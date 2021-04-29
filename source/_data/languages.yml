@@ -1,0 +1,15 @@
+# language
+zh-CN:
+  # items
+  menu:
+    notes: 笔记
+    links: 链接
+  post:
+    copyright:
+      # the translation you perfer
+      author: 本文博主
+    comments:
+      disqus: 评论
+en:
+  menu:
+    schedule: Calendar
