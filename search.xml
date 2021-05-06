@@ -1,31 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hello World</title>
-    <url>/2021/04/29/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="quick-start">Quick Start</h2>
-<h3 id="create-a-new-post">Create a new post</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="run-server">Run server</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="generate-static-files">Generate static files</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="deploy-to-remote-sites">Deploy to remote sites</h3>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-<h3 id="math">Math</h3>
-<p><span class="math inline">\(\theta_1:=\theta_1-\alpha \frac{d}{d\theta_1} J(\theta_1)\)</span></p>
-<img src="/2021/04/29/hello-world/image-20210429190141690.png" class="" title="image-20210429190141690">
+    <title>什么是数据挖掘？</title>
+    <url>/2021/05/06/1-chap01-1/</url>
+    <content><![CDATA[<h1 id="什么是数据挖掘">什么是数据挖掘？</h1>
+<p>有很多定义：</p>
+<ul>
+<li>Non-trivial extraction of implicit, previously unknown and potentially useful information from data</li>
+<li>Exploration &amp; analysis, by automatic or semi-automatic means, of large quantities of data in order to discover meaningful patterns</li>
+</ul>
+<blockquote>
+<p>Data mining is the process of automatically discovering useful information in large data repositories.</p>
+</blockquote>
+<p>​ 总的来说，<strong>数据挖掘是在大型数据仓库中自动发现有用信息的过程。</strong>数据挖掘技术被用于搜索大型数据集，以找到新的和有用的模式。它还可以预测未来的观察结果，比如客户将在网上或实体店消费的金额。</p>
+<p>​ 但并不是所有的信息发现任务都是数据挖掘。例如查询处理，包括在数据库中查询记录，搜索相关网站。因为这些工作只是与数据库管理系统或知识检索系统的简单交互。尽管如此，数据挖掘技术已经被用于提高这类系统的性能，方法是基于与输入查询的相关性来提高搜索结果的质量。</p>
+<h2 id="数据挖掘和知识发现">数据挖掘和知识发现</h2>
+<blockquote>
+<p>Data mining is an integral part of knowledge discovery in databases (KDD), which is the overall process of converting raw data into useful information</p>
+</blockquote>
+<p>​ 数据挖掘是数据库知识发现(knowledge discovery in database, KDD)的重要<strong>组成部分</strong>，是将原始数据转化为有用信息的整个过程。</p>
+<img src="/2021/05/06/1-chap01-1/image-20210506102102770.png" class="" title="image-20210506102102770">
+<ul>
+<li><p>输入数据可以以各种格式存储(平面文件、电子表格或关系表)，可以存储在集中式数据存储库中，也可以分布在多个站点上。</p></li>
+<li><p><strong>数据预处理的目的是将原始输入数据转换为适合后续分析的格式</strong>。数据预处理（Data Preprocessing）的步骤包括融合多源数据、清理数据以去除噪声和重复观测、选择与当前数据挖掘任务相关的记录和特征。由于收集和存储数据的方式多种多样，其可能是整个知识发现过程中最费时费力的步骤。</p></li>
+<li><p>“闭环”（Closing the loop）,指的是将数据挖掘结果集成到决策支持系统的过程。例如，在商业应用中，数据挖掘结果提供的见解可以与商业活动管理工具集成，以便进行和测试有效的营销推广。这种集成就需要后处理步骤（Postprocessing），以确保只有有效和有用的结果被纳入决策支持系统。</p></li>
+</ul>
 ]]></content>
       <categories>
-        <category>ML</category>
+        <category>DM</category>
       </categories>
       <tags>
-        <tag>ML</tag>
+        <tag>DM</tag>
       </tags>
   </entry>
   <entry>
@@ -33,6 +38,7 @@
     <url>/2021/04/16/Hexo%E5%8D%9A%E5%AE%A2%E6%8F%90%E4%BA%A4%E7%99%BE%E5%BA%A6%E5%92%8CGoogle%E6%94%B6%E5%BD%95/</url>
     <content><![CDATA[<h2 id="查看网站是否被收录">1 查看网站是否被收录</h2>
 <p>google或百度输入site:域名，查看域名是否被收录。如下图百度未收录，Google收录了。</p>
+<span id="more"></span>
 <img src="/2021/04/16/Hexo%E5%8D%9A%E5%AE%A2%E6%8F%90%E4%BA%A4%E7%99%BE%E5%BA%A6%E5%92%8CGoogle%E6%94%B6%E5%BD%95/image-20210416180311376.png" class="" title="image-20210416180311376">
 <img src="/2021/04/16/Hexo%E5%8D%9A%E5%AE%A2%E6%8F%90%E4%BA%A4%E7%99%BE%E5%BA%A6%E5%92%8CGoogle%E6%94%B6%E5%BD%95/image-20210416180341954.png" class="" title="image-20210416180341954">
 <h2 id="配置站点地图">2 配置站点地图</h2>
@@ -305,9 +311,39 @@
       </tags>
   </entry>
   <entry>
+    <title>Hello World</title>
+    <url>/2021/04/29/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<span id="more"></span>
+<h2 id="quick-start">Quick Start</h2>
+<h3 id="create-a-new-post">Create a new post</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="run-server">Run server</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="generate-static-files">Generate static files</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="deploy-to-remote-sites">Deploy to remote sites</h3>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<h3 id="math">Math</h3>
+<p><span class="math inline">\(\theta_1:=\theta_1-\alpha \frac{d}{d\theta_1} J(\theta_1)\)</span></p>
+<img src="/2021/04/29/hello-world/image-20210429190141690.png" class="" title="image-20210429190141690">
+]]></content>
+      <categories>
+        <category>ML</category>
+      </categories>
+      <tags>
+        <tag>ML</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>hexo permalink中文乱码解决方案</title>
     <url>/2021/02/16/hexo-permalink%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</url>
     <content><![CDATA[<p>安装完hexo的pure主题后，发现copyright的本文链接时乱码的。这是因为当标题是中文时，<code>post.permalink</code>会被自动url编码，查看copyright.ejs(在<code>themes\pure\layout\_partial\post\</code>目录下),发现如下内容：</p>
+<span id="more"></span>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">&quot;post-copyright-link hidden-xs&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">strong</span>&gt;</span>本文链接：<span class="tag">&lt;/<span class="name">strong</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;&lt;%- post.permalink %&gt;&quot;</span> <span class="attr">title</span>=<span class="string">&quot;&lt;%= post.title %&gt;&quot;</span> <span class="attr">target</span>=<span class="string">&quot;_blank&quot;</span> <span class="attr">rel</span>=<span class="string">&quot;external&quot;</span>&gt;</span>&lt;%- post.permalink %&gt;<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p>尝试了网上普遍的添加urlname方案，很麻烦，而且我还没有弄成功...</p>
 <p>最后查阅<a href="https://hexo.io/news/2019/10/14/hexo-4-released/">官方文档</a>发现，hexo其实内置了<code>decodeURI()</code>函数，可以将编码后的内容解码，因此修改后的内容如下:</p>
@@ -327,6 +363,7 @@
     <url>/2021/02/16/hexo%E5%92%8Ctypora%E5%9B%BE%E7%89%87%E6%97%A0%E6%B3%95%E6%AD%A3%E5%B8%B8%E6%98%BE%E7%A4%BA%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</url>
     <content><![CDATA[<p>安装完hexo后遇到了一个坑，使用typora编辑后hexo图片无法正常显示。</p>
 <p>尝试网上普遍给出的以下方案均无法解决问题。</p>
+<span id="more"></span>
 <ul>
 <li><code>hexo-asset-image</code>插件方案：
 <ul>
@@ -375,6 +412,7 @@
 <li>方法一：通过“系统设置“-”全局主题“-”获取新的全局主题“，同样可以在”外观“中的Plasma样式、应用程序风格、颜色等当中”获取新的全局主题“。</li>
 <li>方法二：通过manjaro kde store下载主题，然后使用osc-url在线将主题导入系统。</li>
 </ul>
+<span id="more"></span>
 <p>manjaro kde store中可以搜索到很多的主题，但是能否适用于自己的桌面这就需要注意了，如果你的桌面是KDE的，那么就不能使用GTK主题，GTK主题适配于Gnome桌面。默认KDE中一个是 Global Themes这个是全局主题，也就对应与于设置中的全局主题 ;另外 Plasma Themes这是Plasma 样式，对应设置中的plasma样式。</p>
 <h3 id="方法一">方法一</h3>
 <p>但是由于一些原因，方法1在我的电脑上是行不通的，加载速度极慢，下载速极慢，据说可以通过proxychain设置终端代理，据说可以行得通，但是我也没有尝试，所以也就不清楚了，所以方法1是行不通的。</p>
@@ -420,6 +458,7 @@
 <li>swap 分区 linux交换区</li>
 <li>/ /ext4</li>
 </ul>
+<span id="more"></span>
 <h2 id="挂载ntfs">1.1 挂载ntfs</h2>
 <p>参考：https://www.cnblogs.com/suge-0620/p/13587224.html</p>
 <p>https://wiki.archlinux.org/index.php/NTFS-3G</p>
@@ -613,7 +652,10 @@
 <li><p>由于git官网下载的太慢了,可以到镜像网站下载最新版本</p>
 <p>https://npm.taobao.org/mirrors/git-for-windows/</p></li>
 <li><p>安装后配置 <figure class="highlight verilog"><table><tr><td class="code"><pre><span class="line">$ git <span class="keyword">config</span> --<span class="keyword">global</span> user<span class="variable">.name</span> <span class="string">&quot;Your Name&quot;</span></span><br><span class="line">$ git <span class="keyword">config</span> --<span class="keyword">global</span> user<span class="variable">.email</span> <span class="string">&quot;email@example.com&quot;</span></span><br></pre></td></tr></table></figure></p></li>
-<li><p>配置远程仓库github</p>
+</ul>
+<span id="more"></span>
+<ul>
+<li>配置远程仓库github
 <ul>
 <li>本地生成SSH KEY。无需设置密码，一路回车。成功后会在用户主目录找到.ssh目录，其中包含<code>id_rsa</code>和<code>id_rsa.pub</code>。
 <ul>
@@ -621,7 +663,7 @@
 </ul></li>
 <li>登录github-&gt;打开“Account settings” -&gt; “SSH Keys” -&gt; 点“Add SSH Key” -&gt;填写任意title,在Key文本框里粘贴<code>id_rsa.pub</code>文件的内容 -&gt; 点击"Add Key"。</li>
 </ul></li>
-<li><p>git系列教程参看https://www.liaoxuefeng.com/wiki/896043488029600</p></li>
+<li>git系列教程参看https://www.liaoxuefeng.com/wiki/896043488029600</li>
 </ul>
 <h2 id="新建一个github仓库">2 新建一个github仓库</h2>
 <ul>
@@ -629,34 +671,50 @@
 </ul>
 <h2 id="安装node.js">3 安装node.js</h2>
 <ul>
-<li>下载安装即可 https://nodejs.org/en/</li>
-<li>将安装目录添加到path环境变量中。例如我的安装目录为<code>D:\Tools\nodejs</code>,找到系统 -&gt; 高级系统设置 -&gt; 环境变量 -&gt; 将该路径添加到系统path环境变量中即可。</li>
-<li>打开cmd,输入<code>npm -version</code> 有显示版本即可。</li>
+<li>下载安装nvm https://github.com/coreybutler/nvm-windows/releases</li>
+<li>选择 nvm-setup.zip</li>
+<li>下载并安装nvm,期间会让输入nvm路径（我的是D:）和nodejs路径（我的是D:）,默认路径是<code>C:\Users\chang\AppData\Roaming\nvm</code></li>
+<li>安装完毕后打开cmd,输入<code>nvm version</code>,看是否出现版本号。否则检查环境变量中是否有如下（系统 -&gt; 高级系统设置 -&gt; 环境变量）。若没有则添加上。</li>
+</ul>
+<img src="/2021/04/16/%E4%BD%BF%E7%94%A8%E5%9F%9F%E5%90%8D%E5%92%8Chexo%E5%9C%A8github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/image-20210430101525773.png" class="" title="image-20210430101525773">
+<ul>
+<li>配置淘宝镜像。打开nvm安装目录下的settings.txt文件，修改后如下：</li>
+</ul>
+<figure class="highlight avrasm"><table><tr><td class="code"><pre><span class="line"><span class="symbol">root:</span> D:\Tools\nvm</span><br><span class="line"><span class="symbol">path:</span> D:\Tools\nodejs</span><br><span class="line"><span class="symbol">arch:</span> <span class="number">64</span> </span><br><span class="line"><span class="symbol">proxy:</span> none</span><br><span class="line"><span class="symbol">node_mirror:</span> http://npm.taobao<span class="meta">.org</span>/mirrors/node/</span><br><span class="line"><span class="symbol">npm_mirror:</span> https://npm.taobao<span class="meta">.org</span>/mirrors/npm/</span><br></pre></td></tr></table></figure>
+<ul>
+<li>安装nodejs。<code>nvm install 12.18.1</code>（推荐12.18.1，较高版本后期安装gitbook会出现错误）</li>
+<li>查看已安装的所有版本的nodejs。<code>nvm list</code></li>
+<li>使用nodejs 12.18.1版本 <code>nvm use 12.18.1</code></li>
+<li><code>node -v</code>,<code>npm -v</code>,<code>npx -v</code>查看是否安装成功。</li>
 </ul>
 <h2 id="安装hexo">4 安装hexo</h2>
 <ul>
-<li>全局安装：<code>npm install -g hexo-cli</code> 或者局部安装<code>npm install hexo</code>。我使用局部安装会出问题所以使用了全局安装</li>
+<li>全局安装：<code>npm install -g hexo-cli</code> （文件路径会在<code>D:\Tools\nodejs\node_modules</code>）或者局部安装<code>npm install hexo</code>(文件路径在执行该命令所在的<code>node_modules</code>目录下)。我使用局部安装会出问题所以使用了全局安装。推荐全局安装。</li>
 <li>创建博客文件夹<code>F:\Blog</code>，在此文件夹中打开cmd,然后输入<code>hexo init</code>,即可初始化。</li>
 <li>hexo常用文件夹
 <ul>
 <li><code>public</code>文件夹存放生成的站点html文件,其内容是根据source中的源文件生成的</li>
 <li><code>source</code>文件夹存放源文件,其中自己写的文档放在<code>_posts</code>文件夹中</li>
 <li><code>themes</code>文件夹存放主题文件</li>
-<li><code>_config.pure.yml</code> 主题配置文件</li>
+<li><code>_config.landscape.yml</code> 主题配置文件</li>
 <li><code>_config.yml</code> hexo全局配置文件</li>
 </ul></li>
-<li>hexo常用命令，日常使用就是在2-6中依次循环
+<li>hexo常用命令，日常使用流程就是在3-7中依次循环，或直接使用第8条命令
 <ol type="1">
 <li><code>hexo init &lt;folder&gt;</code> ,如果指定folder则会在当前文件夹下建立并初始化名为folder的新文件夹。否则初始化当前文件夹。</li>
+<li>hexo new page 页面名 生成一个页面，会在source目录下生成对应的目录</li>
 <li><code>hexo new 文档名</code> 在_posts文件夹中生成一个.md文档</li>
 <li><code>hexo clean</code> 清除站点文件夹public中的文件</li>
 <li><code>hexo g</code>或<code>hexo generate</code> 生成站点文件</li>
 <li><code>hexo s</code> 或<code>hexo server</code>启动本地服务，可以访问http://localhost:4000/ 预览，ctrl+c关闭。默认端口4000，可在_config.yml设定。_</li>
 <li>_<code>hexo d</code> 或 <code>hexo deploy</code> 部署到github,需要在_config.yml中关联github仓库</li>
+<li><code>hexo clean &amp;&amp; hexo d</code>一键部署命令</li>
 </ol></li>
 </ul>
 <h2 id="hexo关联github仓库">5 hexo关联github仓库</h2>
-<p>初始化后Blog文件夹下的_config.yml即为hexo的站点配置文件。找到depoly,修改为如下：</p>
+<p>安装<code>hexo-deployer-git</code>,在博客目录下（我的是<code>F:\Blog</code>）执行：</p>
+<p><code>npm install hexo-deployer-git</code></p>
+<p>修改_config.yml。找到depoly,修改为如下：</p>
 <figure class="highlight dts"><table><tr><td class="code"><pre><span class="line"><span class="symbol">deploy:</span></span><br><span class="line"><span class="symbol">  type:</span> git</span><br><span class="line"><span class="symbol">  repository:</span> 你的仓库地址（我的是：https:<span class="comment">//github.com/Chris-Chang/Chris-Chang.github.io.git）</span></span><br><span class="line"><span class="symbol">  branch:</span> master</span><br></pre></td></tr></table></figure>
 <h2 id="绑定域名">6 绑定域名</h2>
 <ul>
@@ -675,13 +733,29 @@
 </ul>
 <h2 id="配置hexo主题和其他注意点">配置hexo主题和其他注意点</h2>
 <p>此教程为简明教程，主题配置和我安装过程中遇到踩过的坑参看以下文章。</p>
+<p>主题：</p>
 <ul>
-<li><p>本主题使用pure,可<a href="https://blog.cofess.com/2017/11/01/hexo-blog-theme-pure-usage-description.html">参考教程</a>进行配置</p></li>
-<li><p><a href="https://changzhi.space/2021/02/16/hexo%E5%92%8Ctypora%E5%9B%BE%E7%89%87%E6%97%A0%E6%B3%95%E6%AD%A3%E5%B8%B8%E6%98%BE%E7%A4%BA%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/">hexo和typora图片无法正常显示解决方案</a></p></li>
-<li><p><a href="https://changzhi.space/2021/02/16/hexo-permalink%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/">hexo permalink 本文链接中文乱码解决方案</a></p></li>
-<li><p><a href="https://github.com/gitalk/gitalk/blob/master/readme-cn.md">安装Gitalk</a></p></li>
-<li><p><a href="https://cuiqingcai.com/30010.html">Gitalk 评论登录 403 问题解决</a></p></li>
+<li>使用pure主题,可<a href="https://blog.cofess.com/2017/11/01/hexo-blog-theme-pure-usage-description.html">参考教程</a>进行配置</li>
+<li>使用next主题（本主题），可参考<a href="https://theme-next.js.org/docs/getting-started/">官方文档</a></li>
 </ul>
+<p>解决方案：</p>
+<ul>
+<li><a href="https://changzhi.space/2021/02/16/hexo%E5%92%8Ctypora%E5%9B%BE%E7%89%87%E6%97%A0%E6%B3%95%E6%AD%A3%E5%B8%B8%E6%98%BE%E7%A4%BA%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/">hexo和typora图片无法正常显示解决方案</a></li>
+<li><a href="https://changzhi.space/2021/02/16/hexo-permalink%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/">hexo permalink 本文链接中文乱码解决方案</a></li>
+<li><a href="https://github.com/gitalk/gitalk/blob/master/readme-cn.md">安装Gitalk</a></li>
+<li><a href="https://cuiqingcai.com/30010.html">Gitalk 评论登录 403 问题解决</a></li>
+</ul>
+<p>gitbook的安装使用：</p>
+<ul>
+<li><a href="./安装并使用gitbook.md">安装并使用gitbook</a></li>
+</ul>
+<h2 id="nvm常用命令">nvm常用命令</h2>
+<p>linux/unix/macos</p>
+<figure class="highlight jboss-cli"><table><tr><td class="code"><pre><span class="line">nvm install <span class="params">--lts</span> <span class="comment"># 下载最新的稳定版</span></span><br><span class="line">nvm use &lt;版本号&gt; <span class="comment"># 临时切换版本</span></span><br><span class="line">nvm <span class="keyword">alias</span> default &lt;版本号&gt; <span class="comment">#永久切换版本（版本别名，default就是默认使用的版本）</span></span><br><span class="line">nvm uninstall &lt;版本号&gt; <span class="comment"># 删除指定版本</span></span><br><span class="line">nvm <span class="keyword">ls</span> <span class="comment"># 查看本地所有版本</span></span><br><span class="line">nvm ls-remote <span class="params">--lts</span> <span class="comment"># 查看线上所有稳定版 </span></span><br></pre></td></tr></table></figure>
+<p>windows</p>
+<figure class="highlight dts"><table><tr><td class="code"><pre><span class="line">nvm install <span class="params">&lt;版本号&gt;</span> <span class="meta"># 下载指定版本</span></span><br><span class="line">nvm use <span class="params">&lt;版本号&gt;</span> <span class="meta"># 切换版本</span></span><br><span class="line">nvm uninstall <span class="params">&lt;版本号&gt;</span> <span class="meta"># 删除指定版本</span></span><br><span class="line">nvm list available <span class="meta"># 查看线上所有版本</span></span><br></pre></td></tr></table></figure>
+<h2 id="node常用命令">node常用命令</h2>
+<figure class="highlight coffeescript"><table><tr><td class="code"><pre><span class="line"><span class="built_in">npm</span> init <span class="comment"># 初始化node环境，-y可以快速初始化</span></span><br><span class="line"><span class="built_in">npm</span> i &lt;package&gt; <span class="comment"># 下载指定库，看情况添加 -S或者-D，全局安装-g</span></span><br><span class="line"><span class="built_in">npm</span> uninstall &lt;package&gt; <span class="comment"># 删除node包，删除全局-g</span></span><br><span class="line"><span class="built_in">npm</span> list --depth <span class="number">0</span> <span class="comment"># 查看当前目录下载的node包</span></span><br><span class="line"><span class="built_in">npm</span> list -g --depth <span class="number">0</span> <span class="comment"># 查看全局安装的node包</span></span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>hexo</category>
@@ -695,17 +769,55 @@
     <url>/2021/04/17/%E5%AE%89%E8%A3%85%E5%B9%B6%E4%BD%BF%E7%94%A8gitbook/</url>
     <content><![CDATA[<h2 id="安装gitbook">1 安装gitbook</h2>
 <h3 id="安装node.js">1.1 安装node.js</h3>
+<p>推荐nodejs版本为12.18.1，安装过程详见<a href="">使用域名和hexo在github搭建博客</a></p>
 <h3 id="安装gitbook-1">1.2 安装gitbook</h3>
 <figure class="highlight avrasm"><table><tr><td class="code"><pre><span class="line">npm install -g gitbook-<span class="keyword">cli</span></span><br></pre></td></tr></table></figure>
+<p>查看是否安装成功</p>
+<figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">gitbook -V</span></span><br></pre></td></tr></table></figure>
+<p>这时会自动更新。如果出现<code>Gitbook-cli install error TypeError: cb.apply is not a function inside graceful-fs</code>,这是由于较老的graceful-fs版本在较高的node.js上执行出错，下载最新的graceful-fs即可。解决方法如下：</p>
+<span id="more"></span>
+<p>在nodejs安装目录下找到并进入<code>gitbook-cli\node_modules\npm</code>目录，执行（我的是<code>D:\Tools\nodejs\node_modules\gitbook-cli\node_modules\npm</code>）</p>
+<figure class="highlight coffeescript"><table><tr><td class="code"><pre><span class="line"><span class="built_in">npm</span> install graceful-fs@latest --save</span><br></pre></td></tr></table></figure>
 <h2 id="使用gitbook">2 使用gitbook</h2>
-<h3 id="基本命令">2.1 基本命令</h3>
+<h3 id="创建github项目">2.1 创建github项目</h3>
+<p>这里我创建了名为NG_ML的仓库。</p>
+<h3 id="clone到本地或关联本地仓库">2.2 clone到本地或关联本地仓库</h3>
+<p>这里本地创建了<code>F:\Notes\NG_ML</code>的目录，在该目录下执行<code>gitbook init</code>，会生成README.md文件和SUMMARY.md文件。</p>
 <ul>
-<li>创建目录F:，并初始化</li>
+<li>README.md文件是介绍文件。</li>
+<li>SUMMARY.md文件是目录文件。官方格式如下：中括号为目录名，后面跟的小括号是对应文件的相对路径。这里先手动创建，后面会介绍插件自动生成。不要使用notepad++编写，这里被坑了，notepad++设置成utf8生成文件后中文也会乱码，不知道什么问题。推荐使用typora书写。</li>
 </ul>
-<figure class="highlight csharp"><table><tr><td class="code"><pre><span class="line">gitbook <span class="keyword">init</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight less"><table><tr><td class="code"><pre><span class="line"># <span class="selector-tag">Summary</span></span><br><span class="line"></span><br><span class="line">* <span class="selector-attr">[Introduction]</span>(README.md)</span><br><span class="line">* <span class="selector-attr">[前言]</span>(readme.md)</span><br><span class="line">* <span class="selector-attr">[第一周]</span>(part1/README.md)</span><br><span class="line">    * <span class="selector-attr">[第一节]</span>(part1/<span class="number">1</span>.md)</span><br><span class="line">    * <span class="selector-attr">[第二节]</span>(part1/<span class="number">2</span>.md)</span><br><span class="line">    * <span class="selector-attr">[第三节]</span>(part1/<span class="number">3</span>.md)</span><br><span class="line">    * <span class="selector-attr">[第四节]</span>(part1/<span class="number">4</span>.md)</span><br><span class="line">* <span class="selector-attr">[第二周]</span>(part2/README.md)</span><br><span class="line">* <span class="selector-attr">[第三周]</span>(part3/README.md)</span><br><span class="line">* <span class="selector-attr">[第四周]</span>(part4/README.md)</span><br></pre></td></tr></table></figure>
+<img src="/2021/04/17/%E5%AE%89%E8%A3%85%E5%B9%B6%E4%BD%BF%E7%94%A8gitbook/image-20210430111257358.png" class="" title="image-20210430111257358">
+<h3 id="初始化生成对应文件并书写">2.3 初始化生成对应文件，并书写</h3>
+<p>再次执行<code>gitbook init</code>后会根据所写的目录生成文件夹和对应文件</p>
 <ul>
-<li>初始化后生成两个</li>
+<li>书写内容</li>
+</ul>
+<img src="/2021/04/17/%E5%AE%89%E8%A3%85%E5%B9%B6%E4%BD%BF%E7%94%A8gitbook/image-20210430113254530.png" class="" title="image-20210430113254530">
+<ul>
+<li></li>
+<li><ul>
+<li><code>gitbook build</code>生成目录_book</li>
+<li><code>gitbook serve</code>生成目录_book，并预览http://localhost:4000</li>
+</ul></li>
+</ul>
+<h2 id="配置">3 配置</h2>
+<p>安装目录生成插件<code>gitbook-plugin-summary</code></p>
+<ul>
+<li>在笔记文件夹下新建文件为book.json，填写如下内容：</li>
+</ul>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="attr">&quot;plugins&quot;</span>: [<span class="string">&quot;summary&quot;</span>]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>执行<code>g</code></li>
 </ul>
 ]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>gitbook</tag>
+      </tags>
   </entry>
 </search>
