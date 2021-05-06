@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>什么是数据挖掘？</title>
+    <title>1.1 什么是数据挖掘？</title>
     <url>/2021/05/04/1-chap01-1/</url>
     <content><![CDATA[<h1 id="什么是数据挖掘">什么是数据挖掘？</h1>
 <p>有很多定义：</p>
@@ -12,19 +12,121 @@
 <blockquote>
 <p>Data mining is the process of automatically discovering useful information in large data repositories.</p>
 </blockquote>
-<p>​ 总的来说，<strong>数据挖掘是在大型数据仓库中自动发现有用信息的过程。</strong>数据挖掘技术被用于搜索大型数据集，以找到新的和有用的模式。它还可以预测未来的观察结果，比如客户将在网上或实体店消费的金额。</p>
+<p>总的来说，<strong>数据挖掘是在大型数据仓库中自动发现有用信息的过程。</strong>数据挖掘技术被用于搜索大型数据集，以找到新的和有用的模式。它还可以预测未来的观察结果，比如客户将在网上或实体店消费的金额。</p>
 <span id="more"></span>
-<p>​ 但并不是所有的信息发现任务都是数据挖掘。例如查询处理，包括在数据库中查询记录，搜索相关网站。因为这些工作只是与数据库管理系统或知识检索系统的简单交互。尽管如此，数据挖掘技术已经被用于提高这类系统的性能，方法是基于与输入查询的相关性来提高搜索结果的质量。</p>
+<p>但并不是所有的信息发现任务都是数据挖掘。例如查询处理，包括在数据库中查询记录，搜索相关网站。因为这些工作只是与数据库管理系统或知识检索系统的简单交互。尽管如此，数据挖掘技术已经被用于提高这类系统的性能，方法是基于与输入查询的相关性来提高搜索结果的质量。</p>
 <h2 id="数据挖掘和知识发现">数据挖掘和知识发现</h2>
 <blockquote>
 <p>Data mining is an integral part of knowledge discovery in databases (KDD), which is the overall process of converting raw data into useful information</p>
 </blockquote>
-<p>​ 数据挖掘是数据库知识发现(knowledge discovery in database, KDD)的重要<strong>组成部分</strong>，是将原始数据转化为有用信息的整个过程。</p>
+<p>数据挖掘是数据库知识发现(knowledge discovery in database, KDD)的重要组成部分，是将原始数据转化为有用信息的整个过程。</p>
 <img src="/2021/05/04/1-chap01-1/image-20210506102102770.png" class="" title="image-20210506102102770">
 <ul>
 <li><p>输入数据可以以各种格式存储(平面文件、电子表格或关系表)，可以存储在集中式数据存储库中，也可以分布在多个站点上。</p></li>
 <li><p><strong>数据预处理的目的是将原始输入数据转换为适合后续分析的格式</strong>。数据预处理（Data Preprocessing）的步骤包括融合多源数据、清理数据以去除噪声和重复观测、选择与当前数据挖掘任务相关的记录和特征。由于收集和存储数据的方式多种多样，其可能是整个知识发现过程中最费时费力的步骤。</p></li>
 <li><p>“闭环”（Closing the loop）,指的是将数据挖掘结果集成到决策支持系统的过程。例如，在商业应用中，数据挖掘结果提供的见解可以与商业活动管理工具集成，以便进行和测试有效的营销推广。这种集成就需要后处理步骤（Postprocessing），以确保只有有效和有用的结果被纳入决策支持系统。</p></li>
+</ul>
+<p>虽然数据挖掘传统上被视为KDD框架中的中间过程，但多年来它已经成为计算机科学中的一个学术领域，关注于KDD的所有方面，包括数据预处理、挖掘和后处理。</p>
+]]></content>
+      <categories>
+        <category>DM</category>
+      </categories>
+      <tags>
+        <tag>DM</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>1.2 推动数据挖掘发展的因素</title>
+    <url>/2021/05/04/2-chap01-2/</url>
+    <content><![CDATA[<h1 id="推动数据挖掘发展的因素">推动数据挖掘发展的因素</h1>
+<p>传统的数据分析技术在应对大数据应用带来的挑战时，经常遇到实际困难。以下是推动数据挖掘发展的一些具体挑战。</p>
+<h2 id="可扩展">可扩展</h2>
+<p>（Scalability）</p>
+<p>由于数据生成和收集方面的进步，TB、PB甚至EB大小的数据集越来越普遍。<strong>如果数据挖掘算法要处理这些庞大的数据集，它们必须是可扩展的。</strong>可扩展性还可能需要实现新的数据结构，以高效地访问单个记录。比如内存不足时需要使用外部算法。可扩展性也可以通过使用抽样或开发并行和分布式算法来改进。</p>
+<h2 id="高维度">高维度</h2>
+<p>（High Dimensionality）</p>
+<p>现在经常会遇到具有数百或数千个属性的数据集，而不是几十年前仅有的几个属性。如在生物信息学中，微阵列技术的进展产生了涉及数千个特征的基因表达数据。针对低维数据开发的传统数据分析技术常常不能很好用于高维。在一些数据分析算法中，计算复杂度随着维数(特征的数量)的增加而迅速增加。</p>
+<h2 id="异构和复杂的数据">异构和复杂的数据</h2>
+<p>（Heterogeneous and Complex Data）</p>
+<p>传统的数据分析方法经常处理包含相同类型属性的数据集，包括连续的或分类的。现代的数据呈现出复杂和异构性。如包含了文本，超链接，图片，视频等的网页数据。具有顺序和三维结构的DNA数据。<strong>为挖掘此类复杂对象而开发的技术应考虑数据中的关系</strong>，如时间和空间自相关、图的连通性以及半结构化文本和XML文档中元素之间的父子关系。</p>
+<h2 id="数据的所有权和分布">数据的所有权和分布</h2>
+<p>（Data Ownership and Distribution）</p>
+<p>有时，分析所需的数据并不存储在一个位置或属于一个组织。相反，数据在地理上分布在属于多个实体的资源之间。这就要求开发分布式数据挖掘技术。分布式数据挖掘算法面临的关键挑战包括:</p>
+<ol type="1">
+<li>如何减少执行分布式计算所需的通信量;</li>
+<li>如何有效地整合来自多个来源的数据挖掘结果;</li>
+<li>如何解决数据安全和隐私问题</li>
+</ol>
+<h2 id="非传统的分析">非传统的分析</h2>
+<p>传统的统计方法是基于假设和检验的范式。也就是说，提出一个假设，设计一个实验来收集数据，然后根据假设对数据进行分析。不幸的是，这个过程是非常劳动密集型的。当前的数据分析任务通常需要生成和评估数千个假设，因此，一些数据挖掘技术的发展是由假设生成和评估过程自动化的愿望推动的。此外，数据挖掘中分析的数据集通常不是精心设计的实验结果，它代表着数据的机会样本，而不是随机样本。</p>
+]]></content>
+      <categories>
+        <category>DM</category>
+      </categories>
+      <tags>
+        <tag>DM</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>1.3 数据挖掘的起源</title>
+    <url>/2021/05/06/3-chap01-3/</url>
+    <content><![CDATA[<h2 id="数据挖掘的起源">数据挖掘的起源</h2>
+<p>从机器学习/人工智能、模式识别、统计和数据库系统中汲取思想。</p>
+<p>传统的技术可能不适合，由于当今数据具有如下特点</p>
+<ul>
+<li>Large-scale</li>
+<li>High dimensional</li>
+<li>Heterogeneous</li>
+<li>Complex</li>
+<li>Distributed</li>
+</ul>
+<p>数据挖掘是数据科学和数据驱动发现的新兴领域的关键组成部分。数据驱动方法成功的一个例子就是深度学习。</p>
+<p>下图是数据挖掘与其他领域的关系</p>
+<img src="/2021/05/06/3-chap01-3/image-20210506120942931.png" class="" title="image-20210506120942931">
+]]></content>
+      <categories>
+        <category>DM</category>
+      </categories>
+      <tags>
+        <tag>DM</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>1.4 数据挖掘的任务</title>
+    <url>/2021/05/06/4-chap01-4/</url>
+    <content><![CDATA[<h1 id="数据挖掘的任务">数据挖掘的任务</h1>
+<p>数据挖掘任务一般分为两大类:</p>
+<ul>
+<li>预测(Predictive tasks)
+<ul>
+<li>这些任务的目的是根据其他属性的值预测特定属性的值。被预测的属性一般称为<strong>目标(target)</strong>或因变量<strong>(dependent variable)</strong>，用来进行预测的属性称为<strong>解释变量(explanatory)</strong>或<strong>自变量(independent variables)</strong>。</li>
+</ul></li>
+<li>描述(Descriptive tasks)
+<ul>
+<li>这里的目标是导出模式(相关性、趋势、集群、轨迹和异常)，这些模式总结了数据中的基本关系。描述性数据挖掘任务在本质上通常是探索性的，并且经常需要后处理技术来验证和解释结果。</li>
+</ul></li>
+</ul>
+<p>图1.3说明了数据挖掘的四个核心任务，<strong>可结合吴恩达的机器学习课程理解</strong>，如下所用例子该课程均有讲解。</p>
+<img src="/2021/05/06/4-chap01-4/image-20210506122246153.png" class="" title="image-20210506122246153">
+<ul>
+<li><strong>预测建模</strong>（Predictive Modeling）是指将目标变量(被预测的属性)作为解释变量的函数建立模型的任务。有两种类型的预测建模任务：分类和回归。
+<ul>
+<li><strong>分类</strong>（classification），<strong>用于离散目标变量。</strong>例如预测用户是否会网上购物，因为其目标变量只有两个值（是或否）。书这里同样举了对鸢尾花（例子1.1）进行分类的例子。</li>
+<li><strong>回归</strong>（regression），<strong>用于连续目标变量。</strong>例如预测未来一段时间内的股票的价格，因为股票价格是连续的属性。</li>
+<li>这两个任务的目标是学习一个模型，使目标变量的预测值和真实值之间的误差最小化。预测模型可用于识别将对营销活动作出反应的客户，预测地球生态系统的干扰，或根据医学测试的结果判断病人是否患有某种疾病。</li>
+</ul></li>
+<li><strong>关联分析</strong>（Association Analysis）<strong>用于发现描述数据中强关联特征的模式</strong>。发现的模式通常以隐含规则或特征子集的形式表示。由于关联分析的搜索空间是指数级的，所以它的目标是以一种有效的方式提取出最感兴趣的模式。关联分析的应用包括发现具有相关功能的基因组，确定可以一起访问的网页，或者了解地球气候系统中不同元素之间的关系。
+<ul>
+<li>例子1.2：购物车分析。通过对收银台收集的销售数据进行关联分析可以找到顾客经常一起购买的物品，例如，购买尿布的顾客也倾向于购买牛奶。这种类型的规则可以用来识别相关产品之间潜在的交叉销售机会。</li>
+</ul></li>
+<li><strong>聚类分析</strong>（Cluster analysis）的目的是寻找密切相关的观察结果组，从而使属于同一类的观察结果彼此之间比属于其他类的观察结果更加相似，即将具有相同特征的观察结果归为一类。聚类已被用于对相关客户集进行分组，找到对地球气候有重大影响的海洋区域，并压缩数据。
+<ul>
+<li>例子1.3：文章分类。根据文章中出现关键词的频度来进行对其分类。</li>
+</ul></li>
+<li><strong>异常检测</strong>（Anomaly Detection）是识别其特征与其他数据显著不同的观测数据的任务。这种观测被称为异常或异常值。异常检测算法的目标是发现真实的异常，避免错误地将正常对象标记为异常。换句话说，一个好的异常检测器必须具有高检测率和低误报率。异常检测的应用包括检测欺诈、网络入侵、异常疾病的模式和生态系统失调，如干旱、洪水、火灾、飓风等。
+<ul>
+<li>例子1.4：信用卡反欺诈检测。由于欺诈案件的数量相对于合法交易的数量相对较少，可以应用异常检测技术为用户建立合法交易描述文件。当新交易产生时，将它与用户的描述文件进行比较。如果交易的特征与之前创建的交易描述文件非常不同，那么该交易将被标记为潜在的欺诈。</li>
+</ul></li>
 </ul>
 ]]></content>
       <categories>
@@ -170,25 +272,6 @@
       </tags>
   </entry>
   <entry>
-    <title>WEEK1.9-Gradient Descent Intuition</title>
-    <url>/2021/04/28/WEEK1-Gradient-Descent-Intuition/</url>
-    <content><![CDATA[<img src="/2021/04/28/WEEK1-Gradient-Descent-Intuition/image-20210428101426323.png" class="" title="image-20210428101426323">
-<img src="/2021/04/28/WEEK1-Gradient-Descent-Intuition/image-20210428101630702.png" class="" title="image-20210428101630702">
-<img src="/2021/04/28/WEEK1-Gradient-Descent-Intuition/image-20210428102156398.png" class="" title="image-20210428102156398">
-<p>线性回归算法</p>
-<img src="/2021/04/28/WEEK1-Gradient-Descent-Intuition/image-20210428102420775.png" class="" title="image-20210428102420775">
-<img src="/2021/04/28/WEEK1-Gradient-Descent-Intuition/image-20210428103332351.png" class="" title="image-20210428103332351">
-<p>在梯度下降中，当我们接近一个局部的最小值的过程里，梯度下降算法会自动采取越来越小的步子。这是因为当我我们接近局部最优时，其定义就是导数等于0。因此当我们接近局部最优，导数项会自动变小，所以梯度下降会自动采取更小的步子，这就是不需要减小<span class="math inline">\(\alpha\)</span>或时间的原因。梯度下降算法，可以用它来最小化任何成本函数J,而不是我们为线性回归定义的那个成本函数J</p>
-<p><span class="math inline">\(\theta_1:=\theta_1-\alpha \frac{d}{d\theta_1} J(\theta_1)\)</span></p>
-]]></content>
-      <categories>
-        <category>ML</category>
-      </categories>
-      <tags>
-        <tag>ML</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>WEEK1.8-Gradient Descent</title>
     <url>/2021/04/28/WEEK1-Gradient-Descent/</url>
     <content><![CDATA[<h2 id="梯度下降算法">梯度下降算法</h2>
@@ -203,6 +286,25 @@
 <img src="/2021/04/28/WEEK1-Gradient-Descent/image-20210428094159913.png" class="" title="image-20210428094159913">
 <p>梯度下降算法定义：</p>
 <p><span class="math inline">\(\alpha\)</span>称为学习速率，它控制我们以多大幅度更新这个参数<span class="math inline">\(\theta_j\)</span>.它控制了我们下山时会迈出多大的步子。因此如果<span class="math inline">\(\alpha\)</span>值很大，那么相应的梯度下降过程中，我们会试图用大步子下山。如果很小则用小碎步下山。在梯度下降算法中我们要<strong>同时更新<span class="math inline">\(\theta_0\)</span>和<span class="math inline">\(\theta_1\)</span>,</strong>当j=0和j=1时，会产生更新。</p>
+]]></content>
+      <categories>
+        <category>ML</category>
+      </categories>
+      <tags>
+        <tag>ML</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>WEEK1.9-Gradient Descent Intuition</title>
+    <url>/2021/04/28/WEEK1-Gradient-Descent-Intuition/</url>
+    <content><![CDATA[<img src="/2021/04/28/WEEK1-Gradient-Descent-Intuition/image-20210428101426323.png" class="" title="image-20210428101426323">
+<img src="/2021/04/28/WEEK1-Gradient-Descent-Intuition/image-20210428101630702.png" class="" title="image-20210428101630702">
+<img src="/2021/04/28/WEEK1-Gradient-Descent-Intuition/image-20210428102156398.png" class="" title="image-20210428102156398">
+<p>线性回归算法</p>
+<img src="/2021/04/28/WEEK1-Gradient-Descent-Intuition/image-20210428102420775.png" class="" title="image-20210428102420775">
+<img src="/2021/04/28/WEEK1-Gradient-Descent-Intuition/image-20210428103332351.png" class="" title="image-20210428103332351">
+<p>在梯度下降中，当我们接近一个局部的最小值的过程里，梯度下降算法会自动采取越来越小的步子。这是因为当我我们接近局部最优时，其定义就是导数等于0。因此当我们接近局部最优，导数项会自动变小，所以梯度下降会自动采取更小的步子，这就是不需要减小<span class="math inline">\(\alpha\)</span>或时间的原因。梯度下降算法，可以用它来最小化任何成本函数J,而不是我们为线性回归定义的那个成本函数J</p>
+<p><span class="math inline">\(\theta_1:=\theta_1-\alpha \frac{d}{d\theta_1} J(\theta_1)\)</span></p>
 ]]></content>
       <categories>
         <category>ML</category>
@@ -292,6 +394,26 @@
       </tags>
   </entry>
   <entry>
+    <title>WEEK1.1-What is Machine Learning</title>
+    <url>/2021/04/28/What-is-Machine-Learning/</url>
+    <content><![CDATA[<h2 id="什么是机器学习">什么是机器学习？</h2>
+<p>提供了机器学习的两种定义。亚瑟·塞缪尔（Arthur Samuel）将其描述为：“使计算机无需明确编程即可学习的研究领域”。这是一个较旧的非正式定义。</p>
+<p>汤姆·米切尔（Tom Mitchell）提供了一个更现代的定义：“如果某计算机程序在T任务中的性能（由P来衡量）随着经验E的提高而提高，则可以说它是从经验E中学习有关某类任务T和性能度量P的。 ”</p>
+<p>例如：玩跳棋。</p>
+<p>E =玩过许多跳棋游戏的经验</p>
+<p>T =扮演跳棋的任务。</p>
+<p>P =程序将赢得下一场比赛的概率。</p>
+<p>通常，可以将任何机器学习问题分配给以下两种广泛的分类之一：</p>
+<p>监督学习和无监督学习。</p>
+]]></content>
+      <categories>
+        <category>ML</category>
+      </categories>
+      <tags>
+        <tag>ML</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/2021/04/29/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -318,25 +440,6 @@
       </categories>
       <tags>
         <tag>ML</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>hexo permalink中文乱码解决方案</title>
-    <url>/2021/02/16/hexo-permalink%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</url>
-    <content><![CDATA[<p>安装完hexo的pure主题后，发现copyright的本文链接时乱码的。这是因为当标题是中文时，<code>post.permalink</code>会被自动url编码，查看copyright.ejs(在<code>themes\pure\layout\_partial\post\</code>目录下),发现如下内容：</p>
-<span id="more"></span>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">&quot;post-copyright-link hidden-xs&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">strong</span>&gt;</span>本文链接：<span class="tag">&lt;/<span class="name">strong</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;&lt;%- post.permalink %&gt;&quot;</span> <span class="attr">title</span>=<span class="string">&quot;&lt;%= post.title %&gt;&quot;</span> <span class="attr">target</span>=<span class="string">&quot;_blank&quot;</span> <span class="attr">rel</span>=<span class="string">&quot;external&quot;</span>&gt;</span>&lt;%- post.permalink %&gt;<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>尝试了网上普遍的添加urlname方案，很麻烦，而且我还没有弄成功...</p>
-<p>最后查阅<a href="https://hexo.io/news/2019/10/14/hexo-4-released/">官方文档</a>发现，hexo其实内置了<code>decodeURI()</code>函数，可以将编码后的内容解码，因此修改后的内容如下:</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">&quot;post-copyright-link hidden-xs&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">strong</span>&gt;</span>本文链接：<span class="tag">&lt;/<span class="name">strong</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;&lt;%- post.permalink %&gt;&quot;</span> <span class="attr">title</span>=<span class="string">&quot;&lt;%= post.title %&gt;&quot;</span> <span class="attr">target</span>=<span class="string">&quot;_blank&quot;</span> <span class="attr">rel</span>=<span class="string">&quot;external&quot;</span>&gt;</span>&lt;%- decodeURI(post.permalink) %&gt;<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>这时即可如下正常显示。</p>
-]]></content>
-      <categories>
-        <category>hexo</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>解决方案</tag>
       </tags>
   </entry>
   <entry>
@@ -375,6 +478,25 @@
 <li>大功告成</li>
 </ul>
 <p>参考：https://www.cnblogs.com/cocowool/p/hexo-image-link.html</p>
+]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>解决方案</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo permalink中文乱码解决方案</title>
+    <url>/2021/02/16/hexo-permalink%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</url>
+    <content><![CDATA[<p>安装完hexo的pure主题后，发现copyright的本文链接时乱码的。这是因为当标题是中文时，<code>post.permalink</code>会被自动url编码，查看copyright.ejs(在<code>themes\pure\layout\_partial\post\</code>目录下),发现如下内容：</p>
+<span id="more"></span>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">&quot;post-copyright-link hidden-xs&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">strong</span>&gt;</span>本文链接：<span class="tag">&lt;/<span class="name">strong</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;&lt;%- post.permalink %&gt;&quot;</span> <span class="attr">title</span>=<span class="string">&quot;&lt;%= post.title %&gt;&quot;</span> <span class="attr">target</span>=<span class="string">&quot;_blank&quot;</span> <span class="attr">rel</span>=<span class="string">&quot;external&quot;</span>&gt;</span>&lt;%- post.permalink %&gt;<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>尝试了网上普遍的添加urlname方案，很麻烦，而且我还没有弄成功...</p>
+<p>最后查阅<a href="https://hexo.io/news/2019/10/14/hexo-4-released/">官方文档</a>发现，hexo其实内置了<code>decodeURI()</code>函数，可以将编码后的内容解码，因此修改后的内容如下:</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">li</span> <span class="attr">class</span>=<span class="string">&quot;post-copyright-link hidden-xs&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">strong</span>&gt;</span>本文链接：<span class="tag">&lt;/<span class="name">strong</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">&quot;&lt;%- post.permalink %&gt;&quot;</span> <span class="attr">title</span>=<span class="string">&quot;&lt;%= post.title %&gt;&quot;</span> <span class="attr">target</span>=<span class="string">&quot;_blank&quot;</span> <span class="attr">rel</span>=<span class="string">&quot;external&quot;</span>&gt;</span>&lt;%- decodeURI(post.permalink) %&gt;<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>这时即可如下正常显示。</p>
 ]]></content>
       <categories>
         <category>hexo</category>
@@ -743,26 +865,6 @@
       </categories>
       <tags>
         <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>WEEK1.1-What is Machine Learning</title>
-    <url>/2021/04/28/What-is-Machine-Learning/</url>
-    <content><![CDATA[<h2 id="什么是机器学习">什么是机器学习？</h2>
-<p>提供了机器学习的两种定义。亚瑟·塞缪尔（Arthur Samuel）将其描述为：“使计算机无需明确编程即可学习的研究领域”。这是一个较旧的非正式定义。</p>
-<p>汤姆·米切尔（Tom Mitchell）提供了一个更现代的定义：“如果某计算机程序在T任务中的性能（由P来衡量）随着经验E的提高而提高，则可以说它是从经验E中学习有关某类任务T和性能度量P的。 ”</p>
-<p>例如：玩跳棋。</p>
-<p>E =玩过许多跳棋游戏的经验</p>
-<p>T =扮演跳棋的任务。</p>
-<p>P =程序将赢得下一场比赛的概率。</p>
-<p>通常，可以将任何机器学习问题分配给以下两种广泛的分类之一：</p>
-<p>监督学习和无监督学习。</p>
-]]></content>
-      <categories>
-        <category>ML</category>
-      </categories>
-      <tags>
-        <tag>ML</tag>
       </tags>
   </entry>
   <entry>
