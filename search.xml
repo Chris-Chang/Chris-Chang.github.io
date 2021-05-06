@@ -13,6 +13,7 @@
 <p>Data mining is the process of automatically discovering useful information in large data repositories.</p>
 </blockquote>
 <p>​ 总的来说，<strong>数据挖掘是在大型数据仓库中自动发现有用信息的过程。</strong>数据挖掘技术被用于搜索大型数据集，以找到新的和有用的模式。它还可以预测未来的观察结果，比如客户将在网上或实体店消费的金额。</p>
+<span id="more"></span>
 <p>​ 但并不是所有的信息发现任务都是数据挖掘。例如查询处理，包括在数据库中查询记录，搜索相关网站。因为这些工作只是与数据库管理系统或知识检索系统的简单交互。尽管如此，数据挖掘技术已经被用于提高这类系统的性能，方法是基于与输入查询的相关性来提高搜索结果的质量。</p>
 <h2 id="数据挖掘和知识发现">数据挖掘和知识发现</h2>
 <blockquote>
