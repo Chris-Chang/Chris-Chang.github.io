@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>什么是数据挖掘？</title>
-    <url>/2021/05/06/1-chap01-1/</url>
+    <url>/2021/05/04/1-chap01-1/</url>
     <content><![CDATA[<h1 id="什么是数据挖掘">什么是数据挖掘？</h1>
 <p>有很多定义：</p>
 <ul>
@@ -20,7 +20,7 @@
 <p>Data mining is an integral part of knowledge discovery in databases (KDD), which is the overall process of converting raw data into useful information</p>
 </blockquote>
 <p>​ 数据挖掘是数据库知识发现(knowledge discovery in database, KDD)的重要<strong>组成部分</strong>，是将原始数据转化为有用信息的整个过程。</p>
-<img src="/2021/05/06/1-chap01-1/image-20210506102102770.png" class="" title="image-20210506102102770">
+<img src="/2021/05/04/1-chap01-1/image-20210506102102770.png" class="" title="image-20210506102102770">
 <ul>
 <li><p>输入数据可以以各种格式存储(平面文件、电子表格或关系表)，可以存储在集中式数据存储库中，也可以分布在多个站点上。</p></li>
 <li><p><strong>数据预处理的目的是将原始输入数据转换为适合后续分析的格式</strong>。数据预处理（Data Preprocessing）的步骤包括融合多源数据、清理数据以去除噪声和重复观测、选择与当前数据挖掘任务相关的记录和特征。由于收集和存储数据的方式多种多样，其可能是整个知识发现过程中最费时费力的步骤。</p></li>
@@ -283,26 +283,6 @@
 </ul>
 <p>使用Octave环境或matlab，可以用几行代码实现一些算法</p>
 <p>先用Octave写出一个程序原型，确定该算法可以工作后，移植到C++或Java等其他编译环境，svd()解线性方程函数</p>
-]]></content>
-      <categories>
-        <category>ML</category>
-      </categories>
-      <tags>
-        <tag>ML</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>WEEK1.1-What is Machine Learning</title>
-    <url>/2021/04/28/What-is-Machine-Learning/</url>
-    <content><![CDATA[<h2 id="什么是机器学习">什么是机器学习？</h2>
-<p>提供了机器学习的两种定义。亚瑟·塞缪尔（Arthur Samuel）将其描述为：“使计算机无需明确编程即可学习的研究领域”。这是一个较旧的非正式定义。</p>
-<p>汤姆·米切尔（Tom Mitchell）提供了一个更现代的定义：“如果某计算机程序在T任务中的性能（由P来衡量）随着经验E的提高而提高，则可以说它是从经验E中学习有关某类任务T和性能度量P的。 ”</p>
-<p>例如：玩跳棋。</p>
-<p>E =玩过许多跳棋游戏的经验</p>
-<p>T =扮演跳棋的任务。</p>
-<p>P =程序将赢得下一场比赛的概率。</p>
-<p>通常，可以将任何机器学习问题分配给以下两种广泛的分类之一：</p>
-<p>监督学习和无监督学习。</p>
 ]]></content>
       <categories>
         <category>ML</category>
@@ -763,6 +743,26 @@
       </categories>
       <tags>
         <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>WEEK1.1-What is Machine Learning</title>
+    <url>/2021/04/28/What-is-Machine-Learning/</url>
+    <content><![CDATA[<h2 id="什么是机器学习">什么是机器学习？</h2>
+<p>提供了机器学习的两种定义。亚瑟·塞缪尔（Arthur Samuel）将其描述为：“使计算机无需明确编程即可学习的研究领域”。这是一个较旧的非正式定义。</p>
+<p>汤姆·米切尔（Tom Mitchell）提供了一个更现代的定义：“如果某计算机程序在T任务中的性能（由P来衡量）随着经验E的提高而提高，则可以说它是从经验E中学习有关某类任务T和性能度量P的。 ”</p>
+<p>例如：玩跳棋。</p>
+<p>E =玩过许多跳棋游戏的经验</p>
+<p>T =扮演跳棋的任务。</p>
+<p>P =程序将赢得下一场比赛的概率。</p>
+<p>通常，可以将任何机器学习问题分配给以下两种广泛的分类之一：</p>
+<p>监督学习和无监督学习。</p>
+]]></content>
+      <categories>
+        <category>ML</category>
+      </categories>
+      <tags>
+        <tag>ML</tag>
       </tags>
   </entry>
   <entry>

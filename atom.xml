@@ -6,7 +6,7 @@
   <link href="https://changzhi.space/atom.xml" rel="self"/>
   
   <link href="https://changzhi.space/"/>
-  <updated>2021-05-06T02:54:34.227Z</updated>
+  <updated>2021-05-06T02:57:29.973Z</updated>
   <id>https://changzhi.space/</id>
   
   <author>
@@ -18,12 +18,12 @@
   
   <entry>
     <title>什么是数据挖掘？</title>
-    <link href="https://changzhi.space/2021/05/06/1-chap01-1/"/>
-    <id>https://changzhi.space/2021/05/06/1-chap01-1/</id>
-    <published>2021-05-06T02:37:21.508Z</published>
-    <updated>2021-05-06T02:54:34.227Z</updated>
+    <link href="https://changzhi.space/2021/05/04/1-chap01-1/"/>
+    <id>https://changzhi.space/2021/05/04/1-chap01-1/</id>
+    <published>2021-05-04T03:26:15.000Z</published>
+    <updated>2021-05-06T02:57:29.973Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="什么是数据挖掘">什么是数据挖掘？</h1><p>有很多定义：</p><ul><li>Non-trivial extraction of implicit, previously unknown and potentially useful information from data</li><li>Exploration &amp; analysis, by automatic or semi-automatic means, of large quantities of data in order to discover meaningful patterns</li></ul><blockquote><p>Data mining is the process of automatically discovering useful information in large data repositories.</p></blockquote><p>​ 总的来说，<strong>数据挖掘是在大型数据仓库中自动发现有用信息的过程。</strong>数据挖掘技术被用于搜索大型数据集，以找到新的和有用的模式。它还可以预测未来的观察结果，比如客户将在网上或实体店消费的金额。</p><span id="more"></span><p>​ 但并不是所有的信息发现任务都是数据挖掘。例如查询处理，包括在数据库中查询记录，搜索相关网站。因为这些工作只是与数据库管理系统或知识检索系统的简单交互。尽管如此，数据挖掘技术已经被用于提高这类系统的性能，方法是基于与输入查询的相关性来提高搜索结果的质量。</p><h2 id="数据挖掘和知识发现">数据挖掘和知识发现</h2><blockquote><p>Data mining is an integral part of knowledge discovery in databases (KDD), which is the overall process of converting raw data into useful information</p></blockquote><p>​ 数据挖掘是数据库知识发现(knowledge discovery in database, KDD)的重要<strong>组成部分</strong>，是将原始数据转化为有用信息的整个过程。</p><img src="/2021/05/06/1-chap01-1/image-20210506102102770.png" class="" title="image-20210506102102770"><ul><li><p>输入数据可以以各种格式存储(平面文件、电子表格或关系表)，可以存储在集中式数据存储库中，也可以分布在多个站点上。</p></li><li><p><strong>数据预处理的目的是将原始输入数据转换为适合后续分析的格式</strong>。数据预处理（Data Preprocessing）的步骤包括融合多源数据、清理数据以去除噪声和重复观测、选择与当前数据挖掘任务相关的记录和特征。由于收集和存储数据的方式多种多样，其可能是整个知识发现过程中最费时费力的步骤。</p></li><li><p>“闭环”（Closing the loop）,指的是将数据挖掘结果集成到决策支持系统的过程。例如，在商业应用中，数据挖掘结果提供的见解可以与商业活动管理工具集成，以便进行和测试有效的营销推广。这种集成就需要后处理步骤（Postprocessing），以确保只有有效和有用的结果被纳入决策支持系统。</p></li></ul>]]></content>
+    <content type="html"><![CDATA[<h1 id="什么是数据挖掘">什么是数据挖掘？</h1><p>有很多定义：</p><ul><li>Non-trivial extraction of implicit, previously unknown and potentially useful information from data</li><li>Exploration &amp; analysis, by automatic or semi-automatic means, of large quantities of data in order to discover meaningful patterns</li></ul><blockquote><p>Data mining is the process of automatically discovering useful information in large data repositories.</p></blockquote><p>​ 总的来说，<strong>数据挖掘是在大型数据仓库中自动发现有用信息的过程。</strong>数据挖掘技术被用于搜索大型数据集，以找到新的和有用的模式。它还可以预测未来的观察结果，比如客户将在网上或实体店消费的金额。</p><span id="more"></span><p>​ 但并不是所有的信息发现任务都是数据挖掘。例如查询处理，包括在数据库中查询记录，搜索相关网站。因为这些工作只是与数据库管理系统或知识检索系统的简单交互。尽管如此，数据挖掘技术已经被用于提高这类系统的性能，方法是基于与输入查询的相关性来提高搜索结果的质量。</p><h2 id="数据挖掘和知识发现">数据挖掘和知识发现</h2><blockquote><p>Data mining is an integral part of knowledge discovery in databases (KDD), which is the overall process of converting raw data into useful information</p></blockquote><p>​ 数据挖掘是数据库知识发现(knowledge discovery in database, KDD)的重要<strong>组成部分</strong>，是将原始数据转化为有用信息的整个过程。</p><img src="/2021/05/04/1-chap01-1/image-20210506102102770.png" class="" title="image-20210506102102770"><ul><li><p>输入数据可以以各种格式存储(平面文件、电子表格或关系表)，可以存储在集中式数据存储库中，也可以分布在多个站点上。</p></li><li><p><strong>数据预处理的目的是将原始输入数据转换为适合后续分析的格式</strong>。数据预处理（Data Preprocessing）的步骤包括融合多源数据、清理数据以去除噪声和重复观测、选择与当前数据挖掘任务相关的记录和特征。由于收集和存储数据的方式多种多样，其可能是整个知识发现过程中最费时费力的步骤。</p></li><li><p>“闭环”（Closing the loop）,指的是将数据挖掘结果集成到决策支持系统的过程。例如，在商业应用中，数据挖掘结果提供的见解可以与商业活动管理工具集成，以便进行和测试有效的营销推广。这种集成就需要后处理步骤（Postprocessing），以确保只有有效和有用的结果被纳入决策支持系统。</p></li></ul>]]></content>
     
     
     <summary type="html">&lt;h1 id=&quot;什么是数据挖掘&quot;&gt;什么是数据挖掘？&lt;/h1&gt;
