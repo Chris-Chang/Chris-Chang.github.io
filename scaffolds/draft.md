@@ -4,4 +4,6 @@ date: {{ date }}
 mathjax: false
 tags:
 categories:
+fileName:
+type:
 ---
