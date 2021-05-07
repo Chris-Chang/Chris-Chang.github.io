@@ -2,91 +2,161 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://changzhi.space/2021/05/04/2-chap01-2/</loc>
+    <loc>https://changzhi.space/DM/%E6%8E%A8%E5%8A%A8%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98%E5%8F%91%E5%B1%95%E7%9A%84%E5%9B%A0%E7%B4%A0/</loc>
     
-    <lastmod>2021-05-06</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://changzhi.space/2021/05/06/3-chap01-3/</loc>
-    
-    <lastmod>2021-05-06</lastmod>
+    <lastmod>2021-05-07</lastmod>
     
   </url>
   
   <url>
-    <loc>https://changzhi.space/2021/05/06/4-chap01-4/</loc>
+    <loc>https://changzhi.space/hexo/%E5%AE%89%E8%A3%85%E5%B9%B6%E4%BD%BF%E7%94%A8gitbook/</loc>
     
-    <lastmod>2021-05-06</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://changzhi.space/2021/05/04/1-chap01-1/</loc>
-    
-    <lastmod>2021-05-06</lastmod>
+    <lastmod>2021-05-07</lastmod>
     
   </url>
   
   <url>
-    <loc>https://changzhi.space/2021/04/17/%E5%AE%89%E8%A3%85%E5%B9%B6%E4%BD%BF%E7%94%A8gitbook/</loc>
+    <loc>https://changzhi.space/hexo/%E4%BD%BF%E7%94%A8hexo%E5%9C%A8github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E5%B9%B6%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D/</loc>
     
-    <lastmod>2021-04-30</lastmod>
+    <lastmod>2021-05-07</lastmod>
     
   </url>
   
   <url>
-    <loc>https://changzhi.space/2021/04/16/%E4%BD%BF%E7%94%A8%E5%9F%9F%E5%90%8D%E5%92%8Chexo%E5%9C%A8github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</loc>
+    <loc>https://changzhi.space/others/Hello%20World/</loc>
     
-    <lastmod>2021-04-30</lastmod>
+    <lastmod>2021-05-07</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://changzhi.space/hexo/hexo%20permalink%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</loc>
+    
+    <lastmod>2021-05-07</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://changzhi.space/hexo/Hexo%E5%8D%9A%E5%AE%A2%E6%8F%90%E4%BA%A4%E7%99%BE%E5%BA%A6%E5%92%8CGoogle%E6%94%B6%E5%BD%95/</loc>
+    
+    <lastmod>2021-05-07</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://changzhi.space/hexo/hexo%E5%92%8Ctypora%E5%9B%BE%E7%89%87%E6%97%A0%E6%B3%95%E6%AD%A3%E5%B8%B8%E6%98%BE%E7%A4%BA%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</loc>
+    
+    <lastmod>2021-05-07</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://changzhi.space/Linux/manjaro%20%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</loc>
+    
+    <lastmod>2021-05-07</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://changzhi.space/Linux/manjaro%20%E4%B8%BB%E9%A2%98%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</loc>
+    
+    <lastmod>2021-05-07</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://changzhi.space/ML/What%20is%20Machine%20Learning/</loc>
+    
+    <lastmod>2021-05-07</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://changzhi.space/ML/Unsupervised%20Learning/</loc>
+    
+    <lastmod>2021-05-07</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://changzhi.space/ML/Supervised%20Learning/</loc>
+    
+    <lastmod>2021-05-07</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://changzhi.space/ML/Model%20Representation/</loc>
+    
+    <lastmod>2021-05-07</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://changzhi.space/DM/%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98%E7%9A%84%E4%BB%BB%E5%8A%A1/</loc>
+    
+    <lastmod>2021-05-07</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://changzhi.space/DM/%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98%E7%9A%84%E8%B5%B7%E6%BA%90/</loc>
+    
+    <lastmod>2021-05-07</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://changzhi.space/DM/%E4%BB%80%E4%B9%88%E6%98%AF%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98/</loc>
+    
+    <lastmod>2021-05-07</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://changzhi.space/ML/Cost%20Function%20Intuition%20II/</loc>
+    
+    <lastmod>2021-05-07</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://changzhi.space/ML/Cost%20Function%20Intuition%20I/</loc>
+    
+    <lastmod>2021-05-07</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://changzhi.space/ML/Cost%20Function/</loc>
+    
+    <lastmod>2021-05-07</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://changzhi.space/ML/Gradient%20Descent%20Intuition/</loc>
+    
+    <lastmod>2021-05-07</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://changzhi.space/ML/Gradient%20Descent/</loc>
+    
+    <lastmod>2021-05-07</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://changzhi.space/404.html</loc>
+    
+    <lastmod>2021-05-07</lastmod>
     
   </url>
   
   <url>
     <loc>https://changzhi.space/notes/index.html</loc>
-    
-    <lastmod>2021-04-29</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://changzhi.space/2021/02/16/manjaro-%E4%B8%BB%E9%A2%98%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</loc>
-    
-    <lastmod>2021-04-29</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://changzhi.space/2021/02/16/manjaro-%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</loc>
-    
-    <lastmod>2021-04-29</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://changzhi.space/2021/02/16/hexo%E5%92%8Ctypora%E5%9B%BE%E7%89%87%E6%97%A0%E6%B3%95%E6%AD%A3%E5%B8%B8%E6%98%BE%E7%A4%BA%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</loc>
-    
-    <lastmod>2021-04-29</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://changzhi.space/2021/04/16/Hexo%E5%8D%9A%E5%AE%A2%E6%8F%90%E4%BA%A4%E7%99%BE%E5%BA%A6%E5%92%8CGoogle%E6%94%B6%E5%BD%95/</loc>
-    
-    <lastmod>2021-04-29</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://changzhi.space/2021/02/16/hexo-permalink%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</loc>
-    
-    <lastmod>2021-04-29</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://changzhi.space/2021/04/29/hello-world/</loc>
     
     <lastmod>2021-04-29</lastmod>
     
@@ -120,73 +190,10 @@
     
   </url>
   
-  <url>
-    <loc>https://changzhi.space/2021/04/28/WEEK1-Gradient-Descent-Intuition/</loc>
-    
-    <lastmod>2021-04-29</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://changzhi.space/2021/04/28/What-is-Machine-Learning/</loc>
-    
-    <lastmod>2021-04-28</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://changzhi.space/2021/04/28/WEEK1-Cost-Function-Intuition/</loc>
-    
-    <lastmod>2021-04-28</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://changzhi.space/2021/04/28/WEEK1-Gradient-Descent/</loc>
-    
-    <lastmod>2021-04-28</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://changzhi.space/2021/04/28/WEEK1-Cost-Function-Intuition-II/</loc>
-    
-    <lastmod>2021-04-28</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://changzhi.space/2021/04/28/WEEK1-Cost-Function/</loc>
-    
-    <lastmod>2021-04-28</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://changzhi.space/2021/04/28/WEEK1-Model-Representation/</loc>
-    
-    <lastmod>2021-04-28</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://changzhi.space/2021/04/28/WEEK1-Supervised-Learning/</loc>
-    
-    <lastmod>2021-04-28</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://changzhi.space/2021/04/28/WEEK1-Unsupervised-Learning/</loc>
-    
-    <lastmod>2021-04-28</lastmod>
-    
-  </url>
-  
 
   <url>
     <loc>https://changzhi.space/</loc>
-    <lastmod>2021-05-06</lastmod>
+    <lastmod>2021-05-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -194,49 +201,49 @@
   
   <url>
     <loc>https://changzhi.space/tags/DM/</loc>
-    <lastmod>2021-05-06</lastmod>
+    <lastmod>2021-05-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://changzhi.space/tags/hexo/</loc>
-    <lastmod>2021-05-06</lastmod>
+    <lastmod>2021-05-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://changzhi.space/tags/ML/</loc>
-    <lastmod>2021-05-06</lastmod>
+    <lastmod>2021-05-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://changzhi.space/tags/%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</loc>
-    <lastmod>2021-05-06</lastmod>
+    <lastmod>2021-05-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://changzhi.space/tags/Linux/</loc>
-    <lastmod>2021-05-06</lastmod>
+    <lastmod>2021-05-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://changzhi.space/tags/Manjaro/</loc>
-    <lastmod>2021-05-06</lastmod>
+    <lastmod>2021-05-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://changzhi.space/tags/gitbook/</loc>
-    <lastmod>2021-05-06</lastmod>
+    <lastmod>2021-05-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -245,28 +252,28 @@
   
   <url>
     <loc>https://changzhi.space/categories/DM/</loc>
-    <lastmod>2021-05-06</lastmod>
+    <lastmod>2021-05-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://changzhi.space/categories/hexo/</loc>
-    <lastmod>2021-05-06</lastmod>
+    <lastmod>2021-05-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://changzhi.space/categories/ML/</loc>
-    <lastmod>2021-05-06</lastmod>
+    <lastmod>2021-05-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://changzhi.space/categories/Linux/</loc>
-    <lastmod>2021-05-06</lastmod>
+    <lastmod>2021-05-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
