@@ -11,7 +11,7 @@ type: ML
 
 ## 单变量线性回归Linear regression with one variable
 
-学习整个监督学习的流程
+本节学习整个监督学习的流程<!--more -->
 
 ![image-20210420090729205](WEEK1-Model-Representation/image-20210420090729205.png)
 

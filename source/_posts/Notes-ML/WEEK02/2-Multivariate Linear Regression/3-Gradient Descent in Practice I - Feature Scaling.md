@@ -13,6 +13,8 @@ type: ML
 
 ![image-20210512121453251](3-Gradient%20Descent%20in%20Practice%20I%20-%20Feature%20Scaling/image-20210512121453251.png)
 
+<!--more -->
+
 通常如果多个特征范围之间与-1到1范围相差不大也是可以接受的，不是必须将特征缩放到-1到1之间。但是也别太大或太小。不用过分担心特征是否在完全相同的范围或区间内，只要他们足够接近的话，梯度下降算法就能正常工作。
 
 ![image-20210512122239063](3-Gradient%20Descent%20in%20Practice%20I%20-%20Feature%20Scaling/image-20210512122239063.png)

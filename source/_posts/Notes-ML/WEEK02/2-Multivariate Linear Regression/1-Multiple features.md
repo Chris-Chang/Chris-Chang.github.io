@@ -13,7 +13,7 @@ type: ML
 
 ![](1-Multiple%20features/image-20210505181757345.png)
 
-
+<!--more -->
 
 此时假设函数就会变成多元的形式。
 

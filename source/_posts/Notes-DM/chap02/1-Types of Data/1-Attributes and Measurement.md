@@ -15,6 +15,8 @@ type: DM
 
 数据对象由其属性（attribute）来描述。属性的其他名称为variable, characteristic, field, feature, or dimension。
 
+<!--more -->
+
 如下表基于记录的数据集用于记录学生信息。
 
 ![image-20210511100638503](1-Attributes%20and%20Measurement/image-20210511100638503.png)

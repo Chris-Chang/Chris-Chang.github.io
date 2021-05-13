@@ -10,7 +10,7 @@ type: ML
 
 # Gradient Descent For Linear Regression
 
-前面几节讨论了梯度下降算法和线性回归模型、线性假设，平方误差代价函数$J$。本节将梯度下降算法来最小化平方误差代价函数，线性回归学习算法。
+前面几节讨论了梯度下降算法和线性回归模型、线性假设，平方误差代价函数$J$。本节将梯度下降算法来最小化平方误差代价函数，线性回归学习算法。<!--more -->
 
 ![image-20210428104648891](WEEK1-Gradient%20Descent%20For%20Linear%20Regression/image-20210428104648891.png)
 

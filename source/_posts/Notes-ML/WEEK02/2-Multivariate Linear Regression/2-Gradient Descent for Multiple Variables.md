@@ -17,7 +17,7 @@ type: ML
 
 代价函数(Cost Function)是参数为$$\theta_0,\theta_1,...,\theta_n$$的函数 J，其给出了误差平方和。
 
-使用梯度下降法后，$$\theta_j$$被更新成$$\theta_j$$减去学习率$$\alpha$$与对应导数（代价函数J对参数$$\theta_j$$的**偏导数**）的乘积。
+使用梯度下降法后，$$\theta_j$$被更新成$$\theta_j$$减去学习率$$\alpha$$与对应导数（代价函数J对参数$$\theta_j$$的**偏导数**）的乘积。<!--more -->
 
 ![image-20210505185922275](2-Gradient%20Descent%20for%20Multiple%20Variables/image-20210505185922275.png)
 

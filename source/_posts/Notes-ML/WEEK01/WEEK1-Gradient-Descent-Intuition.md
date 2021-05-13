@@ -11,6 +11,8 @@ type: ML
 
 ![image-20210428101426323](WEEK1-Gradient-Descent-Intuition/image-20210428101426323.png)
 
+<!--more -->
+
 ![image-20210428101630702](WEEK1-Gradient-Descent-Intuition/image-20210428101630702.png)
 
 ![image-20210428102156398](WEEK1-Gradient-Descent-Intuition/image-20210428102156398.png)

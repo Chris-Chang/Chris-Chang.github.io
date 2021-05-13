@@ -25,7 +25,7 @@ http://wiki.octave.org/GNU_Octave_Wiki
 3. 单击蓝色的“访问MATLAB Online”按钮，然后使用您的MathWorks帐户凭据登录到MATLAB Online（如果需要）。
 4. 请按照以下说明为MATLAB用户上传练习文件。
 
-有关MATLAB在线访问或技术问题的**帮助**，请参见**MATLAB帮助**讨论论坛。将[https://matlab.mathworks.com/添加](https://matlab.mathworks.com/)为书签，以在将来更快地访问MATLAB Online。
+有关MATLAB在线访问或技术问题的**帮助**，请参见**MATLAB帮助**讨论论坛。将[https://matlab.mathworks.com/添加](https://matlab.mathworks.com/)为书签，以在将来更快地访问MATLAB Online。<!--more -->
 
 ### 下载适用于MATLAB用户的练习文件
 
