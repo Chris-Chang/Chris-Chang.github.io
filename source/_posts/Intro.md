@@ -1,12 +1,12 @@
 ---
-title: 置顶
+title: 【置顶】博客介绍
 mathjax: false
 tags: Intro
 categories: Intro
 type: others
 filename: Intro
 date: 2021-05-12 22:53:47
-top: 10
+top: 1
 ---
 硕士期间研究方向为数据挖掘，会在此记录自己从小白开始的日常学习内容，也方便向我敬爱的导师汇报学习进度O(∩_∩)O~。
 
