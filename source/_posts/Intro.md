@@ -18,7 +18,7 @@ top: 1
 
 - 斯坦福吴恩达教授（Andrew Ng ）的[Coursera课程](https://www.coursera.org/learn/machine-learning/home/welcome)（按照课时进度；当前：week2，70%）
 
-- [Introduction to Data Mining, Second Edition. Pang-Ning Tan](https://book.douban.com/subject/20056013/)（每天一章节不等；当前：chap02，20%）
+- [Introduction to Data Mining, Second Edition. Pang-Ning Tan](https://book.douban.com/subject/20056013/)（每天一小节不等；当前：chap02，20%）
 - 周志华《机器学习》（尚未收到货）
 - 华盛顿大学《机器学习》（Ng的视频看完后开始）
 
@@ -57,5 +57,9 @@ top: 1
   - [1.4 数据挖掘的任务](https://changzhi.space/DM/数据挖掘的任务/)
 - chap02 - 数据
   - 1 - 数据的类型
-    - [属性和度量](https://changzhi.space/DM/属性和度量/)
-    - [数据集的类型](https://changzhi.space/DM/数据集的类型/)
+    - [2.1.1 属性和度量](https://changzhi.space/DM/属性和度量/)
+    - [2.1.2 数据集的类型](https://changzhi.space/DM/数据集的类型/)
+  - 2- 数据质量
+    - [2.2.1 测量和数据收集问题](https://changzhi.space/DM/%E6%B5%8B%E9%87%8F%E5%92%8C%E6%95%B0%E6%8D%AE%E6%94%B6%E9%9B%86%E9%97%AE%E9%A2%98/)
+    - [2.2.2 与应用程序相关的问题](https://changzhi.space/DM/%E6%B5%8B%E9%87%8F%E5%92%8C%E6%95%B0%E6%8D%AE%E6%94%B6%E9%9B%86%E9%97%AE%E9%A2%98/)
+
