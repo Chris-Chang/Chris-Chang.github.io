@@ -16,10 +16,10 @@ top: 1
 
 目前计划开学前将机器学习和数据挖掘内容初步系统学习一遍。计划完成如下内容的学习：
 
-- 斯坦福吴恩达教授（Andrew Ng ）的[Coursera课程](https://www.coursera.org/learn/machine-learning/home/welcome)（按照课时进度；当前：week2，70%）
-
-- [Introduction to Data Mining, Second Edition. Pang-Ning Tan](https://book.douban.com/subject/20056013/)（每天一小节不等；当前：chap02，20%）
-- 周志华《机器学习》（尚未收到货）
+- 斯坦福吴恩达教授（Andrew Ng ）的[Coursera课程](https://www.coursera.org/learn/machine-learning/home/welcome)（按照课时进度；当前：week3，20%）
+- [Introduction to Data Mining, Second Edition. Pang-Ning Tan](https://book.douban.com/subject/20056013/)（每天一小节不等；当前：chap04，50%）
+- 《数据挖掘导论》（上述第一版中文版，范明，范宏建等译）
+- 周志华《机器学习》（尚未开始）
 - 华盛顿大学《机器学习》（Ng的视频看完后开始）
 
 ---
@@ -61,5 +61,19 @@ top: 1
     - [2.1.2 数据集的类型](https://changzhi.space/DM/数据集的类型/)
   - 2- 数据质量
     - [2.2.1 测量和数据收集问题](https://changzhi.space/DM/%E6%B5%8B%E9%87%8F%E5%92%8C%E6%95%B0%E6%8D%AE%E6%94%B6%E9%9B%86%E9%97%AE%E9%A2%98/)
-    - [2.2.2 与应用程序相关的问题](https://changzhi.space/DM/%E6%B5%8B%E9%87%8F%E5%92%8C%E6%95%B0%E6%8D%AE%E6%94%B6%E9%9B%86%E9%97%AE%E9%A2%98/)
+    - [2.2.2 关于应用的问题](https://changzhi.space/DM/关于应用的问题/)
+  - 3 - [数据预处理](https://changzhi.space/DM/数据预处理/)
+    - [聚集](https://changzhi.space/DM/聚集/)
+    - [抽样](https://changzhi.space/DM/抽样/)
+  - 4 - [相似性和相异性的度量](https://changzhi.space/DM/相似性和相异性的度量/)
+    - [2.4.1 基础](https://changzhi.space/DM/2.4.1 基础/)
+    - [2.4.2 简单属性之间的相似度和相异度](https://changzhi.space/DM/简单属性之间的相似度和相异度/)
+    - [2.4.3 数据对象之间的相异度](https://changzhi.space/DM/数据对象之间的相异度/)
+    - [2.4.4 数据对象之间的相似度](https://changzhi.space/DM/数据对象之间的相似度/)
+    - [2.4.5 邻近性度量的例子](https://changzhi.space/DM/邻近性度量的例子/)
+    - [2.4.6 邻近度计算问题](https://changzhi.space/DM/邻近度计算问题/)
+    - [2.4.7 选取正确的邻近性度量](https://changzhi.space/DM/选取正确的邻近性度量/)
+- chap04 - 分类、决策树与模型评估
+  - 1- [预备知识](https://changzhi.space/DM/预备知识/)
+  - 2-[解决分类问题的一般方法](https://changzhi.space/DM/解决分类问题的一般方法/)
 
