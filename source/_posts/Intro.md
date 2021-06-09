@@ -17,8 +17,8 @@ top: 1
 目前计划开学前将机器学习和数据挖掘内容初步系统学习一遍。计划完成如下内容的学习：
 
 - 斯坦福吴恩达教授（Andrew Ng ）的[Coursera课程](https://www.coursera.org/learn/machine-learning/home/welcome)（按照课时进度；当前：week3，20%）
-- [Introduction to Data Mining, Second Edition. Pang-Ning Tan](https://book.douban.com/subject/20056013/)（每天一小节不等；当前：chap04，50%）
-- 《数据挖掘导论》（上述第一版中文版，范明，范宏建等译）
+- [Introduction to Data Mining, Second Edition. Pang-Ning Tan](https://book.douban.com/subject/20056013/)
+- 《数据挖掘导论》（上述第一版中文版，范明，范宏建等译）（每天一小节不等；当前：chap05，100%）
 - 周志华《机器学习》（尚未开始）
 - 华盛顿大学《机器学习》（Ng的视频看完后开始）
 
@@ -26,7 +26,7 @@ top: 1
 
 <!--more -->
 
-机器学习课程和数据挖掘导论书籍所做的笔记列表如下，每周不定时更新。后期会考虑制作成gitbook，放在博客的笔记栏目中（弄了几天没搞成╮(╯▽╰)╭，先放放）。
+机器学习课程和数据挖掘导论书籍所做的笔记列表如下，每周不定时更新。~~后期会考虑制作成gitbook，放在博客的笔记栏目中（弄了几天没搞成╮(╯▽╰)╭，先放放）~~ 现改成思维导图形式，方便复习和构建整体系统框架。
 
 ## 机器学习
 
@@ -76,4 +76,19 @@ top: 1
 - chap04 - 分类、决策树与模型评估
   - 1- [预备知识](https://changzhi.space/DM/预备知识/)
   - 2-[解决分类问题的一般方法](https://changzhi.space/DM/解决分类问题的一般方法/)
+  - 3-[决策树归纳](https://changzhi.space/DM/决策树归纳/)
+    - 4.3.1 [决策树的工作原理](https://changzhi.space/DM/决策树的工作原理/)
+    - 4.3.2 [如何建立决策树](https://changzhi.space/DM/如何建立决策树/)
+    - 4.3.3 [表示属性测试条件的方法](https://changzhi.space/DM/表示属性测试条件的方法/)
+    - 4.3.4 [选择最佳划分的度量](https://changzhi.space/DM/选择最佳划分的度量/)
+    - 4.3.5 [决策树归纳算法](https://changzhi.space/DM/决策树归纳算法/)
+    - 4.3.7 [决策树归纳的特点](https://changzhi.space/DM/决策树归纳的特点/)
+  - 4-[模型的过拟合](https://changzhi.space/DM/模型的过拟合/)
+- chap05 - [分类：其他技术](https://changzhi.space/DM/分类-其他技术)
+  - 1-[基于规则的分类器](https://changzhi.space/DM/基于规则的分类器/)
+  - 2-[最近邻分类器](https://changzhi.space/DM/最近邻分类器/)
+  - 3-[贝叶斯分类器](https://changzhi.space/DM/贝叶斯分类器/)
+  - 4-[人工神经网络ANN](https://changzhi.space/DM/人工神经网络ANN/)
+  - 5-[支持向量机SVM](https://changzhi.space/DM/支持向量机SVM/)
+  - 6-[组合方法](https://changzhi.space/DM/组合方法/)
 
