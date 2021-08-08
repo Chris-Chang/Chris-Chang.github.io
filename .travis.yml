@@ -11,12 +11,12 @@ branches:
 cache:
   directories:
     - node_modules # 把 源码中的node_modules 放入缓存可以节约构建的时间
+    - pandoc-2.7.2-1-amd64.deb
 
 # Start: Build Lifecycle
 before_install: # 配置环境 安装hexo和pandoc
-  - npm install -g hexo-cli
-  - wget https://github.com/jgm/pandoc/releases/download/2.7.2/pandoc-2.7.2-1-amd64.deb
   - ls
+  - npm install -g hexo-cli
   - sudo dpkg -i pandoc-2.7.2-1-amd64.deb
 
 install: # 安装依赖
@@ -29,7 +29,6 @@ before_script:
   - sed -i'' "s~https://github.com/Chris-Chang/Chris-Chang.github.io.git~https://${GITHUB_ACCESS_TOKEN}@github.com/Chris-Chang/Chris-Chang.github.io.git~" _config.yml
 
 script:
-  - ls
   - hexo clean
 
 

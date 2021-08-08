@@ -76,12 +76,12 @@ branches:
 # cache these folders
 cache:
   directories:
-    - node_modules # 把 node_modules 放入缓存可以节约构建的时间
+    - node_modules # 把 源码中的node_modules 放入缓存可以节约构建的时间
+    - pandoc-2.7.2-1-amd64.deb
 
 # Start: Build Lifecycle
 before_install: # 配置环境 安装hexo和pandoc
   - npm install -g hexo-cli
-  - wget https://github.com/jgm/pandoc/releases/download/2.7.2/pandoc-2.7.2-1-amd64.deb
   - sudo dpkg -i pandoc-2.7.2-1-amd64.deb
 
 install: # 安装依赖
@@ -103,9 +103,11 @@ after_success:
 ```
 
 - 如果你的源码分支名不是 `source`，那么 `only:` 下的分支名就要改成你相应的分支名。
-
 - 最后的 `after_success：` 中，使用到了我们设置的环境变量的值 `USER_NAME`、`USER_EMAIL` 和 `GITHUB_REPO_TOKEN`。sed 命令将 hexo 中的`_config.yml`部署仓库的链接替换成了 `access_token` 形式，其中前面的 `git@github.com:yourname/yourname.github.io.git` 是你在 `_config.yml`中的链接，后面的 `https://${GITHUB_REPO_TOKEN}@github.com/yourname/yourname.github.io.git` 是 token 形式的链接。
+- ls 后会发现，当前travis运行的根目录就是博客根目录。
+- 由于我需要使用pandoc依赖包,所以需要单独安装pandoc，要提前将下载好的pandoc直接放入博客根目录
 
 **需要注意 `hexo deploy` 是否真正成功，有时没执行成功，例如最后的 push 失败了，但是构建任务的状态还是绿色的 `passed`**,是否真正成功要看构建日志。
 
-[参考](https://wylu.github.io/posts/aa960b18/#%E9%85%8D%E7%BD%AE-travis-ci-%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90)
+[参考文章](https://wylu.github.io/posts/aa960b18/#%E9%85%8D%E7%BD%AE-travis-ci-%E6%8C%81%E7%BB%AD%E9%9B%86%E6%88%90)
+

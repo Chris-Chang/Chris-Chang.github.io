@@ -1,10 +1,10 @@
 ---
-title: Hexo博客提交百度和Google收录
+title: Hexo博客链接持久化、提交百度和Google收录
 mathjax: false
 toc: true
 tags: hexo
 categories: hexo
-abbrlink: 5c84a3bd
+abbrlink: 3d57b9dd
 date: 2021-04-16 18:00:04
 ---
 
@@ -89,9 +89,46 @@ npm install hexo-generator-sitemap --save
 
 ![image-20210416185626286](Hexo%E5%8D%9A%E5%AE%A2%E6%8F%90%E4%BA%A4%E7%99%BE%E5%BA%A6%E5%92%8CGoogle%E6%94%B6%E5%BD%95/image-20210416185626286.png)
 
-## 5 至此大功告成
+## 5 链接持久化
 
-推荐阅读：[使用hexo在github搭建博客并绑定域名](https://changzhi.space/2021/04/16/%E4%BD%BF%E7%94%A8%E5%9F%9F%E5%90%8D%E5%92%8Chexo%E5%9C%A8github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/)
+使用Hexo后，默认的链接是`http://url/2020/02/10/hello-world`这种类型的，这是由年/月/日/标题组成。如果调整过日期会变化，还有就是标题是中文或存在特殊符号的时候这样的链接可能就有问题。
+
+### 安装`hexo-abbrlink`插件
+
+```
+npm install hexo-abbrlink --save
+```
+
+## 配置
+
+在根目录下的配置_config.yml里的配置:permalink
+
+```yaml
+permalink: p/:abbrlink.html
+abbrlink:
+  alg: crc32  # 算法：crc16(default) and crc32
+  rep: hex    # 进制：dec(default) and hex
+```
+
+生成之后的效果是这样的了`http://url/p/2fe3da.html`
+
+## 说明
+
+- 如果文章头中存在`abbrlink`，则不会做任何处理。
+- 如查文章头中不存在`abbrlink`，则会依据 `title`根据配置的alg算法来成生abbrlink字符串。
+- 当然，你也可以自己手动为特殊的文章写链接地址。只要在文章中配置好`abbrlink`就可以了
+
+```
+title: Hexo博客
+categories: 
+  - 软件使用
+tags:
+  - 博客
+abbrlink: hexo-blog
+date: 2020-08-08 15:55:55
+```
+
+
 
 参考：
 

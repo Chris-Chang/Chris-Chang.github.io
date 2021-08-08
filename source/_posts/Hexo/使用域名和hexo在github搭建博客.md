@@ -127,18 +127,18 @@ deploy:
 
 解决方案：
 
-- [hexo和typora图片无法正常显示解决方案](https://changzhi.space/hexo/hexo%E5%92%8Ctypora%E5%9B%BE%E7%89%87%E6%97%A0%E6%B3%95%E6%AD%A3%E5%B8%B8%E6%98%BE%E7%A4%BA%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/)
-- [hexo permalink 本文链接中文乱码解决方案](https://changzhi.space/hexo/hexo%20permalink%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/)
+- [hexo和typora图片无法正常显示解决方案](https://changzhi.space/p/74693f4b.html)
+- [hexo permalink 本文链接中文乱码解决方案](https://changzhi.space/p/ccd1e516.html)
 - [安装Gitalk](https://github.com/gitalk/gitalk/blob/master/readme-cn.md)
 - [Gitalk 评论登录 403 问题解决](https://cuiqingcai.com/30010.html)
 
 集成Travis CI：
 
-- 
+- [Travis CI自动构建部署博客](https://changzhi.space/p/d42a3850.html)
 
 gitbook的安装使用：
 
-- [安装并使用gitbook](https://changzhi.space/hexo/%E5%AE%89%E8%A3%85%E5%B9%B6%E4%BD%BF%E7%94%A8gitbook/)
+- [安装并使用gitbook](https://changzhi.space/p/6be4e76e.html)
 
 ## nvm常用命令
 
