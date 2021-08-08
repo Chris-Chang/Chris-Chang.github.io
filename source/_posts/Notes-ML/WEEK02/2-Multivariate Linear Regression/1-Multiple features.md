@@ -1,11 +1,12 @@
 ---
 title: WEEK2.2.1 多重特征量
 mathjax: true
-date: 2021-05-12 11:27:48
 tags: ML
 categories: ML
 filename: 多重特征量
 type: ML
+abbrlink: 235de122
+date: 2021-05-12 11:27:48
 ---
 # 多重特征量（变量）
 

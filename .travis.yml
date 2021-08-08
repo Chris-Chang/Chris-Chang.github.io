@@ -2,20 +2,21 @@ language: node_js # 构建环境
 node_js:
   - "12.18.1"
 
-# 设置只检测 dev 分支的 push 操作
+# 设置只检测 source 分支的 push 操作
 branches:
   only:
-  - source # 只有 dev 分支提交时才运行 Travis CI
+  - source # 只有 source 分支提交时才运行 Travis CI
 
 # cache these folders
 cache:
   directories:
-    - node_modules # 把 node_modules 放入缓存可以节约构建的时间
+    - node_modules # 把 源码中的node_modules 放入缓存可以节约构建的时间
 
 # Start: Build Lifecycle
-before_install: # 配置环境
+before_install: # 配置环境 安装hexo和pandoc
   - npm install -g hexo-cli
   - wget https://github.com/jgm/pandoc/releases/download/2.7.2/pandoc-2.7.2-1-amd64.deb
+  - ls
   - sudo dpkg -i pandoc-2.7.2-1-amd64.deb
 
 install: # 安装依赖
@@ -23,19 +24,14 @@ install: # 安装依赖
   - npm install
 
 before_script:
-  # it will auto export after setting environment variables from repository settings
-  #- export HEXO_ALGOLIA_INDEXING_KEY="${HEXO_ALGOLIA_INDEXING_KEY}"
   - git config user.name $USER_NAME
   - git config user.email $USER_EMAIL
   - sed -i'' "s~https://github.com/Chris-Chang/Chris-Chang.github.io.git~https://${GITHUB_ACCESS_TOKEN}@github.com/Chris-Chang/Chris-Chang.github.io.git~" _config.yml
 
 script:
-  - pwd # 查看当前工作目录
+  - ls
   - hexo clean
-  # --flush option used to remove invalid indexes or update some indexes
-  #- hexo algolia --flush # 更新 algolia search 索引
-  # this operation is not required as it will be done by "hexo deploy"
-  #- hexo generate
+
 
 after_success:
   - hexo deploy

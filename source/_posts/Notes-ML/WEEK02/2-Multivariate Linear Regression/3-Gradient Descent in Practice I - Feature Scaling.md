@@ -1,11 +1,12 @@
 ---
 title: WEEK2.2.3 特征缩放法
 mathjax: true
-date: 2021-05-12 11:27:48
 tags: ML
 categories: ML
 filename: 特征缩放法
 type: ML
+abbrlink: 259616c1
+date: 2021-05-12 11:27:48
 ---
 # 特征缩放法
 

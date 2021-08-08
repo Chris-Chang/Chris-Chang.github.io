@@ -2,11 +2,10 @@
 title: WEEK1.4-Model Representation
 mathjax: true
 toc: true
-date: 2021-04-28 11:30:15
 tags: ML
 categories: ML
-filename: Model Representation
-type: ML
+abbrlink: ba4f3f2c
+date: 2021-04-28 11:30:15
 ---
 
 ## 单变量线性回归Linear regression with one variable

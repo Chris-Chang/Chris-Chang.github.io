@@ -2,11 +2,10 @@
 title: WEEK1.2-Supervised Learning
 mathjax: true
 toc: true
-date: 2021-04-28 11:31:30
 tags: ML
 categories: ML
-filename: Supervised Learning
-type: ML
+abbrlink: 82bbac08
+date: 2021-04-28 11:31:30
 ---
 
 # Supervised Learning

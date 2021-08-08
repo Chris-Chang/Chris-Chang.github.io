@@ -2,14 +2,13 @@
 title: manjaro 主题安装教程
 mathjax: false
 toc: true
-date: 2021-02-16 22:26:40
 tags:
   - Linux
   - Manjaro
 categories:
   - Linux
-filename: manjaro 主题安装教程
-type: Linux
+abbrlink: 9a1fe7e9
+date: 2021-02-16 22:26:40
 ---
 
 ## 安装方法

@@ -1,12 +1,19 @@
 ---
 title: 使用hexo在github搭建博客并绑定域名
 mathjax: false
-date: 2021-04-16 11:51:11
 tags: hexo
 categories: hexo
-type: hexo
-filename: 使用hexo在github搭建博客并绑定域名
+abbrlink: c223b195
+date: 2021-04-16 11:51:11
 ---
+
+本文环境基于以下版本：
+- nvm: 1.1.7
+- nodejs: 12.18.1
+- hexo: 5.4.0
+- hexo-cli: 4.2.0
+- git: [Git-2.30.1-64-bit](https://cdn.npm.taobao.org/dist/git-for-windows/v2.30.1.windows.1/Git-2.30.1-64-bit.exe)
+- windows10 21H1
 
 ## 1 安装git
 
@@ -36,8 +43,8 @@ filename: 使用hexo在github搭建博客并绑定域名
 
 - 下载安装nvm https://github.com/coreybutler/nvm-windows/releases
 - 选择 nvm-setup.zip
-- 下载并安装nvm,期间会让输入nvm路径（我的是D:\Tools\nvm）和nodejs路径（我的是D:\Tools\nodejs）,默认路径是`C:\Users\chang\AppData\Roaming\nvm`
-- 安装完毕后打开cmd,输入`nvm version`,看是否出现版本号。否则检查环境变量中是否有如下（系统 -> 高级系统设置 -> 环境变量）。若没有则添加上。
+- 下载并安装nvm,期间会让输入nvm路径（我的是`D:\Tools\nvm`）和nodejs路径（我的是`D:\Tools\nodejs`）,默认路径是`C:\Users\chang\AppData\Roaming\nvm`。其中nojdejs真实安装路径在nvm目录下。
+- 安装完毕后打开cmd,输入`nvm version`,看是否出现版本号。否则检查环境变量中是否有如下（系统 -> 高级系统设置 -> 环境变量）。若没有则添加上（**重装系统后如果原来nvm文件夹还存在，可以不必再重装nvm,直添加环境变量即可，这样原来的配置和hexo等安装包仍然可用，可以直接使用无需重新配置**）。
 
 ![image-20210430101525773](%E4%BD%BF%E7%94%A8%E5%9F%9F%E5%90%8D%E5%92%8Chexo%E5%9C%A8github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/image-20210430101525773.png)
 
@@ -52,14 +59,14 @@ node_mirror: http://npm.taobao.org/mirrors/node/
 npm_mirror: https://npm.taobao.org/mirrors/npm/
 ```
 
-- 安装nodejs。`nvm install 12.18.1`（推荐12.18.1，较高版本后期安装gitbook会出现错误）
+- 安装nodejs。`nvm install 12.18.1`（推荐12.18.1，较高版本后期安装gitbook模块会出现错误）
 - 查看已安装的所有版本的nodejs。`nvm list`
 - 使用nodejs 12.18.1版本 `nvm use 12.18.1`
 - `node -v`,`npm -v`,`npx -v`查看是否安装成功。
 
 ## 4 安装hexo
 
-- 全局安装：`npm install -g hexo-cli` （文件路径会在`D:\Tools\nodejs\node_modules`）或者局部安装`npm install hexo`(文件路径在执行该命令所在的`node_modules`目录下)。我使用局部安装会出问题所以使用了全局安装。推荐全局安装。
+- 全局安装：`npm install -g hexo-cli` （添加`-g`后，安装模块的文件路径会在`D:\Tools\nodejs\node_modules`）或者局部安装`npm install hexo`(文件路径在执行该命令所在的`node_modules`目录下)。我使用局部安装会出问题所以使用了全局安装。推荐全局安装。
 - 创建博客文件夹`F:\Blog`，在此文件夹中打开cmd,然后输入`hexo init`,即可初始化。
 - hexo常用文件夹
   - `public`文件夹存放生成的站点html文件,其内容是根据source中的源文件生成的
@@ -83,7 +90,7 @@ npm_mirror: https://npm.taobao.org/mirrors/npm/
 
 `npm install hexo-deployer-git`
 
-修改_config.yml。找到depoly,修改为如下：
+修改`_config.yml`。找到depoly,修改为如下：
 
 ```
 deploy:
@@ -120,14 +127,18 @@ deploy:
 
 解决方案：
 
-- [hexo和typora图片无法正常显示解决方案](https://changzhi.space/2021/02/16/hexo%E5%92%8Ctypora%E5%9B%BE%E7%89%87%E6%97%A0%E6%B3%95%E6%AD%A3%E5%B8%B8%E6%98%BE%E7%A4%BA%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/)
-- [hexo permalink 本文链接中文乱码解决方案](https://changzhi.space/2021/02/16/hexo-permalink%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/)
+- [hexo和typora图片无法正常显示解决方案](https://changzhi.space/hexo/hexo%E5%92%8Ctypora%E5%9B%BE%E7%89%87%E6%97%A0%E6%B3%95%E6%AD%A3%E5%B8%B8%E6%98%BE%E7%A4%BA%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/)
+- [hexo permalink 本文链接中文乱码解决方案](https://changzhi.space/hexo/hexo%20permalink%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/)
 - [安装Gitalk](https://github.com/gitalk/gitalk/blob/master/readme-cn.md)
 - [Gitalk 评论登录 403 问题解决](https://cuiqingcai.com/30010.html)
 
+集成Travis CI：
+
+- 
+
 gitbook的安装使用：
 
-- [安装并使用gitbook](./安装并使用gitbook.md)
+- [安装并使用gitbook](https://changzhi.space/hexo/%E5%AE%89%E8%A3%85%E5%B9%B6%E4%BD%BF%E7%94%A8gitbook/)
 
 ## nvm常用命令
 

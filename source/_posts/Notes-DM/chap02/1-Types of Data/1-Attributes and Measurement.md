@@ -1,11 +1,10 @@
 ---
 title: 2.1.1 属性和度量
-filename: 属性和度量
 mathjax: false
 tags: DM
 categories: DM
+abbrlink: 3a488b8
 date: 2021-05-12 11:26:15
-type: DM
 ---
 # 2.1.1 属性和度量
 

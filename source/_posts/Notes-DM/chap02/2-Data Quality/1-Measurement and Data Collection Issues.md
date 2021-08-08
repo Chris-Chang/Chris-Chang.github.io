@@ -1,11 +1,10 @@
 ---
 title: 2.2.1 测量和数据收集问题
-filename: 测量和数据收集问题
 mathjax: true
 tags: DM
 categories: DM
+abbrlink: 532c9de0
 date: 2021-05-13 11:26:15
-type: DM
 ---
 数据挖掘常常不能在源头控制质量，由于无法避免数据质量问题，因此数据挖掘着眼于两个方面：
 

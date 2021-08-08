@@ -1,11 +1,10 @@
 ---
 title: 2.1.2 数据集的类型
-filename: 数据集的类型
 mathjax: false
 tags: DM
 categories: DM
+abbrlink: bedf5c8c
 date: 2021-05-12 11:26:15
-type: DM
 ---
 # 2.1.2 数据集的类型
 

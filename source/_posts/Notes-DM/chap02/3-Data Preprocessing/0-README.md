@@ -3,8 +3,7 @@ title: 2.3 数据预处理
 mathjax: false
 tags: Intro
 categories: DM
-type: DM
-filename: 数据预处理
+abbrlink: 9cbeb245
 date: 2021-05-25 22:53:47
 ---
 

@@ -2,20 +2,19 @@
 title: 安装并使用gitbook
 mathjax: false
 toc: true
-date: 2021-04-17 10:16:57
-tags: 
+tags:
   - gitbook
   - hexo
 categories: hexo
-type: hexo
-filename: 安装并使用gitbook
+abbrlink: 6be4e76e
+date: 2021-04-17 10:16:57
 ---
 
 ## 1  安装gitbook
 
 ### 1.1 安装node.js
 
-推荐nodejs版本为12.18.1，安装过程详见[使用域名和hexo在github搭建博客]()
+推荐nodejs版本为12.18.1，安装过程详见[使用hexo在github搭建博客并绑定域名](https://changzhi.space/hexo/%E4%BD%BF%E7%94%A8hexo%E5%9C%A8github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E5%B9%B6%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D/#%E5%AE%89%E8%A3%85node.js)
 
 ### 1.2 安装gitbook
 

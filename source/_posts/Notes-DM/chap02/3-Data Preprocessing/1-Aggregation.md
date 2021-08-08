@@ -3,8 +3,7 @@ title: 2.3.1 聚集
 mathjax: false
 tags: Intro
 categories: DM
-type: DM
-filename: 聚集
+abbrlink: 8c315fb6
 date: 2021-05-25 22:53:47
 ---
 # 2.3.1 聚集

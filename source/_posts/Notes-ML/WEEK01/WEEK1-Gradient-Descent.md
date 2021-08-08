@@ -2,11 +2,10 @@
 title: WEEK1.8-Gradient Descent
 mathjax: true
 toc: true
-date: 2021-04-28 11:28:52
 tags: ML
 categories: ML
-filename: Gradient Descent
-type: ML
+abbrlink: 3b70a7d1
+date: 2021-04-28 11:28:52
 ---
 
 ## 梯度下降算法

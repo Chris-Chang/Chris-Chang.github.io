@@ -1,11 +1,10 @@
 ---
 title: WEEK1.9-Gradient Descent For Linear Regression
 mathjax: true
-date: 2021-05-12 11:27:48
 tags: ML
 categories: ML
-filename: Gradient Descent For Linear Regression
-type: ML
+abbrlink: a4210253
+date: 2021-05-12 11:27:48
 ---
 
 # Gradient Descent For Linear Regression

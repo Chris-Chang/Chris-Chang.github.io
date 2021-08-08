@@ -2,14 +2,13 @@
 title: hexo permalink中文乱码解决方案
 mathjax: false
 toc: false
-date: 2021-02-16 21:37:34
-tags: 
+tags:
   - hexo
   - 解决方案
 categories:
   - hexo
-type: hexo
-filename: hexo permalink中文乱码解决方案
+abbrlink: ccd1e516
+date: 2021-02-16 21:37:34
 ---
 
 安装完hexo的pure主题后，发现copyright的本文链接时乱码的。这是因为当标题是中文时，`post.permalink`会被自动url编码，查看copyright.ejs(在`themes\pure\layout\_partial\post\`目录下),发现如下内容：

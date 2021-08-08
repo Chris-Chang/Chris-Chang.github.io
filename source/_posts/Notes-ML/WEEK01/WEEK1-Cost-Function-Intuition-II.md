@@ -2,11 +2,10 @@
 title: WEEK1.7-Cost Function Intuition II
 mathjax: true
 toc: true
-date: 2021-04-28 11:25:11
 tags: ML
 categories: ML
-filename: Cost Function Intuition II
-type: ML
+abbrlink: dce5857f
+date: 2021-04-28 11:25:11
 ---
 
 深入学习代价函数的作用。理解代价函数$J$所表达的值，它们是什么样的，它们对应的假设是什么样的。以及什么样的假设对应的点更接近代价函数$J$的最小值<!--more -->

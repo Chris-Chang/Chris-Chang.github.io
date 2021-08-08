@@ -3,8 +3,7 @@ title: 2.3.2  抽样
 mathjax: false
 tags: Intro
 categories: DM
-type: DM
-filename: 抽样
+abbrlink: cd7f4bdf
 date: 2021-05-25 22:53:47
 ---
 # 抽样

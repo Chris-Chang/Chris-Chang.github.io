@@ -1,15 +1,14 @@
 ---
 title: hexo和typora图片无法正常显示解决方案
 mathjax: true
-date: 2021-02-16 12:20:05
 tags:
-- hexo
-- 解决方案
+  - hexo
+  - 解决方案
 categories:
-- hexo
+  - hexo
 toc: true
-filename: hexo和typora图片无法正常显示解决方案
-type: hexo
+abbrlink: 74693f4b
+date: 2021-02-16 12:20:05
 ---
 
 安装完hexo后遇到了一个坑，使用typora编辑后hexo图片无法正常显示。

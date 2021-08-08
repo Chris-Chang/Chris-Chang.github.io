@@ -1,11 +1,12 @@
 ---
 title: WEEK2.2.2 多变量的梯度下降
 mathjax: true
-date: 2021-05-12 11:27:48
 tags: ML
 categories: ML
 filename: 多变量的梯度下降
 type: ML
+abbrlink: f38d8ec4
+date: 2021-05-12 11:27:48
 ---
 # 多变量的梯度下降
 

@@ -2,11 +2,10 @@
 title: WEEK1.9-Gradient Descent Intuition
 mathjax: true
 toc: true
-date: 2021-04-28 11:27:48
 tags: ML
 categories: ML
-filename: Gradient Descent Intuition
-type: ML
+abbrlink: 10ce7b21
+date: 2021-04-28 11:27:48
 ---
 
 ![image-20210428101426323](WEEK1-Gradient-Descent-Intuition/image-20210428101426323.png)

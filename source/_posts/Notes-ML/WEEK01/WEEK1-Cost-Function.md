@@ -2,11 +2,10 @@
 title: WEEK1.5-Cost Function
 mathjax: true
 toc: true
-date: 2021-04-28 11:26:15
 tags: ML
 categories: ML
-filename: Cost Function
-type: ML
+abbrlink: a7f3c23d
+date: 2021-04-28 11:26:15
 ---
 
 本节定义代价函数的数学定义即概念，弄清楚如何把最有可能的直线与我们的数据相拟合

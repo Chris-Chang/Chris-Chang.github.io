@@ -2,11 +2,10 @@
 title: WEEK1.6-Cost Function Intuition
 mathjax: true
 toc: true
-date: 2021-04-28 11:21:36
 tags: ML
 categories: ML
-filename: Cost Function Intuition I
-type: ML
+abbrlink: ea60870a
+date: 2021-04-28 11:21:36
 ---
 
 用简化后的算法，即让这个函数只有一个参数$\theta_1$,即设定$\theta_0=0$来理解代价函数。

@@ -2,11 +2,10 @@
 title: WEEK1.1-What is Machine Learning
 mathjax: true
 toc: true
-date: 2021-04-28 11:33:59
 tags: ML
 categories: ML
-filename: What is Machine Learning
-type: ML
+abbrlink: 3e6aa545
+date: 2021-04-28 11:33:59
 ---
 
 ## 什么是机器学习？

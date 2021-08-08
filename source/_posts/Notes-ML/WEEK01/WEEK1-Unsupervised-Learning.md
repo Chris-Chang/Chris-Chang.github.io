@@ -2,11 +2,10 @@
 title: WEEK1.3-Unsupervised Learning
 mathjax: true
 toc: true
-date: 2021-04-28 11:32:55
 tags: ML
 categories: ML
-filename: Unsupervised Learning
-type: ML
+abbrlink: e879ee16
+date: 2021-04-28 11:32:55
 ---
 
 与监督学习相比，无监督学习的数据没有属性或者标签，即给定的数据集都是一样的。我们不知道每个数据是什么意义。让机器在从数据集中找到某种结构，对于无监督学习，没有基于预测结果的反馈。

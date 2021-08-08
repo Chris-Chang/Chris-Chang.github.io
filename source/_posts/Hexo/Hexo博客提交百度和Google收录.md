@@ -2,12 +2,10 @@
 title: Hexo博客提交百度和Google收录
 mathjax: false
 toc: true
-date: 2021-04-16 18:00:04
 tags: hexo
 categories: hexo
-type: hexo
-filename: Hexo博客提交百度和Google收录
-
+abbrlink: 5c84a3bd
+date: 2021-04-16 18:00:04
 ---
 
 ## 1 查看网站是否被收录

@@ -1,11 +1,10 @@
 ---
 title: 2.2.1 关于应用的问题
-filename: 关于应用的问题
 mathjax: false
 tags: DM
 categories: DM
+abbrlink: 720c926a
 date: 2021-05-13 11:26:15
-type: DM
 ---
 # 关于应用的问题
 

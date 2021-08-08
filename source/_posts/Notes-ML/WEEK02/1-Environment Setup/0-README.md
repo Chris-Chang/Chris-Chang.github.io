@@ -1,11 +1,12 @@
 ---
 title: WEEK2.1 环境设置
 mathjax: true
-date: 2021-05-12 11:27:48
 tags: ML
 categories: ML
 filename: 环境设置
 type: ML
+abbrlink: cc4f79c
+date: 2021-05-12 11:27:48
 ---
 
 # 环境设置
