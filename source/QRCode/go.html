@@ -140,14 +140,15 @@
 			</div>
 			<div>
 				<label>身份</label>
-				<input name="identity" type="radio" value="暑期留校学生" checked/>暑期留校学生
-				<input name="identity" type="radio" value="请假被批准的学生" />请假被批准的学生
+				<input name="identity" type="radio" value="请假被批准的学生" checked/>请假被批准的学生
+				<input name="identity" type="radio" value="暑期留校学生" />暑期留校学生
+				
 				
 			</div>
 			<div>
 				当日返校？
-				<input type="radio" name="back2skuY" value="back2skuY">是
-				<input type="radio" name="back2skuY" value="back2skuN" checked>否
+				<input type="radio" name="back2skuY" value="back2skuY" checked>是
+				<input type="radio" name="back2skuY" value="back2skuN" >否
 			</div>
 		</form>
 		<br>
@@ -181,7 +182,7 @@
 			document.querySelector("span[id='identity']").innerHTML = "出入身份: "+identity;
 
 			if (document.querySelector("[value='back2skuY']").checked) {
-				document.querySelector("span[id='tipNoRecord']").style.display = "block";
+				document.querySelector("span[id='tipNoRecord']").style.display = "none";
 			}
 			
 			if (way == "entrance") {

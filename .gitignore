@@ -2,4 +2,3 @@
 *.log
 public/
 .deploy*/
-*.bat
