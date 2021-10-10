@@ -18,8 +18,8 @@ date: 2021-05-12 22:53:47
 - ~~斯坦福吴恩达教授（Andrew Ng ）的[Coursera课程](https://www.coursera.org/learn/machine-learning/home/welcome)（按照课时进度；当前：week3，20%）~~
 - [Introduction to Data Mining, Second Edition. Pang-Ning Tan](https://book.douban.com/subject/20056013/)
 - 《数据挖掘导论》（上述第一版中文版，范明，范宏建等译）（每天一小节不等；当前：chap08，100%）
-- 周志华《机器学习》（尚未开始）
-- 华盛顿大学《机器学习》（50%）
+- 周志华《机器学习》（30%）
+- 华盛顿大学《机器学习》（80%）
 
 ---
 
