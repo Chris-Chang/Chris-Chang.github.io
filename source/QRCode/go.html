@@ -97,9 +97,10 @@
 					<div><span style="color:#f00" id="tipNoRecord">提醒: 未检索到你今天的出校记录</span></div>
 			</div>
 			<div id="QRCode">
-				<div style="padding: 20px;background: #fff;">
+				<div style="padding: 15px 15px 0px 15px;background: #fff;">
 					<img id="QRCodeZhao" src="zhaoting.jpg" style="width:270px;height:270px;margin:0 auto">
 					<img id="QRCodeChang" src="changzhi.jpg" style="width:270px;height:270px;margin:0 auto">
+					<div style="font-family: 黑体;color: #00c; text-align:center;line-height:20px"><span id="footbar"></span></div>
 				</div>
 				
 			</div>
@@ -140,8 +141,8 @@
 			</div>
 			<div>
 				<label>身份</label>
-				<input name="identity" type="radio" value="请假被批准的学生" checked/>请假被批准的学生
-				<input name="identity" type="radio" value="暑期留校学生" />暑期留校学生
+				<input name="identity" type="radio" value="批准出入校园学生" checked/>批准出入校园学生
+				<input name="identity" type="radio" value="请假被批准的学生" />请假被批准的学生
 				
 				
 			</div>
@@ -174,9 +175,11 @@
 			let identity = document.querySelector("input[name='identity']:checked").value;
 			if( username == "0"){
 				document.querySelector("span[id='collageAndName']").innerHTML = "护理与健康学院 赵婷";
+				document.querySelector("span[id='footbar']").innerHTML = "护理与健康学院 赵婷";
 				document.querySelector("img[id='QRCodeZhao']").style.display = 'block';
 			}else{
 				document.querySelector("span[id='collageAndName']").innerHTML = "信息工程学院 常智";
+				document.querySelector("span[id='footbar']").innerHTML = "信息工程学院 常智";
 				document.querySelector("img[id='QRCodeChang']").style.display = 'block';
 			}
 			document.querySelector("span[id='identity']").innerHTML = "出入身份: "+identity;
