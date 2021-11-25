@@ -1,205 +1,43 @@
-<!DOCTYPE html>
 <html>
+    <body bgcolor="#000" >
+        
+        <div style="color: blue; font-size: 20px; float: right;">
 
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+                f-south:
+                    <ul>
+                        <li> <a href="./sf-out.html">sf-out</a></li>
+                        <li></li>
+                        <li> <a href="./sf-in.html">sf-in</a></li>
+                    </ul>
 
-	<meta name="viewport"
-		content="width=350, initial-scale=1.0, maximum-scale=1.0, user-scalable=1.0, user-scalable=no">
-	<meta http-equiv="pragma" content="no-cache">
-	<meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
-	<meta http-equiv="expires" content="Wed, 26 Feb 2007 08:21:57 GMT">
-	<title>郑州大学数据中台2020</title>
-	<link rel="stylesheet" type="text/css" href="./mycss.css">
-	<style>
-		#bak_0 {
-			MARGIN: 0 auto;
-			left: 0;
-			WIDTH: 350px;
-			min-HEIGHT: 540px;
-		}
+                f-east:
+                    <ul>
+                        <li> <a href="./ef-out.html">ef-out</a></li>
+                        <li></li>
+                        <li> <a href="./ef-in.html">ef-in</a></li>
+                    </ul>
 
-		#QRCode {
-            background-color: #BFFFC8;
-			
-			padding: 20px;
-			margin: 0px 0px;
-        }
-    
-        #QRCode.flash-pink {
-            background-color: #D720D2;
-        }
-        #QRCode.flash-green {
-            background-color: #009900;
-        }
-	</style>
-	<script src='jquery-3.6.0.min.js'></script>
-	<script>
-		//闪烁效果
-            var flashing;
-            function flashPink() {
-                flashing = setInterval(function () {
-                    $('#QRCode').toggleClass('flash-pink')
-                }, 1445);
-            }
-            function flashGreen() {
-                flashing = setInterval(function () {
-                    $('#QRCode').toggleClass('flash-green')
-                }, 1445);
-            }
-            function pauseFlash() {
-                clearInterval(flashing);
-            }
-	</script>
-	<script language="javascript">
-		function zzjCallOneUrl(us) {
-			document.getElem
-			entById("zzj_fun_426s").src = us;
-		}
-		var timeID = 0;
-		var tt1 = 600;
-		tt2 = 0;
-		tt3 = 0;
-		var timeID = setInterval("hnceTimer()", 1000);
-		function hnceTimer() {
-			tt1--;
-			if (tt1 >= 0) {
-				tt2 = tt1 % 60;
-				tt3 = (tt1 - tt2) / 60;
-				document.getElementById("tim317").innerHTML = tt3 + "分" + tt2 + "秒";
-			} else { document.getElementById("tim317").innerHTML = "已作废"; }
-		}
-	</script>
+        </div>
 
-	<script src='Valine.min.js'></script>
-</head>
+        <div style="color: #FFF; font-size: 20px; float: left;">
+ 
+                south:
+                    <ul>
+                        <li> <a href="./s-out.html">s-out</a></li>
+                        <li></li>
+                        <li> <a href="./s-in.html">s-in</a></li>
 
-<body style="cursor:default;">
+                    </ul>
 
-	<div id="bak_0">
-		<div style="WIDTH: 100%; HEIGHT: 102px;background:url(title316b.png);">
-			<div style="width:100%;height:32px;line-height:32px;text-align:right"><a href="https://jksb.v.zzu.edu.cn/vls6sss/zzujksb.dll/logout?ptopid=s1B91155D19B741238DC1233C96FFD7DC"><span
-						style="color:#00c;">〖切换账号〗</span></a>　</div>
-		</div>
-		<div style="width:350px; HEIGHT: 90px;">
-			<hr/>
-			<div style="height:32%;line-height:32px;text-align:left;">
-				<span style="font-size:12px;color:#333;">获取时间: </span>
-				<span style="font-size:16px;color:#a0a;" id="datetimenow"> </span>
-				<span style="font-size:12px;color:#333;">有效期剩余 </span>
-				<span id="tim317" style="font-size:22px;color:#c00;font-weight:500;font-family:微软雅黑;">10分00秒</span>
-			</div>
-			<hr/>
-			<div style="min-height:25px;line-height:25px;font-size:18px;color:#00c;font-weight:550;font-family:黑体; padding-left: 15px;" >
-					<div><span id="collageAndName"></span></div>
-					<div><span id="door"></span></div>
-					<div><span id="identity">出入身份: 暑期留校学生</span></div>
-					<div><span style="color:#f00" id="tipNoRecord">提醒: 未检索到你今天的出校记录</span></div>
-			</div>
-			<div id="QRCode">
-				<div style="padding: 15px 15px 0px 15px;background: #fff;">
-					<img id="QRCodeZhao" src="zhaoting.jpg" style="width:270px;height:270px;margin:0 auto">
-					<img id="QRCodeChang" src="changzhi.jpg" style="width:270px;height:270px;margin:0 auto">
-					<div style="font-family: 黑体;color: #00c; text-align:center;line-height:20px"><span id="footbar"></span></div>
-				</div>
-				
-			</div>
-			<div style="width:100%;min-height:18px;line-height:18px;font-size:12px;color:#666;text-align:center">
-				郑州大学疫情防控领导小组、保卫处、信息化办公室</div>
-		</div>
-		<script>
-			let dt = new Date();
-			document.getElementById("datetimenow").innerHTML = (("0" + (dt.getMonth() + 1)).slice(-2)) + "月" + (("0" + dt.getDate()).slice(-2)) + "日" + " " + (("0" + dt.getHours()).slice(-2)) + ":" + (("0" + dt.getMinutes()).slice(-2)) + "      ";
-		</script>
+                east:
+                    <ul>
+                        <li> <a href="./e-out.html">e-out</a></li>
+                        <li></li>
+                        <li> <a href="./e-in.html">e-in</a></li>
+                    </ul>
 
-		<input type="hidden" name="ptopid" value="s1B91155D19B741238DC1233C96FFD7DC"><input type="hidden" name="sid"
-			value="210319164227035784">
+        </div>
 
-		<div style="width:100%;height:50px;"></div>
 
-	</div>
-
-	<div id="bak_1" style="text-align:center">
-		<h2>
-			赵婷&常智的通行码
-		</h2>
-		<form>
-			<div>
-				<input name="username" type="radio" value="0" />赵婷
-				<input name="username" type="radio" value="1" checked/>常智
-			</div>
-			<div>
-				<label>方式:</label>
-				<input name="way" type="radio" value="entrance" />入口
-				<input name="way" type="radio" value="exit" checked/>出口
-			</div>
-			<div>
-				<label>出入口</label>
-				<input name="gate" type="radio" value="南门" checked/>南门
-				<input name="gate" type="radio" value="东门" />东门
-				<input name="gate" type="radio" value="北门" />北门
-			</div>
-			<div>
-				<label>身份</label>
-				<input name="identity" type="radio" value="批准出入校园学生" checked/>批准出入校园学生
-				<input name="identity" type="radio" value="请假被批准的学生" />请假被批准的学生
-				
-				
-			</div>
-			<div>
-				当日返校？
-				<input type="radio" name="back2skuY" value="back2skuY" checked>是
-				<input type="radio" name="back2skuY" value="back2skuN" >否
-			</div>
-		</form>
-		<br>
-		<button onclick="showBlock521()">生成通行码</button>
-
-	</div>
-
-	<script>
-		// 将背景隔离
-		document.querySelector("div[id='bak_0']").style.display = 'none';
-		document.querySelector("img[id='QRCodeZhao']").style.display = 'none';
-		document.querySelector("img[id='QRCodeChang']").style.display = 'none';
-		function showBlock521() {
-			let dta = new Date();
-			document.getElementById("datetimenow").innerHTML = (("0" + (dta.getMonth() + 1)).slice(-2)) + "月" + (("0" + dta.getDate()).slice(-2)) + "日" + " " + (("0" + dta.getHours()).slice(-2)) + ":" + (("0" + dta.getMinutes()).slice(-2)) + "      ";
-			document.getElementById("tim317").innerHTML = "10分00秒";
-			document.querySelector("div[id='bak_1']").style.display = 'none';
-			document.querySelector("div[id='bak_0']").style.display = 'block';
-
-			let username = document.querySelector("input[name='username']:checked").value;
-			let gate = document.querySelector("input[name='gate']:checked").value;
-			let way = document.querySelector("input[name='way']:checked").value;
-			let identity = document.querySelector("input[name='identity']:checked").value;
-			if( username == "0"){
-				document.querySelector("span[id='collageAndName']").innerHTML = "护理与健康学院 赵婷";
-				document.querySelector("span[id='footbar']").innerHTML = "护理与健康学院 赵婷";
-				document.querySelector("img[id='QRCodeZhao']").style.display = 'block';
-			}else{
-				document.querySelector("span[id='collageAndName']").innerHTML = "信息工程学院 常智";
-				document.querySelector("span[id='footbar']").innerHTML = "信息工程学院 常智";
-				document.querySelector("img[id='QRCodeChang']").style.display = 'block';
-			}
-			document.querySelector("span[id='identity']").innerHTML = "出入身份: "+identity;
-
-			if (document.querySelector("[value='back2skuY']").checked) {
-				document.querySelector("span[id='tipNoRecord']").style.display = "none";
-			}
-			
-			if (way == "entrance") {
-				
-				document.querySelector("span[id='door']").innerHTML = "通行信息: 主校区大门" + gate + ".<span style=\"background:#009900;color:#F6FF0F\">入口</span>";
-				flashGreen();
-			} else {
-				document.querySelector("span[id='door']").innerHTML = "通行信息: 主校区大门" + gate + ".<span style=\"background:#D720D2;color:#F6FF0F\">出口</span>";
-				flashPink();
-			}
-
-		}
-
-	</script>
-</body>
-
+    </body>
 </html>
