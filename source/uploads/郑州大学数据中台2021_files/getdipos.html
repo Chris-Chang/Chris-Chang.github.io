@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!-- saved from url=(0124)https://jksb.v.zzu.edu.cn/vls6sss/zzujksb.dll/getdipos?ptopid=s5391C5FBCA04407999AF2F1E6A5FF158&sid=220429143327481757&fun2= -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=360, initial-scale=1.0, maximum-scale=1.0, user-scalable=1.0, user-scalable=no;">
+<title></title>
+<style>
+#bak_0 {MARGIN:0 auto; left: 0;WIDTH: 2px; min-HEIGHT:3px;}
+</style>
+<script type="text/javascript" src="./api"></script><script type="text/javascript" src="./getscript"></script>
+
+<script language="javascript">
+var xmlHttp6a=null;
+try{
+  xmlHttp6a=new XMLHttpRequest();
+}catch(e){
+  try {
+    xmlHttp6a=new ActiveXObject("Microsoft.XMLHTTP");
+  }catch(e){}
+}
+
+function zzjchangecart(j5,w5,s7){
+  var str56="";
+  var us55="https://jksb.v.zzu.edu.cn/vls6sss/zzujksb.dll/getpos113?j5="+j5+"&w5="+w5+"&ptopid=s5391C5FBCA04407999AF2F1E6A5FF158&d5=&sid=220429143327667197&s7="+s7;
+  if (xmlHttp6a){
+    xmlHttp6a.open("GET",us55,false);
+    xmlHttp6a.send(null);
+    str56=xmlHttp6a.responseText;
+    if (str56 != "ook"){parent.window.document.getElementById("msg11").innerHTML=str56;}
+  }
+}
+
+function getLocation2() {
+var geolocation = new BMap.Geolocation();
+geolocation.getCurrentPosition(function(e) {
+    if(this.getStatus() == BMAP_STATUS_SUCCESS){
+       var s1127="Position success.";
+       zzjchangecart(e.point.lat.toFixed(6),e.point.lng.toFixed(6),s1127);
+    } else {       
+       zzjchangecart("0.000000","0.000000",this.getStatus());
+    }
+});
+}
+
+</script>
+</head>
+<body marginwidth="0" marginheight="0">
+<div id="bak_0">  
+<script language="javascript">
+getLocation2();
+</script>
+</div>
+
+</body></html>
