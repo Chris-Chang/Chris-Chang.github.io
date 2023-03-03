@@ -179,22 +179,6 @@ src="https://changzhi.space/uploads/DM-INTRO/5.2%20最近邻分类器.svg" /></p
       </tags>
   </entry>
   <entry>
-    <title>5.4 人工神经网络ANN</title>
-    <url>/p/8b139232.html</url>
-    <content><![CDATA[<span id="more"></span>
-<p>图片可能加载缓慢<a
-href="https://changzhi.space/uploads/DM-INTRO/5.4%20人工神经网络ANN.svg">点击链接</a>立即查看</p>
-<p><img
-src="https://changzhi.space/uploads/DM-INTRO/5.4%20人工神经网络ANN.svg" /></p>
-]]></content>
-      <categories>
-        <category>DM</category>
-      </categories>
-      <tags>
-        <tag>Intro</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>5.3 贝叶斯分类器</title>
     <url>/p/eb32e4d1.html</url>
     <content><![CDATA[<span id="more"></span>
@@ -211,13 +195,13 @@ src="https://changzhi.space/uploads/DM-INTRO/5.3%20贝叶斯分类器.svg" /></p
       </tags>
   </entry>
   <entry>
-    <title>5.5 支持向量机SVM</title>
-    <url>/p/6dcc93d0.html</url>
+    <title>5.4 人工神经网络ANN</title>
+    <url>/p/8b139232.html</url>
     <content><![CDATA[<span id="more"></span>
 <p>图片可能加载缓慢<a
-href="https://changzhi.space/uploads/DM-INTRO/5.5%20支持向量机SVM.svg">点击链接</a>立即查看</p>
+href="https://changzhi.space/uploads/DM-INTRO/5.4%20人工神经网络ANN.svg">点击链接</a>立即查看</p>
 <p><img
-src="https://changzhi.space/uploads/DM-INTRO/5.5%20支持向量机SVM.svg" /></p>
+src="https://changzhi.space/uploads/DM-INTRO/5.4%20人工神经网络ANN.svg" /></p>
 ]]></content>
       <categories>
         <category>DM</category>
@@ -234,6 +218,22 @@ src="https://changzhi.space/uploads/DM-INTRO/5.5%20支持向量机SVM.svg" /></p
 href="https://changzhi.space/uploads/DM-INTRO/5.6%20组合方法.svg">点击链接</a>立即查看</p>
 <p><img
 src="https://changzhi.space/uploads/DM-INTRO/5.6%20组合方法.svg" /></p>
+]]></content>
+      <categories>
+        <category>DM</category>
+      </categories>
+      <tags>
+        <tag>Intro</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>5.5 支持向量机SVM</title>
+    <url>/p/6dcc93d0.html</url>
+    <content><![CDATA[<span id="more"></span>
+<p>图片可能加载缓慢<a
+href="https://changzhi.space/uploads/DM-INTRO/5.5%20支持向量机SVM.svg">点击链接</a>立即查看</p>
+<p><img
+src="https://changzhi.space/uploads/DM-INTRO/5.5%20支持向量机SVM.svg" /></p>
 ]]></content>
       <categories>
         <category>DM</category>
@@ -352,22 +352,6 @@ src="https://changzhi.space/uploads/DM-INTRO/4.3.7%20决策树归纳的特点.sv
       </tags>
   </entry>
   <entry>
-    <title>4.4 泛化误差估计</title>
-    <url>/p/eac065fa.html</url>
-    <content><![CDATA[<span id="more"></span>
-<p>图片可能加载缓慢<a
-href="3.5%20模型选择（4.4.4%20泛化误差估计）.svg">点击链接</a>立即查看</p>
-<p><img
-src="https://changzhi.space/uploads/DM-INTRO/3.5%20模型选择（4.4.4%20泛化误差估计）.svg" /></p>
-]]></content>
-      <categories>
-        <category>DM</category>
-      </categories>
-      <tags>
-        <tag>Intro</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>4.5 评估分类器的性能</title>
     <url>/p/df98fe2b.html</url>
     <content><![CDATA[<span id="more"></span>
@@ -391,6 +375,22 @@ src="https://changzhi.space/uploads/DM-INTRO/3.6%20模型评估%20（4.5%20评�
 href="https://changzhi.space/uploads/DM-INTRO/3.9(4.6)%20比较分类器的方法.svg">点击链接</a>立即查看</p>
 <p><img
 src="https://changzhi.space/uploads/DM-INTRO/3.9(4.6)%20比较分类器的方法.svg" /></p>
+]]></content>
+      <categories>
+        <category>DM</category>
+      </categories>
+      <tags>
+        <tag>Intro</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>4.4 泛化误差估计</title>
+    <url>/p/eac065fa.html</url>
+    <content><![CDATA[<span id="more"></span>
+<p>图片可能加载缓慢<a
+href="3.5%20模型选择（4.4.4%20泛化误差估计）.svg">点击链接</a>立即查看</p>
+<p><img
+src="https://changzhi.space/uploads/DM-INTRO/3.5%20模型选择（4.4.4%20泛化误差估计）.svg" /></p>
 ]]></content>
       <categories>
         <category>DM</category>
@@ -492,15 +492,14 @@ alt="2.4.1 基础" />
       </tags>
   </entry>
   <entry>
-    <title>2.4.2 简单属性之间的相似度和相异度</title>
-    <url>/p/5ee51da9.html</url>
+    <title>2.4.4 数据对象之间的相似度</title>
+    <url>/p/e4cb9948.html</url>
     <content><![CDATA[<span id="more"></span>
 <figure>
 <img
-src="https://changzhi.space/uploads/DM-INTRO/2.4.2%20%E7%AE%80%E5%8D%95%E5%B1%9E%E6%80%A7%E4%B9%8B%E9%97%B4%E7%9A%84%E7%9B%B8%E4%BC%BC%E5%BA%A6%E5%92%8C%E7%9B%B8%E5%BC%82%E5%BA%A6.svg"
-alt="2.4.2 简单属性之间的相似度和相异度" />
-<figcaption aria-hidden="true">2.4.2
-简单属性之间的相似度和相异度</figcaption>
+src="https://changzhi.space/uploads/DM-INTRO/2.4.4%20%E6%95%B0%E6%8D%AE%E5%AF%B9%E8%B1%A1%E4%B9%8B%E9%97%B4%E7%9A%84%E7%9B%B8%E4%BC%BC%E5%BA%A6.svg"
+alt="2.4.4 数据对象之间的相似度" />
+<figcaption aria-hidden="true">2.4.4 数据对象之间的相似度</figcaption>
 </figure>
 ]]></content>
       <categories>
@@ -529,14 +528,51 @@ alt="2.4.3 数据对象之间的相异度" />
       </tags>
   </entry>
   <entry>
-    <title>2.4.4 数据对象之间的相似度</title>
-    <url>/p/e4cb9948.html</url>
+    <title>2.4.2 简单属性之间的相似度和相异度</title>
+    <url>/p/5ee51da9.html</url>
     <content><![CDATA[<span id="more"></span>
 <figure>
 <img
-src="https://changzhi.space/uploads/DM-INTRO/2.4.4%20%E6%95%B0%E6%8D%AE%E5%AF%B9%E8%B1%A1%E4%B9%8B%E9%97%B4%E7%9A%84%E7%9B%B8%E4%BC%BC%E5%BA%A6.svg"
-alt="2.4.4 数据对象之间的相似度" />
-<figcaption aria-hidden="true">2.4.4 数据对象之间的相似度</figcaption>
+src="https://changzhi.space/uploads/DM-INTRO/2.4.2%20%E7%AE%80%E5%8D%95%E5%B1%9E%E6%80%A7%E4%B9%8B%E9%97%B4%E7%9A%84%E7%9B%B8%E4%BC%BC%E5%BA%A6%E5%92%8C%E7%9B%B8%E5%BC%82%E5%BA%A6.svg"
+alt="2.4.2 简单属性之间的相似度和相异度" />
+<figcaption aria-hidden="true">2.4.2
+简单属性之间的相似度和相异度</figcaption>
+</figure>
+]]></content>
+      <categories>
+        <category>DM</category>
+      </categories>
+      <tags>
+        <tag>Intro</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2.4.5 邻近性度量的例子</title>
+    <url>/p/d946d40b.html</url>
+    <content><![CDATA[<span id="more"></span>
+<figure>
+<img
+src="https://changzhi.space/uploads/DM-INTRO/2.4.5%20%E9%82%BB%E8%BF%91%E6%80%A7%E5%BA%A6%E9%87%8F%E7%9A%84%E4%BE%8B%E5%AD%90.svg"
+alt="2.4.5 邻近性度量的例子" />
+<figcaption aria-hidden="true">2.4.5 邻近性度量的例子</figcaption>
+</figure>
+]]></content>
+      <categories>
+        <category>DM</category>
+      </categories>
+      <tags>
+        <tag>Intro</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2.4.6 邻近度计算问题</title>
+    <url>/p/44ca3808.html</url>
+    <content><![CDATA[<span id="more"></span>
+<figure>
+<img
+src="https://changzhi.space/uploads/DM-INTRO/2.4.6%20%E9%82%BB%E8%BF%91%E5%BA%A6%E8%AE%A1%E7%AE%97%E9%97%AE%E9%A2%98.svg"
+alt="2.4.6 邻近度计算问题" />
+<figcaption aria-hidden="true">2.4.6 邻近度计算问题</figcaption>
 </figure>
 ]]></content>
       <categories>
@@ -560,24 +596,6 @@ alt="2.4.4 数据对象之间的相似度" />
 <li>变量转换 Variable transformation</li>
 </ul>
 <p>总之，以上技术可以归为两类：选择分析所需要的数据对象和属性以及创造/改变属性。其目标是降低数据挖掘分析的时间，花销和提高质量。后述的特征（feature）和变量（variable）都是指属性（attribute）。</p>
-]]></content>
-      <categories>
-        <category>DM</category>
-      </categories>
-      <tags>
-        <tag>Intro</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>2.4.5 邻近性度量的例子</title>
-    <url>/p/d946d40b.html</url>
-    <content><![CDATA[<span id="more"></span>
-<figure>
-<img
-src="https://changzhi.space/uploads/DM-INTRO/2.4.5%20%E9%82%BB%E8%BF%91%E6%80%A7%E5%BA%A6%E9%87%8F%E7%9A%84%E4%BE%8B%E5%AD%90.svg"
-alt="2.4.5 邻近性度量的例子" />
-<figcaption aria-hidden="true">2.4.5 邻近性度量的例子</figcaption>
-</figure>
 ]]></content>
       <categories>
         <category>DM</category>
@@ -629,24 +647,6 @@ Analytical Processing，OLAP）技术。</p>
       </tags>
   </entry>
   <entry>
-    <title>2.4.6 邻近度计算问题</title>
-    <url>/p/44ca3808.html</url>
-    <content><![CDATA[<span id="more"></span>
-<figure>
-<img
-src="https://changzhi.space/uploads/DM-INTRO/2.4.6%20%E9%82%BB%E8%BF%91%E5%BA%A6%E8%AE%A1%E7%AE%97%E9%97%AE%E9%A2%98.svg"
-alt="2.4.6 邻近度计算问题" />
-<figcaption aria-hidden="true">2.4.6 邻近度计算问题</figcaption>
-</figure>
-]]></content>
-      <categories>
-        <category>DM</category>
-      </categories>
-      <tags>
-        <tag>Intro</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>2.3.2  抽样</title>
     <url>/p/cd7f4bdf.html</url>
     <content><![CDATA[<h1 id="抽样">抽样</h1>
@@ -682,28 +682,6 @@ sampling）方法。这些方法从一个小样本开始，然后增加样本容
       </categories>
       <tags>
         <tag>Intro</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>2.2.1 关于应用的问题</title>
-    <url>/p/720c926a.html</url>
-    <content><![CDATA[<h1 id="关于应用的问题">关于应用的问题</h1>
-<p>数据质量问题也可以从应用的角度来考虑，表达为“如果数据适合其预期用途，那么它就是高质量的“。高质量的数据需考虑以下几点:</p>
-<h2 id="时效性">时效性</h2>
-<p>有些数据收集后就开始老化。特别是，如果数据提供了一些正在发生的现象或过程的快照，如客户的购买行为或web浏览模式，那么这个快照只能代表有限时间内的情况。如果数据过时了，那么基于它的数据模型和模式也会过时。</p>
-<span id="more"></span>
-<h2 id="相关性">相关性</h2>
-<p>可用的数据必须包含应用所需的信息。比如建立一个预测驾驶员事故率的模型。如果忽略驾驶员的年龄和性别信息，那么模型的准确性很可能有限，除非这些信息可以从其他属性间接获得。</p>
-<p>确保数据集中的对象是相关的不太容易。常见问题是抽样偏倚（sampling
-bias），指样本包含的不同类型的对象与它们在总体中的出现情况不成比例。因为数据分析的结果只能反映当前的样本数据，抽样偏倚通常会导致不正确的分析。</p>
-<h2 id="关于数据的知识">关于数据的知识</h2>
-<p>理想情况下，数据集附有描述数据的文档。此文档的质量可以支持或干扰后续的分析。例如，如果文档将几个属性标识为强相关的，则属性很可能提供高度冗余的信息，我们可以决定只保留一个。但是，如果文档很糟糕，例如并没有说明某特定字段的缺省值是用-9999表示的，那么我们对数据的分析可能会出现问题。其他应该说明的重要特性包括数据精度、特征的类型（标称的、序数的、区间的、比率的）、测量的刻度（如长度用米还是英尺）和数据的来源。</p>
-]]></content>
-      <categories>
-        <category>DM</category>
-      </categories>
-      <tags>
-        <tag>DM</tag>
       </tags>
   </entry>
   <entry>
@@ -791,6 +769,28 @@ class="math display">\[\pm5mm\]</span></p>
 <li>需要注意避免意外地将相似但不重复的数据对象合并在一起，比如两个有着相同名字的人。</li>
 <li>在某些情况下，两个或多个对象相对于数据库的属性度量上是相同的，但它们仍然代表不同的对象。这种情况重复是合法的，但需要注意修改一些没有考虑这种情况的算法，否则可能会造成问题。</li>
 </ul>
+]]></content>
+      <categories>
+        <category>DM</category>
+      </categories>
+      <tags>
+        <tag>DM</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2.2.1 关于应用的问题</title>
+    <url>/p/720c926a.html</url>
+    <content><![CDATA[<h1 id="关于应用的问题">关于应用的问题</h1>
+<p>数据质量问题也可以从应用的角度来考虑，表达为“如果数据适合其预期用途，那么它就是高质量的“。高质量的数据需考虑以下几点:</p>
+<h2 id="时效性">时效性</h2>
+<p>有些数据收集后就开始老化。特别是，如果数据提供了一些正在发生的现象或过程的快照，如客户的购买行为或web浏览模式，那么这个快照只能代表有限时间内的情况。如果数据过时了，那么基于它的数据模型和模式也会过时。</p>
+<span id="more"></span>
+<h2 id="相关性">相关性</h2>
+<p>可用的数据必须包含应用所需的信息。比如建立一个预测驾驶员事故率的模型。如果忽略驾驶员的年龄和性别信息，那么模型的准确性很可能有限，除非这些信息可以从其他属性间接获得。</p>
+<p>确保数据集中的对象是相关的不太容易。常见问题是抽样偏倚（sampling
+bias），指样本包含的不同类型的对象与它们在总体中的出现情况不成比例。因为数据分析的结果只能反映当前的样本数据，抽样偏倚通常会导致不正确的分析。</p>
+<h2 id="关于数据的知识">关于数据的知识</h2>
+<p>理想情况下，数据集附有描述数据的文档。此文档的质量可以支持或干扰后续的分析。例如，如果文档将几个属性标识为强相关的，则属性很可能提供高度冗余的信息，我们可以决定只保留一个。但是，如果文档很糟糕，例如并没有说明某特定字段的缺省值是用-9999表示的，那么我们对数据的分析可能会出现问题。其他应该说明的重要特性包括数据精度、特征的类型（标称的、序数的、区间的、比率的）、测量的刻度（如长度用米还是英尺）和数据的来源。</p>
 ]]></content>
       <categories>
         <category>DM</category>
