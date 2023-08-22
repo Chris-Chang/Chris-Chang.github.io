@@ -130,6 +130,195 @@ href="https://wylu.github.io/posts/aa960b18/#%E9%85%8D%E7%BD%AE-travis-ci-%E6%8C
       </tags>
   </entry>
   <entry>
+    <title>4.3.1 决策树的工作原理</title>
+    <url>/p/a9eabccf.html</url>
+    <content><![CDATA[<span id="more"></span>
+<p>图片可能加载缓慢<a
+href="https://changzhi.space/uploads/DM-INTRO/4.3.1%20决策树的工作原理.svg">点击链接</a>立即查看</p>
+<p><img
+src="https://changzhi.space/uploads/DM-INTRO/4.3.1%20决策树的工作原理.svg" /></p>
+]]></content>
+      <categories>
+        <category>DM</category>
+      </categories>
+      <tags>
+        <tag>Intro</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>4.3.2 如何建立决策树</title>
+    <url>/p/d1df6577.html</url>
+    <content><![CDATA[<span id="more"></span>
+<p>图片可能加载缓慢<a
+href="https://changzhi.space/uploads/DM-INTRO/4.3.2%20如何建立决策树.svg">点击链接</a>立即查看</p>
+<p><img
+src="https://changzhi.space/uploads/DM-INTRO/4.3.2%20如何建立决策树.svg" /></p>
+]]></content>
+      <categories>
+        <category>DM</category>
+      </categories>
+      <tags>
+        <tag>Intro</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>4.3.3 表示属性测试条件的方法</title>
+    <url>/p/a99a037b.html</url>
+    <content><![CDATA[<span id="more"></span>
+<p>图片可能加载缓慢<a
+href="4.3.3%20表示属性测试条件的方法.svg">点击链接</a>立即查看</p>
+<p><img
+src="https://changzhi.space/uploads/DM-INTRO/4.3.3%20表示属性测试条件的方法.svg" /></p>
+]]></content>
+      <categories>
+        <category>DM</category>
+      </categories>
+      <tags>
+        <tag>Intro</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>4.3.4 选择最佳划分的度量</title>
+    <url>/p/8c051d6.html</url>
+    <content><![CDATA[<span id="more"></span>
+<p>图片可能加载缓慢<a
+href="https://changzhi.space/uploads/DM-INTRO/4.3.4%20选择最佳划分的度量.svg">点击链接</a>立即查看</p>
+<p><img
+src="https://changzhi.space/uploads/DM-INTRO/4.3.4%20选择最佳划分的度量.svg" /></p>
+]]></content>
+      <categories>
+        <category>DM</category>
+      </categories>
+      <tags>
+        <tag>Intro</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>4.3.5 决策树归纳算法</title>
+    <url>/p/f328c568.html</url>
+    <content><![CDATA[<span id="more"></span>
+<p>图片可能加载缓慢<a
+href="https://changzhi.space/uploads/DM-INTRO/4.3.5%20决策树归纳算法.svg">点击链接</a>立即查看</p>
+<p><img
+src="https://changzhi.space/uploads/DM-INTRO/4.3.5%20决策树归纳算法.svg" /></p>
+]]></content>
+      <categories>
+        <category>DM</category>
+      </categories>
+      <tags>
+        <tag>Intro</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>4.3.7 决策树归纳的特点</title>
+    <url>/p/a5ca0cf3.html</url>
+    <content><![CDATA[<span id="more"></span>
+<p>图片可能加载缓慢<a
+href="https://changzhi.space/uploads/DM-INTRO/4.3.7%20决策树归纳的特点.svg">点击链接</a>立即查看</p>
+<p><img
+src="https://changzhi.space/uploads/DM-INTRO/4.3.7%20决策树归纳的特点.svg" /></p>
+]]></content>
+      <categories>
+        <category>DM</category>
+      </categories>
+      <tags>
+        <tag>Intro</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>4.4 泛化误差估计</title>
+    <url>/p/eac065fa.html</url>
+    <content><![CDATA[<span id="more"></span>
+<p>图片可能加载缓慢<a
+href="3.5%20模型选择（4.4.4%20泛化误差估计）.svg">点击链接</a>立即查看</p>
+<p><img
+src="https://changzhi.space/uploads/DM-INTRO/3.5%20模型选择（4.4.4%20泛化误差估计）.svg" /></p>
+]]></content>
+      <categories>
+        <category>DM</category>
+      </categories>
+      <tags>
+        <tag>Intro</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>4.3 决策树归纳</title>
+    <url>/p/583b295c.html</url>
+    <content><![CDATA[<span id="more"></span>
+<img src="/p/583b295c/image-20210609082241007.png" class="" title="image-20210609082241007">
+]]></content>
+      <categories>
+        <category>DM</category>
+      </categories>
+      <tags>
+        <tag>Intro</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>4.5 评估分类器的性能</title>
+    <url>/p/df98fe2b.html</url>
+    <content><![CDATA[<span id="more"></span>
+<p>图片可能加载缓慢<a
+href="https://changzhi.space/uploads/DM-INTRO/3.6%20模型评估%20（4.5%20评估分类器的性能）.svg">点击链接</a>立即查看</p>
+<p><img
+src="https://changzhi.space/uploads/DM-INTRO/3.6%20模型评估%20（4.5%20评估分类器的性能）.svg" /></p>
+]]></content>
+      <categories>
+        <category>DM</category>
+      </categories>
+      <tags>
+        <tag>Intro</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>4.6 比较分类器的方法</title>
+    <url>/p/32567607.html</url>
+    <content><![CDATA[<span id="more"></span>
+<p>图片可能加载缓慢<a
+href="https://changzhi.space/uploads/DM-INTRO/3.9(4.6)%20比较分类器的方法.svg">点击链接</a>立即查看</p>
+<p><img
+src="https://changzhi.space/uploads/DM-INTRO/3.9(4.6)%20比较分类器的方法.svg" /></p>
+]]></content>
+      <categories>
+        <category>DM</category>
+      </categories>
+      <tags>
+        <tag>Intro</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>4.7 超参数α</title>
+    <url>/p/204d86f0.html</url>
+    <content><![CDATA[<span id="more"></span>
+<p>图片可能加载缓慢<a
+href="https://changzhi.space/uploads/DM-INTRO/3.7%20超参数α.svg">点击链接</a>立即查看</p>
+<p><img
+src="https://changzhi.space/uploads/DM-INTRO/3.7%20超参数α.svg" /></p>
+]]></content>
+      <categories>
+        <category>DM</category>
+      </categories>
+      <tags>
+        <tag>Intro</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>4.8 模型选择和评估的陷阱</title>
+    <url>/p/ba636e88.html</url>
+    <content><![CDATA[<span id="more"></span>
+<p>图片可能加载缓慢<a
+href="https://changzhi.space/uploads/DM-INTRO/3.8%20模型选择和评估的陷阱.svg">点击链接</a>立即查看</p>
+<p><img
+src="https://changzhi.space/uploads/DM-INTRO/3.8%20模型选择和评估的陷阱.svg" /></p>
+]]></content>
+      <categories>
+        <category>DM</category>
+      </categories>
+      <tags>
+        <tag>Intro</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>5 分类-其他技术</title>
     <url>/p/84e5093f.html</url>
     <content><![CDATA[<span id="more"></span>
@@ -243,195 +432,6 @@ src="https://changzhi.space/uploads/DM-INTRO/5.5%20支持向量机SVM.svg" /></p
       </tags>
   </entry>
   <entry>
-    <title>4.3.1 决策树的工作原理</title>
-    <url>/p/a9eabccf.html</url>
-    <content><![CDATA[<span id="more"></span>
-<p>图片可能加载缓慢<a
-href="https://changzhi.space/uploads/DM-INTRO/4.3.1%20决策树的工作原理.svg">点击链接</a>立即查看</p>
-<p><img
-src="https://changzhi.space/uploads/DM-INTRO/4.3.1%20决策树的工作原理.svg" /></p>
-]]></content>
-      <categories>
-        <category>DM</category>
-      </categories>
-      <tags>
-        <tag>Intro</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>4.3.2 如何建立决策树</title>
-    <url>/p/d1df6577.html</url>
-    <content><![CDATA[<span id="more"></span>
-<p>图片可能加载缓慢<a
-href="https://changzhi.space/uploads/DM-INTRO/4.3.2%20如何建立决策树.svg">点击链接</a>立即查看</p>
-<p><img
-src="https://changzhi.space/uploads/DM-INTRO/4.3.2%20如何建立决策树.svg" /></p>
-]]></content>
-      <categories>
-        <category>DM</category>
-      </categories>
-      <tags>
-        <tag>Intro</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>4.3.3 表示属性测试条件的方法</title>
-    <url>/p/a99a037b.html</url>
-    <content><![CDATA[<span id="more"></span>
-<p>图片可能加载缓慢<a
-href="4.3.3%20表示属性测试条件的方法.svg">点击链接</a>立即查看</p>
-<p><img
-src="https://changzhi.space/uploads/DM-INTRO/4.3.3%20表示属性测试条件的方法.svg" /></p>
-]]></content>
-      <categories>
-        <category>DM</category>
-      </categories>
-      <tags>
-        <tag>Intro</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>4.3.4 选择最佳划分的度量</title>
-    <url>/p/8c051d6.html</url>
-    <content><![CDATA[<span id="more"></span>
-<p>图片可能加载缓慢<a
-href="https://changzhi.space/uploads/DM-INTRO/4.3.4%20选择最佳划分的度量.svg">点击链接</a>立即查看</p>
-<p><img
-src="https://changzhi.space/uploads/DM-INTRO/4.3.4%20选择最佳划分的度量.svg" /></p>
-]]></content>
-      <categories>
-        <category>DM</category>
-      </categories>
-      <tags>
-        <tag>Intro</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>4.3.5 决策树归纳算法</title>
-    <url>/p/f328c568.html</url>
-    <content><![CDATA[<span id="more"></span>
-<p>图片可能加载缓慢<a
-href="https://changzhi.space/uploads/DM-INTRO/4.3.5%20决策树归纳算法.svg">点击链接</a>立即查看</p>
-<p><img
-src="https://changzhi.space/uploads/DM-INTRO/4.3.5%20决策树归纳算法.svg" /></p>
-]]></content>
-      <categories>
-        <category>DM</category>
-      </categories>
-      <tags>
-        <tag>Intro</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>4.3.7 决策树归纳的特点</title>
-    <url>/p/a5ca0cf3.html</url>
-    <content><![CDATA[<span id="more"></span>
-<p>图片可能加载缓慢<a
-href="https://changzhi.space/uploads/DM-INTRO/4.3.7%20决策树归纳的特点.svg">点击链接</a>立即查看</p>
-<p><img
-src="https://changzhi.space/uploads/DM-INTRO/4.3.7%20决策树归纳的特点.svg" /></p>
-]]></content>
-      <categories>
-        <category>DM</category>
-      </categories>
-      <tags>
-        <tag>Intro</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>4.3 决策树归纳</title>
-    <url>/p/583b295c.html</url>
-    <content><![CDATA[<span id="more"></span>
-<img src="/p/583b295c/image-20210609082241007.png" class="" title="image-20210609082241007">
-]]></content>
-      <categories>
-        <category>DM</category>
-      </categories>
-      <tags>
-        <tag>Intro</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>4.5 评估分类器的性能</title>
-    <url>/p/df98fe2b.html</url>
-    <content><![CDATA[<span id="more"></span>
-<p>图片可能加载缓慢<a
-href="https://changzhi.space/uploads/DM-INTRO/3.6%20模型评估%20（4.5%20评估分类器的性能）.svg">点击链接</a>立即查看</p>
-<p><img
-src="https://changzhi.space/uploads/DM-INTRO/3.6%20模型评估%20（4.5%20评估分类器的性能）.svg" /></p>
-]]></content>
-      <categories>
-        <category>DM</category>
-      </categories>
-      <tags>
-        <tag>Intro</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>4.6 比较分类器的方法</title>
-    <url>/p/32567607.html</url>
-    <content><![CDATA[<span id="more"></span>
-<p>图片可能加载缓慢<a
-href="https://changzhi.space/uploads/DM-INTRO/3.9(4.6)%20比较分类器的方法.svg">点击链接</a>立即查看</p>
-<p><img
-src="https://changzhi.space/uploads/DM-INTRO/3.9(4.6)%20比较分类器的方法.svg" /></p>
-]]></content>
-      <categories>
-        <category>DM</category>
-      </categories>
-      <tags>
-        <tag>Intro</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>4.4 泛化误差估计</title>
-    <url>/p/eac065fa.html</url>
-    <content><![CDATA[<span id="more"></span>
-<p>图片可能加载缓慢<a
-href="3.5%20模型选择（4.4.4%20泛化误差估计）.svg">点击链接</a>立即查看</p>
-<p><img
-src="https://changzhi.space/uploads/DM-INTRO/3.5%20模型选择（4.4.4%20泛化误差估计）.svg" /></p>
-]]></content>
-      <categories>
-        <category>DM</category>
-      </categories>
-      <tags>
-        <tag>Intro</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>4.7 超参数α</title>
-    <url>/p/204d86f0.html</url>
-    <content><![CDATA[<span id="more"></span>
-<p>图片可能加载缓慢<a
-href="https://changzhi.space/uploads/DM-INTRO/3.7%20超参数α.svg">点击链接</a>立即查看</p>
-<p><img
-src="https://changzhi.space/uploads/DM-INTRO/3.7%20超参数α.svg" /></p>
-]]></content>
-      <categories>
-        <category>DM</category>
-      </categories>
-      <tags>
-        <tag>Intro</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>4.8 模型选择和评估的陷阱</title>
-    <url>/p/ba636e88.html</url>
-    <content><![CDATA[<span id="more"></span>
-<p>图片可能加载缓慢<a
-href="https://changzhi.space/uploads/DM-INTRO/3.8%20模型选择和评估的陷阱.svg">点击链接</a>立即查看</p>
-<p><img
-src="https://changzhi.space/uploads/DM-INTRO/3.8%20模型选择和评估的陷阱.svg" /></p>
-]]></content>
-      <categories>
-        <category>DM</category>
-      </categories>
-      <tags>
-        <tag>Intro</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>预备知识</title>
     <url>/p/5316d9ad.html</url>
     <content><![CDATA[<span id="more"></span>
@@ -492,42 +492,6 @@ alt="2.4.1 基础" />
       </tags>
   </entry>
   <entry>
-    <title>2.4.4 数据对象之间的相似度</title>
-    <url>/p/e4cb9948.html</url>
-    <content><![CDATA[<span id="more"></span>
-<figure>
-<img
-src="https://changzhi.space/uploads/DM-INTRO/2.4.4%20%E6%95%B0%E6%8D%AE%E5%AF%B9%E8%B1%A1%E4%B9%8B%E9%97%B4%E7%9A%84%E7%9B%B8%E4%BC%BC%E5%BA%A6.svg"
-alt="2.4.4 数据对象之间的相似度" />
-<figcaption aria-hidden="true">2.4.4 数据对象之间的相似度</figcaption>
-</figure>
-]]></content>
-      <categories>
-        <category>DM</category>
-      </categories>
-      <tags>
-        <tag>Intro</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>2.4.3 数据对象之间的相异度</title>
-    <url>/p/87f6d7ea.html</url>
-    <content><![CDATA[<span id="more"></span>
-<figure>
-<img
-src="https://changzhi.space/uploads/DM-INTRO/2.4.3%20%E6%95%B0%E6%8D%AE%E5%AF%B9%E8%B1%A1%E4%B9%8B%E9%97%B4%E7%9A%84%E7%9B%B8%E5%BC%82%E5%BA%A6.svg"
-alt="2.4.3 数据对象之间的相异度" />
-<figcaption aria-hidden="true">2.4.3 数据对象之间的相异度</figcaption>
-</figure>
-]]></content>
-      <categories>
-        <category>DM</category>
-      </categories>
-      <tags>
-        <tag>Intro</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>2.4.2 简单属性之间的相似度和相异度</title>
     <url>/p/5ee51da9.html</url>
     <content><![CDATA[<span id="more"></span>
@@ -547,32 +511,14 @@ alt="2.4.2 简单属性之间的相似度和相异度" />
       </tags>
   </entry>
   <entry>
-    <title>2.4.5 邻近性度量的例子</title>
-    <url>/p/d946d40b.html</url>
+    <title>2.4.3 数据对象之间的相异度</title>
+    <url>/p/87f6d7ea.html</url>
     <content><![CDATA[<span id="more"></span>
 <figure>
 <img
-src="https://changzhi.space/uploads/DM-INTRO/2.4.5%20%E9%82%BB%E8%BF%91%E6%80%A7%E5%BA%A6%E9%87%8F%E7%9A%84%E4%BE%8B%E5%AD%90.svg"
-alt="2.4.5 邻近性度量的例子" />
-<figcaption aria-hidden="true">2.4.5 邻近性度量的例子</figcaption>
-</figure>
-]]></content>
-      <categories>
-        <category>DM</category>
-      </categories>
-      <tags>
-        <tag>Intro</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>2.4.6 邻近度计算问题</title>
-    <url>/p/44ca3808.html</url>
-    <content><![CDATA[<span id="more"></span>
-<figure>
-<img
-src="https://changzhi.space/uploads/DM-INTRO/2.4.6%20%E9%82%BB%E8%BF%91%E5%BA%A6%E8%AE%A1%E7%AE%97%E9%97%AE%E9%A2%98.svg"
-alt="2.4.6 邻近度计算问题" />
-<figcaption aria-hidden="true">2.4.6 邻近度计算问题</figcaption>
+src="https://changzhi.space/uploads/DM-INTRO/2.4.3%20%E6%95%B0%E6%8D%AE%E5%AF%B9%E8%B1%A1%E4%B9%8B%E9%97%B4%E7%9A%84%E7%9B%B8%E5%BC%82%E5%BA%A6.svg"
+alt="2.4.3 数据对象之间的相异度" />
+<figcaption aria-hidden="true">2.4.3 数据对象之间的相异度</figcaption>
 </figure>
 ]]></content>
       <categories>
@@ -605,6 +551,42 @@ alt="2.4.6 邻近度计算问题" />
       </tags>
   </entry>
   <entry>
+    <title>2.4.4 数据对象之间的相似度</title>
+    <url>/p/e4cb9948.html</url>
+    <content><![CDATA[<span id="more"></span>
+<figure>
+<img
+src="https://changzhi.space/uploads/DM-INTRO/2.4.4%20%E6%95%B0%E6%8D%AE%E5%AF%B9%E8%B1%A1%E4%B9%8B%E9%97%B4%E7%9A%84%E7%9B%B8%E4%BC%BC%E5%BA%A6.svg"
+alt="2.4.4 数据对象之间的相似度" />
+<figcaption aria-hidden="true">2.4.4 数据对象之间的相似度</figcaption>
+</figure>
+]]></content>
+      <categories>
+        <category>DM</category>
+      </categories>
+      <tags>
+        <tag>Intro</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2.4.5 邻近性度量的例子</title>
+    <url>/p/d946d40b.html</url>
+    <content><![CDATA[<span id="more"></span>
+<figure>
+<img
+src="https://changzhi.space/uploads/DM-INTRO/2.4.5%20%E9%82%BB%E8%BF%91%E6%80%A7%E5%BA%A6%E9%87%8F%E7%9A%84%E4%BE%8B%E5%AD%90.svg"
+alt="2.4.5 邻近性度量的例子" />
+<figcaption aria-hidden="true">2.4.5 邻近性度量的例子</figcaption>
+</figure>
+]]></content>
+      <categories>
+        <category>DM</category>
+      </categories>
+      <tags>
+        <tag>Intro</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>2.4.7 选取正确的邻近性度量</title>
     <url>/p/503f49dc.html</url>
     <content><![CDATA[<span id="more"></span>
@@ -613,6 +595,24 @@ alt="2.4.6 邻近度计算问题" />
 src="https://changzhi.space/uploads/DM-INTRO/2.4.7%20%E9%80%89%E5%8F%96%E6%AD%A3%E7%A1%AE%E7%9A%84%E9%82%BB%E8%BF%91%E6%80%A7%E5%BA%A6%E9%87%8F.svg"
 alt="2.4.7 选取正确的邻近性度量" />
 <figcaption aria-hidden="true">2.4.7 选取正确的邻近性度量</figcaption>
+</figure>
+]]></content>
+      <categories>
+        <category>DM</category>
+      </categories>
+      <tags>
+        <tag>Intro</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2.4.6 邻近度计算问题</title>
+    <url>/p/44ca3808.html</url>
+    <content><![CDATA[<span id="more"></span>
+<figure>
+<img
+src="https://changzhi.space/uploads/DM-INTRO/2.4.6%20%E9%82%BB%E8%BF%91%E5%BA%A6%E8%AE%A1%E7%AE%97%E9%97%AE%E9%A2%98.svg"
+alt="2.4.6 邻近度计算问题" />
+<figcaption aria-hidden="true">2.4.6 邻近度计算问题</figcaption>
 </figure>
 ]]></content>
       <categories>
