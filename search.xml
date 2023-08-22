@@ -226,22 +226,6 @@ src="https://changzhi.space/uploads/DM-INTRO/4.3.7%20决策树归纳的特点.sv
       </tags>
   </entry>
   <entry>
-    <title>4.4 泛化误差估计</title>
-    <url>/p/eac065fa.html</url>
-    <content><![CDATA[<span id="more"></span>
-<p>图片可能加载缓慢<a
-href="3.5%20模型选择（4.4.4%20泛化误差估计）.svg">点击链接</a>立即查看</p>
-<p><img
-src="https://changzhi.space/uploads/DM-INTRO/3.5%20模型选择（4.4.4%20泛化误差估计）.svg" /></p>
-]]></content>
-      <categories>
-        <category>DM</category>
-      </categories>
-      <tags>
-        <tag>Intro</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>4.3 决策树归纳</title>
     <url>/p/583b295c.html</url>
     <content><![CDATA[<span id="more"></span>
@@ -262,6 +246,22 @@ src="https://changzhi.space/uploads/DM-INTRO/3.5%20模型选择（4.4.4%20泛化
 href="https://changzhi.space/uploads/DM-INTRO/3.6%20模型评估%20（4.5%20评估分类器的性能）.svg">点击链接</a>立即查看</p>
 <p><img
 src="https://changzhi.space/uploads/DM-INTRO/3.6%20模型评估%20（4.5%20评估分类器的性能）.svg" /></p>
+]]></content>
+      <categories>
+        <category>DM</category>
+      </categories>
+      <tags>
+        <tag>Intro</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>4.4 泛化误差估计</title>
+    <url>/p/eac065fa.html</url>
+    <content><![CDATA[<span id="more"></span>
+<p>图片可能加载缓慢<a
+href="3.5%20模型选择（4.4.4%20泛化误差估计）.svg">点击链接</a>立即查看</p>
+<p><img
+src="https://changzhi.space/uploads/DM-INTRO/3.5%20模型选择（4.4.4%20泛化误差估计）.svg" /></p>
 ]]></content>
       <categories>
         <category>DM</category>
@@ -400,13 +400,13 @@ src="https://changzhi.space/uploads/DM-INTRO/5.4%20人工神经网络ANN.svg" />
       </tags>
   </entry>
   <entry>
-    <title>5.6 组合方法</title>
-    <url>/p/b574c23a.html</url>
+    <title>5.5 支持向量机SVM</title>
+    <url>/p/6dcc93d0.html</url>
     <content><![CDATA[<span id="more"></span>
 <p>图片可能加载缓慢<a
-href="https://changzhi.space/uploads/DM-INTRO/5.6%20组合方法.svg">点击链接</a>立即查看</p>
+href="https://changzhi.space/uploads/DM-INTRO/5.5%20支持向量机SVM.svg">点击链接</a>立即查看</p>
 <p><img
-src="https://changzhi.space/uploads/DM-INTRO/5.6%20组合方法.svg" /></p>
+src="https://changzhi.space/uploads/DM-INTRO/5.5%20支持向量机SVM.svg" /></p>
 ]]></content>
       <categories>
         <category>DM</category>
@@ -416,13 +416,13 @@ src="https://changzhi.space/uploads/DM-INTRO/5.6%20组合方法.svg" /></p>
       </tags>
   </entry>
   <entry>
-    <title>5.5 支持向量机SVM</title>
-    <url>/p/6dcc93d0.html</url>
+    <title>5.6 组合方法</title>
+    <url>/p/b574c23a.html</url>
     <content><![CDATA[<span id="more"></span>
 <p>图片可能加载缓慢<a
-href="https://changzhi.space/uploads/DM-INTRO/5.5%20支持向量机SVM.svg">点击链接</a>立即查看</p>
+href="https://changzhi.space/uploads/DM-INTRO/5.6%20组合方法.svg">点击链接</a>立即查看</p>
 <p><img
-src="https://changzhi.space/uploads/DM-INTRO/5.5%20支持向量机SVM.svg" /></p>
+src="https://changzhi.space/uploads/DM-INTRO/5.6%20组合方法.svg" /></p>
 ]]></content>
       <categories>
         <category>DM</category>
@@ -452,6 +452,90 @@ src="https://changzhi.space/uploads/DM-INTRO/4.1%20预备知识.svg" /></p>
 <p><img src="https://changzhi.space/uploads/DM-INTRO/4.2 解决分类问题的一般方法.svg" /></p>
 <p>图片可能加载缓慢<a
 href="https://changzhi.space/uploads/DM-INTRO/4.1%20预备知识.svg">点击链接</a>立即查看</p>
+]]></content>
+      <categories>
+        <category>DM</category>
+      </categories>
+      <tags>
+        <tag>Intro</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2.3 数据预处理</title>
+    <url>/p/9cbeb245.html</url>
+    <content><![CDATA[<p>数据预处理策略和技术常见的有以下几种：</p>
+<ul>
+<li>聚集 Aggregation</li>
+<li>抽样 Sampling</li>
+<li>维规约 Dimensionality reduction</li>
+<li>特征子集选择 Feature subset selection</li>
+<li>特征创建 Feature creation</li>
+<li>离散化和二元化 Discretization and binarization</li>
+<li>变量转换 Variable transformation</li>
+</ul>
+<p>总之，以上技术可以归为两类：选择分析所需要的数据对象和属性以及创造/改变属性。其目标是降低数据挖掘分析的时间，花销和提高质量。后述的特征（feature）和变量（variable）都是指属性（attribute）。</p>
+]]></content>
+      <categories>
+        <category>DM</category>
+      </categories>
+      <tags>
+        <tag>Intro</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2.3.1 聚集</title>
+    <url>/p/8c315fb6.html</url>
+    <content><![CDATA[<h1 id="聚集">2.3.1 聚集</h1>
+<p>聚集（Aggregation）就是将两个或多个对象合并成单个对象。例如一个记录了不同地区的各个商店每日的交易信息，如图2.4，可以将其按照地区进行聚集。这样可以减少每日每个商店的单个交易记录。</p>
+<img src="/p/8c315fb6/image-20210514091622077.png" class="" title="image-20210514091622077">
+<p>聚集时的一些属性值需要改变。定量（Quantitative）的一些属性，例如价格可以是求总和或者平均值进行聚集。定性的属性（qualitative），例如商品名称可以忽略或汇总为一个大类，比如电视机归为家电类。</p>
+<p>表2.4也可以看做是一个多维数组，每一个属性都是一个维。从这方面来看，聚集是一个删除属性的过程，或者是压缩特定属性不同值个数的过程。例如物品名称归为大类，时间记录从每天归为每月。这用聚集方法通常用于联机分析处理（Online
+Analytical Processing，OLAP）技术。</p>
+<p>以下为使用聚集的动机。</p>
+<ol type="1">
+<li>数据规约导致的较小数据集可以减少内存和处理时间等的花销。也因此一些开销较大的算法的使用也成为了可能。</li>
+<li>通过高层而不是底层数据视图，聚集起了范围或标度转换的作用。上面例子中的将每个商店位置聚集为地区，将每日数据归为每月，将商品归为大类等操作。</li>
+<li>对象或属性群的行为通常比单个对象或属性的行为更加稳定。这反映了统计学的事实：相对于被聚集的单个对象，诸如平均值、总数等聚集量具有较小的变异性。对于总数，实际变差大于单个对象的（平均）变差，但是变差的百分比较小；对于均值，实际变差小于单个对象的（平均）变差。</li>
+</ol>
+<p>聚合的缺点就是可能会丢失一些有用的细节。上例中，将每日数据聚合为每月，将无法估计每周哪天的销量最好。</p>
+]]></content>
+      <categories>
+        <category>DM</category>
+      </categories>
+      <tags>
+        <tag>Intro</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2.3.2  抽样</title>
+    <url>/p/cd7f4bdf.html</url>
+    <content><![CDATA[<h1 id="抽样">抽样</h1>
+<p>抽样是一种选择数据对象子集进行分析的常用方法。在数据挖掘中，抽样的目的是减小计算的成本（内存，时间等处理因素），在某些情况下使用抽样的算法可以压缩数据量，以便使用更好但开销较大的数据挖掘算法。</p>
+<p>有效抽样的主要原理如下：</p>
+<ul>
+<li>如果样本是由代表性的，则使用样本与使用整个数据集的效果几乎一样</li>
+<li>代表性的样本和原始数据集有相同的性质。如果数据对象的均值（平均值）是感兴趣的性质，而样本具有近似于原数据集的均值，则样本就是有代表性的。</li>
+</ul>
+<p>由于抽样是一个统计过程，特定样本的代表性是变化的，因此我们所能做的最好的抽样方案就是选择一个确保以很高的概率得到有代表性的样本。</p>
+<p>下面将介绍如何选择恰当的样本。</p>
+<h2 id="抽样方法">抽样方法</h2>
+<h3 id="简单随机抽样">简单随机抽样</h3>
+<p>简单随机抽样（simple random
+sampling）：从总体N个单位中任意抽取n个单位作为样本，每个样本被抽中的概率相等。</p>
+<ul>
+<li>无放回抽样（sampling with
+replacement）：每个选中项立即从构成总体的所有对象集中删除</li>
+<li>有会抽样 （sampling without
+replacement）：对象被选中时不从总体中删除。在抽样过程中，每个对象被选中的概率保持不变。</li>
+</ul>
+<h3 id="分层抽样">分层抽样</h3>
+<p>当总体由不同类型的对象组成，每种类型的对象数量差别很大时，简单随机抽样不能充分地代表不太频繁出现的对象类型。当分析需要所有类型的代表时，这可能出现问题。因此需要提供具有不同频率的感兴趣的项的抽样方案。</p>
+<p>分层抽样（stratified
+sampling）：从预先指定的组开始抽样。有两种形式：（1）尽管每组的大小不同，但是从每组抽取的对象的个数相同。（2）从每组抽取的对象数量正比于该组的大小。</p>
+<h2 id="渐进抽样">渐进抽样</h2>
+<p>合适的样本容量可能很难确定，因此有时需要使用自适应（adaptive）或渐进抽样（progressive
+sampling）方法。这些方法从一个小样本开始，然后增加样本容量直至得到足够容量的样本，尽管这种技术不需要在开始就确定正确的样本容量，但是需要评估样本的方法，确定它是否足够大。</p>
+<p>例如，假定使用渐进抽样来学习一个预测模型。尽管预测模型的准确率随时间样本容量增加，</p>
 ]]></content>
       <categories>
         <category>DM</category>
@@ -529,28 +613,6 @@ alt="2.4.3 数据对象之间的相异度" />
       </tags>
   </entry>
   <entry>
-    <title>2.3 数据预处理</title>
-    <url>/p/9cbeb245.html</url>
-    <content><![CDATA[<p>数据预处理策略和技术常见的有以下几种：</p>
-<ul>
-<li>聚集 Aggregation</li>
-<li>抽样 Sampling</li>
-<li>维规约 Dimensionality reduction</li>
-<li>特征子集选择 Feature subset selection</li>
-<li>特征创建 Feature creation</li>
-<li>离散化和二元化 Discretization and binarization</li>
-<li>变量转换 Variable transformation</li>
-</ul>
-<p>总之，以上技术可以归为两类：选择分析所需要的数据对象和属性以及创造/改变属性。其目标是降低数据挖掘分析的时间，花销和提高质量。后述的特征（feature）和变量（variable）都是指属性（attribute）。</p>
-]]></content>
-      <categories>
-        <category>DM</category>
-      </categories>
-      <tags>
-        <tag>Intro</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>2.4.4 数据对象之间的相似度</title>
     <url>/p/e4cb9948.html</url>
     <content><![CDATA[<span id="more"></span>
@@ -587,24 +649,6 @@ alt="2.4.5 邻近性度量的例子" />
       </tags>
   </entry>
   <entry>
-    <title>2.4.7 选取正确的邻近性度量</title>
-    <url>/p/503f49dc.html</url>
-    <content><![CDATA[<span id="more"></span>
-<figure>
-<img
-src="https://changzhi.space/uploads/DM-INTRO/2.4.7%20%E9%80%89%E5%8F%96%E6%AD%A3%E7%A1%AE%E7%9A%84%E9%82%BB%E8%BF%91%E6%80%A7%E5%BA%A6%E9%87%8F.svg"
-alt="2.4.7 选取正确的邻近性度量" />
-<figcaption aria-hidden="true">2.4.7 选取正确的邻近性度量</figcaption>
-</figure>
-]]></content>
-      <categories>
-        <category>DM</category>
-      </categories>
-      <tags>
-        <tag>Intro</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>2.4.6 邻近度计算问题</title>
     <url>/p/44ca3808.html</url>
     <content><![CDATA[<span id="more"></span>
@@ -623,59 +667,15 @@ alt="2.4.6 邻近度计算问题" />
       </tags>
   </entry>
   <entry>
-    <title>2.3.1 聚集</title>
-    <url>/p/8c315fb6.html</url>
-    <content><![CDATA[<h1 id="聚集">2.3.1 聚集</h1>
-<p>聚集（Aggregation）就是将两个或多个对象合并成单个对象。例如一个记录了不同地区的各个商店每日的交易信息，如图2.4，可以将其按照地区进行聚集。这样可以减少每日每个商店的单个交易记录。</p>
-<img src="/p/8c315fb6/image-20210514091622077.png" class="" title="image-20210514091622077">
-<p>聚集时的一些属性值需要改变。定量（Quantitative）的一些属性，例如价格可以是求总和或者平均值进行聚集。定性的属性（qualitative），例如商品名称可以忽略或汇总为一个大类，比如电视机归为家电类。</p>
-<p>表2.4也可以看做是一个多维数组，每一个属性都是一个维。从这方面来看，聚集是一个删除属性的过程，或者是压缩特定属性不同值个数的过程。例如物品名称归为大类，时间记录从每天归为每月。这用聚集方法通常用于联机分析处理（Online
-Analytical Processing，OLAP）技术。</p>
-<p>以下为使用聚集的动机。</p>
-<ol type="1">
-<li>数据规约导致的较小数据集可以减少内存和处理时间等的花销。也因此一些开销较大的算法的使用也成为了可能。</li>
-<li>通过高层而不是底层数据视图，聚集起了范围或标度转换的作用。上面例子中的将每个商店位置聚集为地区，将每日数据归为每月，将商品归为大类等操作。</li>
-<li>对象或属性群的行为通常比单个对象或属性的行为更加稳定。这反映了统计学的事实：相对于被聚集的单个对象，诸如平均值、总数等聚集量具有较小的变异性。对于总数，实际变差大于单个对象的（平均）变差，但是变差的百分比较小；对于均值，实际变差小于单个对象的（平均）变差。</li>
-</ol>
-<p>聚合的缺点就是可能会丢失一些有用的细节。上例中，将每日数据聚合为每月，将无法估计每周哪天的销量最好。</p>
-]]></content>
-      <categories>
-        <category>DM</category>
-      </categories>
-      <tags>
-        <tag>Intro</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>2.3.2  抽样</title>
-    <url>/p/cd7f4bdf.html</url>
-    <content><![CDATA[<h1 id="抽样">抽样</h1>
-<p>抽样是一种选择数据对象子集进行分析的常用方法。在数据挖掘中，抽样的目的是减小计算的成本（内存，时间等处理因素），在某些情况下使用抽样的算法可以压缩数据量，以便使用更好但开销较大的数据挖掘算法。</p>
-<p>有效抽样的主要原理如下：</p>
-<ul>
-<li>如果样本是由代表性的，则使用样本与使用整个数据集的效果几乎一样</li>
-<li>代表性的样本和原始数据集有相同的性质。如果数据对象的均值（平均值）是感兴趣的性质，而样本具有近似于原数据集的均值，则样本就是有代表性的。</li>
-</ul>
-<p>由于抽样是一个统计过程，特定样本的代表性是变化的，因此我们所能做的最好的抽样方案就是选择一个确保以很高的概率得到有代表性的样本。</p>
-<p>下面将介绍如何选择恰当的样本。</p>
-<h2 id="抽样方法">抽样方法</h2>
-<h3 id="简单随机抽样">简单随机抽样</h3>
-<p>简单随机抽样（simple random
-sampling）：从总体N个单位中任意抽取n个单位作为样本，每个样本被抽中的概率相等。</p>
-<ul>
-<li>无放回抽样（sampling with
-replacement）：每个选中项立即从构成总体的所有对象集中删除</li>
-<li>有会抽样 （sampling without
-replacement）：对象被选中时不从总体中删除。在抽样过程中，每个对象被选中的概率保持不变。</li>
-</ul>
-<h3 id="分层抽样">分层抽样</h3>
-<p>当总体由不同类型的对象组成，每种类型的对象数量差别很大时，简单随机抽样不能充分地代表不太频繁出现的对象类型。当分析需要所有类型的代表时，这可能出现问题。因此需要提供具有不同频率的感兴趣的项的抽样方案。</p>
-<p>分层抽样（stratified
-sampling）：从预先指定的组开始抽样。有两种形式：（1）尽管每组的大小不同，但是从每组抽取的对象的个数相同。（2）从每组抽取的对象数量正比于该组的大小。</p>
-<h2 id="渐进抽样">渐进抽样</h2>
-<p>合适的样本容量可能很难确定，因此有时需要使用自适应（adaptive）或渐进抽样（progressive
-sampling）方法。这些方法从一个小样本开始，然后增加样本容量直至得到足够容量的样本，尽管这种技术不需要在开始就确定正确的样本容量，但是需要评估样本的方法，确定它是否足够大。</p>
-<p>例如，假定使用渐进抽样来学习一个预测模型。尽管预测模型的准确率随时间样本容量增加，</p>
+    <title>2.4.7 选取正确的邻近性度量</title>
+    <url>/p/503f49dc.html</url>
+    <content><![CDATA[<span id="more"></span>
+<figure>
+<img
+src="https://changzhi.space/uploads/DM-INTRO/2.4.7%20%E9%80%89%E5%8F%96%E6%AD%A3%E7%A1%AE%E7%9A%84%E9%82%BB%E8%BF%91%E6%80%A7%E5%BA%A6%E9%87%8F.svg"
+alt="2.4.7 选取正确的邻近性度量" />
+<figcaption aria-hidden="true">2.4.7 选取正确的邻近性度量</figcaption>
+</figure>
 ]]></content>
       <categories>
         <category>DM</category>
