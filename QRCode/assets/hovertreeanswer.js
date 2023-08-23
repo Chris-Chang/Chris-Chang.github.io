@@ -47,6 +47,8 @@ $.fn.answerSheet = function (options) {
             $('.card_bottom').find('.prev').click(function () {
                 var _idx = $(this).parents(_cont).index(),
                 _cardcont = $(this).parents(_cont);
+                console.log("_idx:", _idx);
+                console.log("_cardcont", _cardcont);
                 obj.eq(_idx + 2).removeClass('card3').removeClass('cardn');
                 obj.eq(_idx + 1).removeClass('card2').removeClass('cardn').addClass('card3');
                 obj.eq(_idx).removeClass('card1').removeClass('cardn').addClass('card2');

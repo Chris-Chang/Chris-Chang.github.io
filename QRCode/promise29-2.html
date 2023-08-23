@@ -1,0 +1,1455 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Promise-29评估计算系统</title>
+  <style>
+
+    :root {
+    --theme-light--color-bg: #f9fafa;
+    --theme-light--color-font: #42494f;
+    --theme-light--color-border: rgba(0, 0, 0, .08627);
+    --theme-light--color-primary: #6bbaf0;
+    --theme-light--color-line-primary: #fff;
+
+    --input-color: #fff;
+    --input-color: var(--theme-light--color-default);
+    --input-color--bg: #f9fafa;
+    --input-color--bg: var(--theme-light--color-bg);
+    --input-color--font: #42494f;
+    --input-color--font: var(--theme-light--color-font);
+    --input-color--border: rgba(0, 0, 0, .08627);
+    --input-color--border: var(--theme-light--color-border);
+    --input-size--large: 13px;
+    --input-size--default: 28px;
+    --input-size--small: 9px;
+    --input-size--xsmall: 8px;
+    --input-size: 11px;
+    --input-size: var(--input-size--default)
+}
+.theme-light {
+    --input-color: #fff;
+    --input-color: var(--theme-light--color-default);
+    --input-color--line: #42494f;
+    --input-color--line: var(--theme-light--color-line-default);
+    --input-color--default: #fff;
+    --input-color--default: var(--theme-light--color-default);
+    --input-color--bg: #f9fafa;
+    --input-color--bg: var(--theme-light--color-bg);
+    --input-color--font: #42494f;
+    --input-color--font: var(--theme-light--color-font);
+    --input-color--border: rgba(0, 0, 0, .08627);
+    --input-color--border: var(--theme-light--color-border)
+}
+.theme-light .input--primary {
+    --input-color: #6bbaf0;
+    --input-color: var(--theme-light--color-primary);
+    --input-color--line: #fff;
+    --input-color--line: var(--theme-light--color-line-primary)
+}
+
+
+.input {
+    display: inline;
+    font-size: 11px;
+    font-size: var(--input-size--default);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    color: #42494f;
+    color: var(--input-color--font);
+    --input-size: 11px;
+    --input-size: var(--input-size--default)
+}
+.input.input--large {
+    --input-size: 13px;
+    --input-size: var(--input-size--large)
+}
+.input.input--small {
+    --input-size: 9px;
+    --input-size: var(--input-size--small)
+}
+.input.input--xsmall {
+    --input-size: 8px;
+    --input-size: var(--input-size--xsmall)
+}
+.input label {
+    text-align: left
+}
+.input__box {
+    display: inline-block;
+    width: 11px;
+    width: var(--input-size);
+    height: 11px;
+    height: var(--input-size);
+    margin-right: 7px;
+    margin-right: calc(18px - var(--input-size));
+    background-color: var(--input-color--default);
+    border-color: rgba(0, 0, 0, .08627);
+    border: 1px solid var(--input-color--border);
+    vertical-align: -2.75px;
+    vertical-align: calc((var(--input-size--default) - var(--input-size)) / 2 - var(--input-size--default) / 4);
+    -webkit-transition: background-color .1s ease;
+    transition: background-color .1s ease;
+    -webkit-transition-delay: .05s;
+    transition-delay: .05s
+}
+@-webkit-keyframes wobble {
+    0% {
+        -webkit-transform: scale(1) rotate(0deg);
+        transform: scale(1) rotate(0deg)
+    }
+    40% {
+        -webkit-transform: scale(1.1, .9) rotate(5deg);
+        transform: scale(1.1, .9) rotate(5deg)
+    }
+    70% {
+        -webkit-transform: scale(.9, 1.1) rotate(-3deg);
+        transform: scale(.9, 1.1) rotate(-3deg)
+    }
+    80% {
+        -webkit-transform: scale(1.05, .95) rotate(1deg);
+        transform: scale(1.05, .95) rotate(1deg)
+    }
+    to {
+        -webkit-transform: scale(1) rotate(0deg);
+        transform: scale(1) rotate(0deg)
+    }
+}
+@keyframes wobble {
+    0% {
+        -webkit-transform: scale(1) rotate(0deg);
+        transform: scale(1) rotate(0deg)
+    }
+    40% {
+        -webkit-transform: scale(1.1, .9) rotate(5deg);
+        transform: scale(1.1, .9) rotate(5deg)
+    }
+    70% {
+        -webkit-transform: scale(.9, 1.1) rotate(-3deg);
+        transform: scale(.9, 1.1) rotate(-3deg)
+    }
+    80% {
+        -webkit-transform: scale(1.05, .95) rotate(1deg);
+        transform: scale(1.05, .95) rotate(1deg)
+    }
+    to {
+        -webkit-transform: scale(1) rotate(0deg);
+        transform: scale(1) rotate(0deg)
+    }
+}
+.preload * {
+    -webkit-animation-duration: 0s !important;
+    animation-duration: 0s !important
+}
+.input--radio {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+.input--radio input {
+    display: none
+}
+.input--radio .input__box {
+    border-radius: 11px;
+    border-radius: var(--input-size);
+    opacity: .9;
+    position: relative;
+    overflow: hidden
+}
+.input--radio .input__box:after,
+.input--radio .input__box:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transform-origin: 38% 38%;
+    transform-origin: 38% 38%;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    width: 11px;
+    width: var(--input-size);
+    height: 11px;
+    height: var(--input-size);
+    border: 1px solid transparent;
+    border-radius: 11px;
+    border-radius: var(--input-size);
+    -webkit-transition: transform .2s ease;
+    transition: transform .2s ease
+}
+.input--radio .input__box:before {
+    -webkit-transition-delay: .2s;
+    transition-delay: .2s;
+    background-color: #fff;
+    background-color: var(--input-color)
+}
+.input--radio .input__box:after {
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+    background-color: var(--input-color--line)
+}
+.input--radio label {
+    cursor: pointer
+}
+.input--radio label:hover .input__box {
+    opacity: 1
+}
+.input--radio input:checked+.input__box {
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+    -webkit-animation-name: wobble;
+    animation-name: wobble;
+    -webkit-animation-duration: .3s;
+    animation-duration: .3s;
+    -webkit-animation-timing-function: ease;
+    animation-timing-function: ease
+}
+.input--radio input:checked+.input__box:before {
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1)
+}
+.input--radio input:checked+.input__box:after {
+    -webkit-transition-delay: .2s;
+    transition-delay: .2s;
+    -webkit-transform: scale(.33);
+    transform: scale(.33)
+}
+.input--radio input:disabled+.input__box,
+.input--radio input:disabled+.input__box+span {
+    opacity: .5
+}
+body,
+html {
+    padding: 10, 10;
+    margin: 0 0;
+    font-size: 28px;
+}
+article {
+    font-family: Gotham Rounded SSm A, Gotham Rounded SSm B, Gotham Rounded A, Gotham Rounded B, proxima-nova-soft, Verdana, Geneva, sans-serif;
+    color: #42494f;
+    color: var(--input-color--font);
+    background: #f9fafa;
+    background: var(--input-color--bg);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+    float: left;
+    text-align: left;
+    
+}
+article p {
+    margin-top: 32px;
+    margin-top: 2rem
+}
+article span {
+    display: inline-block;
+    width: 150px
+}
+article .row {
+    margin: 15px 10px
+}
+
+.button-3d-1{
+    width: 100px;
+    margin:100px auto;
+    padding:10px 10px;
+    border-radius: 5px;
+    background: #6bbaf0;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+.button-3d-1:active{
+    background: gray;
+}
+
+
+
+
+  </style>
+  <script src='./assets/jquery-3.6.0.min.js'></script>
+  <script language="javascript">
+    // function zzjCallOneUrl(us) {
+    //   document.getElementById("zzj_fun_426s").src = us;
+    // }
+    // var timeID = 0;
+    // var tt1 = 600;
+    // tt2 = 0;
+    // tt3 = 0;
+    // var timeID = setInterval("hnceTimer()", 1000);
+    // function hnceTimer() {
+    //   tt1--;
+    //   if (tt1 >= 0) {
+    //     if ((tt1 % 2) == 1) {
+    //       document.getElementById('bian92a').style.backgroundColor = "#bfffc8";
+    //       document.getElementById('bian92b1').style.backgroundColor = "#bfffc8";
+    //       document.getElementById('bian92b2').style.backgroundColor = "#bfffc8";
+    //       document.getElementById('bian92c').style.backgroundColor = "#bfffc8";
+    //     } else {
+    //       document.getElementById('bian92a').style.backgroundColor = "#090";
+    //       document.getElementById('bian92b1').style.backgroundColor = "#090";
+    //       document.getElementById('bian92b2').style.backgroundColor = "#090";
+    //       document.getElementById('bian92c').style.backgroundColor = "#090";
+    //     }
+    //     tt2 = tt1 % 60;
+    //     tt3 = (tt1 - tt2) / 60;
+    //     document.getElementById("tim317").innerHTML = tt3 + "分" + tt2 + "秒";
+    //   } else { document.getElementById("tim317").innerHTML = "已作废"; }
+    // }
+    const $inputs = document.getElementsByClassName('input');
+    for (let inputIndex = $inputs.length - 1; inputIndex >= 0; inputIndex--) {
+        const $input = $inputs[inputIndex];
+        // ...
+    }
+    const $radiobuttons = document.getElementsByClassName('input--radio');
+    for (let radioIndex = $radiobuttons.length - 1; radioIndex >= 0; radioIndex--) {
+        const $radio = $radiobuttons[radioIndex];
+        // ...
+    }
+    setTimeout(() => {
+        const $preloadElements = document.getElementsByClassName('preload');
+        for (let preloadIndex = $preloadElements.length - 1; preloadIndex >= 0; preloadIndex--) {
+            const $preload = $preloadElements[preloadIndex];
+            $preload.classList.remove('preload');
+        }
+    }, 500);
+  </script>
+</head>
+
+<body>
+<article class="theme-light preload">
+    <div class="center">
+        <div class="row">
+            <h1>Promise-29评估计算系统</h1>
+        </div>
+
+        <div class="row">
+            <hr/>
+            <h3>身体功能 - physical</h3>
+            <p>1.您能够做打扫卫生或整理屋子之类的家务吗?</p>
+            <div class="input input--radio input--primary">
+                <label>
+                    <input type="radio" name="physical1" value="5" >
+                    <span class="input__box"></span>
+                    <span>没有困难</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="physical1" value="4">
+                    <span class="input__box"></span>
+                    <span>有少许困难 </span>
+                </label>
+
+                <label>
+                    <input type="radio" name="physical1" value="3">
+                    <span class="input__box"></span>
+                    <span>有一些困难</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="physical1" value="2">
+                    <span class="input__box"></span>
+                    <span>非常困难</span>
+                </label>
+                <label>
+                    <input type="radio" name="physical1" value="1">
+                    <span class="input__box"></span>
+                    <span>无法做到</span>
+                </label>
+            </div>
+        </div>
+
+        <div class="row">
+            <p>2.您能够用正常速度上下楼梯吗？</p>
+            <div class="input input--radio input--primary">
+                <label>
+                    <input type="radio" name="physical2" value="5" >
+                    <span class="input__box"></span>
+                    <span>没有困难</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="physical2" value="4">
+                    <span class="input__box"></span>
+                    <span>有少许困难 </span>
+                </label>
+
+                <label>
+                    <input type="radio" name="physical2" value="3">
+                    <span class="input__box"></span>
+                    <span>有一些困难</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="physical2" value="2">
+                    <span class="input__box"></span>
+                    <span>非常困难</span>
+                </label>
+                <label>
+                    <input type="radio" name="physical2" value="1">
+                    <span class="input__box"></span>
+                    <span>无法做到</span>
+                </label>
+            </div>
+        </div>
+
+        <div class="row">
+            <p>3.您能够散步15分钟以上吗？</p>
+            <div class="input input--radio input--primary">
+                <label>
+                    <input type="radio" name="physical3" value="5" >
+                    <span class="input__box"></span>
+                    <span>没有困难</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="physical3" value="4">
+                    <span class="input__box"></span>
+                    <span>有少许困难 </span>
+                </label>
+
+                <label>
+                    <input type="radio" name="physical3" value="3">
+                    <span class="input__box"></span>
+                    <span>有一些困难</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="physical3" value="2">
+                    <span class="input__box"></span>
+                    <span>非常困难</span>
+                </label>
+                <label>
+                    <input type="radio" name="physical3" value="1">
+                    <span class="input__box"></span>
+                    <span>无法做到</span>
+                </label>
+            </div>
+        </div>
+
+        <div class="row">
+            <p>4.您能去附近办事或买东西吗？</p>
+            <div class="input input--radio input--primary">
+                <label>
+                    <input type="radio" name="physical4" value="5" >
+                    <span class="input__box"></span>
+                    <span>没有困难</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="physical4" value="4">
+                    <span class="input__box"></span>
+                    <span>有少许困难 </span>
+                </label>
+
+                <label>
+                    <input type="radio" name="physical4" value="3">
+                    <span class="input__box"></span>
+                    <span>有一些困难</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="physical4" value="2">
+                    <span class="input__box"></span>
+                    <span>非常困难</span>
+                </label>
+                <label>
+                    <input type="radio" name="physical4" value="1">
+                    <span class="input__box"></span>
+                    <span>无法做到</span>
+                </label>
+            </div>
+        </div>
+
+        <div class="row">
+            <hr/>
+            <h3>焦虑 - anxiety</h3>
+            <p>5.我感到害怕</p>
+            <div class="input input--radio input--primary">
+                <label>
+                    <input type="radio" name="anxiety1" value="1" >
+                    <span class="input__box"></span>
+                    <span>从来没有</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="anxiety1" value="2">
+                    <span class="input__box"></span>
+                    <span>很少 </span>
+                </label>
+
+                <label>
+                    <input type="radio" name="anxiety1" value="3">
+                    <span class="input__box"></span>
+                    <span>有时候</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="anxiety1" value="4">
+                    <span class="input__box"></span>
+                    <span>常常</span>
+                </label>
+                <label>
+                    <input type="radio" name="anxiety1" value="5">
+                    <span class="input__box"></span>
+                    <span>总是</span>
+                </label>
+            </div>
+        </div>
+
+        <div class="row">
+            <p>6.焦虑让我很难专心做事</p>
+            <div class="input input--radio input--primary">
+                <label>
+                    <input type="radio" name="anxiety2" value="1" >
+                    <span class="input__box"></span>
+                    <span>从来没有</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="anxiety2" value="2">
+                    <span class="input__box"></span>
+                    <span>很少 </span>
+                </label>
+
+                <label>
+                    <input type="radio" name="anxiety2" value="3">
+                    <span class="input__box"></span>
+                    <span>有时候</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="anxiety2" value="4">
+                    <span class="input__box"></span>
+                    <span>常常</span>
+                </label>
+                <label>
+                    <input type="radio" name="anxiety2" value="5">
+                    <span class="input__box"></span>
+                    <span>总是</span>
+                </label>
+            </div>
+        </div>
+
+        <div class="row">
+            <p>7.忧虑让我难以承受</p>
+            <div class="input input--radio input--primary">
+                <label>
+                    <input type="radio" name="anxiety3" value="1" >
+                    <span class="input__box"></span>
+                    <span>从来没有</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="anxiety3" value="2">
+                    <span class="input__box"></span>
+                    <span>很少 </span>
+                </label>
+
+                <label>
+                    <input type="radio" name="anxiety3" value="3">
+                    <span class="input__box"></span>
+                    <span>有时候</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="anxiety3" value="4">
+                    <span class="input__box"></span>
+                    <span>常常</span>
+                </label>
+                <label>
+                    <input type="radio" name="anxiety3" value="5">
+                    <span class="input__box"></span>
+                    <span>总是</span>
+                </label>
+            </div>
+        </div>
+
+        <div class="row">
+            <p>8.我感到不安</p>
+            <div class="input input--radio input--primary">
+                <label>
+                    <input type="radio" name="anxiety4" value="1" >
+                    <span class="input__box"></span>
+                    <span>从来没有</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="anxiety4" value="2">
+                    <span class="input__box"></span>
+                    <span>很少 </span>
+                </label>
+
+                <label>
+                    <input type="radio" name="anxiety4" value="3">
+                    <span class="input__box"></span>
+                    <span>有时候</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="anxiety4" value="4">
+                    <span class="input__box"></span>
+                    <span>常常</span>
+                </label>
+                <label>
+                    <input type="radio" name="anxiety4" value="5">
+                    <span class="input__box"></span>
+                    <span>总是</span>
+                </label>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <hr/>
+<h3>抑郁-depression 以下问题请根据您最近一周的情况回答。</h3>
+
+            <p>9.我觉得自己没有用</p>
+            <div class="input input--radio input--primary">
+                <label>
+                    <input type="radio" name="depression1" value="1" >
+                    <span class="input__box"></span>
+                    <span>从来没有</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="depression1" value="2">
+                    <span class="input__box"></span>
+                    <span>很少 </span>
+                </label>
+
+                <label>
+                    <input type="radio" name="depression1" value="3">
+                    <span class="input__box"></span>
+                    <span>有时候</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="depression1" value="4">
+                    <span class="input__box"></span>
+                    <span>常常</span>
+                </label>
+                <label>
+                    <input type="radio" name="depression1" value="5">
+                    <span class="input__box"></span>
+                    <span>总是</span>
+                </label>
+            </div>
+        </div>
+
+        <div class="row">
+            <p>10.在过去七天内，我感到无助</p>
+            <div class="input input--radio input--primary">
+                <label>
+                    <input type="radio" name="depression2" value="1" >
+                    <span class="input__box"></span>
+                    <span>从来没有</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="depression2" value="2">
+                    <span class="input__box"></span>
+                    <span>很少 </span>
+                </label>
+
+                <label>
+                    <input type="radio" name="depression2" value="3">
+                    <span class="input__box"></span>
+                    <span>有时候</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="depression2" value="4">
+                    <span class="input__box"></span>
+                    <span>常常</span>
+                </label>
+                <label>
+                    <input type="radio" name="depression2" value="5">
+                    <span class="input__box"></span>
+                    <span>总是</span>
+                </label>
+            </div>
+        </div>
+
+        <div class="row">
+            <p>11.在过去七天内， 我感到心情低沉、沮丧。</p>
+            <div class="input input--radio input--primary">
+                <label>
+                    <input type="radio" name="depression3" value="1" >
+                    <span class="input__box"></span>
+                    <span>从来没有</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="depression3" value="2">
+                    <span class="input__box"></span>
+                    <span>很少 </span>
+                </label>
+
+                <label>
+                    <input type="radio" name="depression3" value="3">
+                    <span class="input__box"></span>
+                    <span>有时候</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="depression3" value="4">
+                    <span class="input__box"></span>
+                    <span>常常</span>
+                </label>
+                <label>
+                    <input type="radio" name="depression3" value="5">
+                    <span class="input__box"></span>
+                    <span>总是</span>
+                </label>
+            </div>
+        </div>
+
+        <div class="row">
+            <p>12.在过去七天内，我感到绝望</p>
+            <div class="input input--radio input--primary">
+                <label>
+                    <input type="radio" name="depression4" value="1" >
+                    <span class="input__box"></span>
+                    <span>从来没有</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="depression4" value="2">
+                    <span class="input__box"></span>
+                    <span>很少 </span>
+                </label>
+
+                <label>
+                    <input type="radio" name="depression4" value="3">
+                    <span class="input__box"></span>
+                    <span>有时候</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="depression4" value="4">
+                    <span class="input__box"></span>
+                    <span>常常</span>
+                </label>
+                <label>
+                    <input type="radio" name="depression4" value="5">
+                    <span class="input__box"></span>
+                    <span>总是</span>
+                </label>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <hr/>
+            <h3>疲劳-fatigue 以下问题请根据您最近一周的情况回答。</h3>
+            <p>13.我觉得疲乏</p>
+            <div class="input input--radio input--primary">
+                <label>
+                    <input type="radio" name="fatigue1" value="1" >
+                    <span class="input__box"></span>
+                    <span>一点也不</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="fatigue1" value="2">
+                    <span class="input__box"></span>
+                    <span>有一点 </span>
+                </label>
+
+                <label>
+                    <input type="radio" name="fatigue1" value="3">
+                    <span class="input__box"></span>
+                    <span>有些</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="fatigue1" value="4">
+                    <span class="input__box"></span>
+                    <span>相当</span>
+                </label>
+                <label>
+                    <input type="radio" name="fatigue1" value="5">
+                    <span class="input__box"></span>
+                    <span>非常</span>
+                </label>
+            </div>
+        </div>
+
+        <div class="row">
+            <p>14.疲乏让我很难开始做事情</p>
+            <div class="input input--radio input--primary">
+                <label>
+                    <input type="radio" name="fatigue2" value="1" >
+                    <span class="input__box"></span>
+                    <span>一点也不</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="fatigue2" value="2">
+                    <span class="input__box"></span>
+                    <span>有一点 </span>
+                </label>
+
+                <label>
+                    <input type="radio" name="fatigue2" value="3">
+                    <span class="input__box"></span>
+                    <span>有些</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="fatigue2" value="4">
+                    <span class="input__box"></span>
+                    <span>相当</span>
+                </label>
+                <label>
+                    <input type="radio" name="fatigue2" value="5">
+                    <span class="input__box"></span>
+                    <span>非常</span>
+                </label>
+            </div>
+        </div>
+        <div class="row">
+            <p>15. 一般来说，您觉得精气神不足的程度有多少？</p>
+            <div class="input input--radio input--primary">
+                <label>
+                    <input type="radio" name="fatigue3" value="1" >
+                    <span class="input__box"></span>
+                    <span>一点也不</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="fatigue3" value="2">
+                    <span class="input__box"></span>
+                    <span>有一点 </span>
+                </label>
+
+                <label>
+                    <input type="radio" name="fatigue3" value="3">
+                    <span class="input__box"></span>
+                    <span>有些</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="fatigue3" value="4">
+                    <span class="input__box"></span>
+                    <span>相当</span>
+                </label>
+                <label>
+                    <input type="radio" name="fatigue3" value="5">
+                    <span class="input__box"></span>
+                    <span>非常</span>
+                </label>
+            </div>
+        </div>
+
+        <div class="row">
+            <p>16.一般来说，您疲乏的程度有多少？</p>
+            <div class="input input--radio input--primary">
+                <label>
+                    <input type="radio" name="fatigue4" value="1" >
+                    <span class="input__box"></span>
+                    <span>一点也不</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="fatigue4" value="2">
+                    <span class="input__box"></span>
+                    <span>有一点 </span>
+                </label>
+
+                <label>
+                    <input type="radio" name="fatigue4" value="3">
+                    <span class="input__box"></span>
+                    <span>有些</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="fatigue4" value="4">
+                    <span class="input__box"></span>
+                    <span>相当</span>
+                </label>
+                <label>
+                    <input type="radio" name="fatigue4" value="5">
+                    <span class="input__box"></span>
+                    <span>非常</span>
+                </label>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <hr/>
+            <h3>睡眠障碍- sleep disturbance</h3>
+            <p>17.在过去七天内，我的睡眠品质</p>
+            <div class="input input--radio input--primary">
+                <label>
+                    <input type="radio" name="sleep1" value="5" >
+                    <span class="input__box"></span>
+                    <span>非常差</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="sleep1" value="4">
+                    <span class="input__box"></span>
+                    <span>差 </span>
+                </label>
+
+                <label>
+                    <input type="radio" name="sleep1" value="3">
+                    <span class="input__box"></span>
+                    <span>一般</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="sleep1" value="2">
+                    <span class="input__box"></span>
+                    <span>好</span>
+                </label>
+                <label>
+                    <input type="radio" name="sleep1" value="1">
+                    <span class="input__box"></span>
+                    <span>非常好</span>
+                </label>
+            </div>
+        </div>
+
+        <div class="row">
+            <p>18.睡醒后我觉得神清气爽</p>
+            <div class="input input--radio input--primary">
+                <label>
+                    <input type="radio" name="sleep2" value="5" >
+                    <span class="input__box"></span>
+                    <span>完全没有</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="sleep2" value="4">
+                    <span class="input__box"></span>
+                    <span>有一点 </span>
+                </label>
+
+                <label>
+                    <input type="radio" name="sleep2" value="3">
+                    <span class="input__box"></span>
+                    <span>有一些</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="sleep2" value="2">
+                    <span class="input__box"></span>
+                    <span>相当</span>
+                </label>
+                <label>
+                    <input type="radio" name="sleep2" value="1">
+                    <span class="input__box"></span>
+                    <span>总是</span>
+                </label>
+            </div>
+        </div>
+
+        <div class="row">
+            <p>19.我有睡眠问题</p>
+            <div class="input input--radio input--primary">
+                <label>
+                    <input type="radio" name="sleep3" value="5" >
+                    <span class="input__box"></span>
+                    <span>完全没有</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="sleep3" value="4">
+                    <span class="input__box"></span>
+                    <span>有一点 </span>
+                </label>
+
+                <label>
+                    <input type="radio" name="sleep3" value="3">
+                    <span class="input__box"></span>
+                    <span>有一些</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="sleep3" value="2">
+                    <span class="input__box"></span>
+                    <span>相当</span>
+                </label>
+                <label>
+                    <input type="radio" name="sleep3" value="1">
+                    <span class="input__box"></span>
+                    <span>总是</span>
+                </label>
+            </div>
+        </div>
+
+        <div class="row">
+            <p>20.我很难入睡</p>
+            <div class="input input--radio input--primary">
+                <label>
+                    <input type="radio" name="sleep4" value="5" >
+                    <span class="input__box"></span>
+                    <span>完全没有</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="sleep4" value="4">
+                    <span class="input__box"></span>
+                    <span>有一点 </span>
+                </label>
+
+                <label>
+                    <input type="radio" name="sleep4" value="3">
+                    <span class="input__box"></span>
+                    <span>有一些</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="sleep4" value="2">
+                    <span class="input__box"></span>
+                    <span>相当</span>
+                </label>
+                <label>
+                    <input type="radio" name="sleep4" value="1">
+                    <span class="input__box"></span>
+                    <span>总是</span>
+                </label>
+            </div>
+        </div>
+
+        <div class="row">
+            <hr/>
+            <h3>社会角色- social</h3>
+
+
+            <p>21.我能够完成所有和他人一起的日常休闲活动</p>
+            <div class="input input--radio input--primary">
+                <label>
+                    <input type="radio" name="social1" value="1" >
+                    <span class="input__box"></span>
+                    <span>从来没有</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="social1" value="2">
+                    <span class="input__box"></span>
+                    <span>很少 </span>
+                </label>
+
+                <label>
+                    <input type="radio" name="social1" value="3">
+                    <span class="input__box"></span>
+                    <span>有时候可以</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="social1" value="4">
+                    <span class="input__box"></span>
+                    <span>常常可以</span>
+                </label>
+                <label>
+                    <input type="radio" name="social1" value="5">
+                    <span class="input__box"></span>
+                    <span>总是可以</span>
+                </label>
+            </div>
+        </div>
+
+        <div class="row">
+            <p>22.我能够完成所有我想参与的家庭活动</p>
+            <div class="input input--radio input--primary">
+                <label>
+                    <input type="radio" name="social2" value="1" >
+                    <span class="input__box"></span>
+                    <span>从来没有</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="social2" value="2">
+                    <span class="input__box"></span>
+                    <span>很少 </span>
+                </label>
+
+                <label>
+                    <input type="radio" name="social2" value="3">
+                    <span class="input__box"></span>
+                    <span>有时候可以</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="social2" value="4">
+                    <span class="input__box"></span>
+                    <span>常常可以</span>
+                </label>
+                <label>
+                    <input type="radio" name="social2" value="5">
+                    <span class="input__box"></span>
+                    <span>总是可以</span>
+                </label>
+            </div>
+        </div>
+
+        <div class="row">
+            <p>23.我能够和朋友一起完成所有我想做的事</p>
+            <div class="input input--radio input--primary">
+                <label>
+                    <input type="radio" name="social3" value="1" >
+                    <span class="input__box"></span>
+                    <span>从来没有</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="social3" value="2">
+                    <span class="input__box"></span>
+                    <span>很少 </span>
+                </label>
+
+                <label>
+                    <input type="radio" name="social3" value="3">
+                    <span class="input__box"></span>
+                    <span>有时候可以</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="social3" value="4">
+                    <span class="input__box"></span>
+                    <span>常常可以</span>
+                </label>
+                <label>
+                    <input type="radio" name="social3" value="5">
+                    <span class="input__box"></span>
+                    <span>总是可以</span>
+                </label>
+            </div>
+        </div>
+
+        <div class="row">
+            <p>24.我能够完成所有的日常事务</p>
+            <div class="input input--radio input--primary">
+                <label>
+                    <input type="radio" name="social4" value="1" >
+                    <span class="input__box"></span>
+                    <span>从来没有</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="social4" value="2">
+                    <span class="input__box"></span>
+                    <span>很少 </span>
+                </label>
+
+                <label>
+                    <input type="radio" name="social4" value="3">
+                    <span class="input__box"></span>
+                    <span>有时候可以</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="social4" value="4">
+                    <span class="input__box"></span>
+                    <span>常常可以</span>
+                </label>
+                <label>
+                    <input type="radio" name="social4" value="5">
+                    <span class="input__box"></span>
+                    <span>总是可以</span>
+                </label>
+            </div>
+        </div>
+
+        <div class="row">
+            <hr/>
+            <h3>疼痛程度- pain level</h3>
+
+
+            <p>25.您会给您的平均疼痛程度打几分？</p>
+            <div class="input input--radio input--primary">
+                <label>
+                    <input type="radio" name="pain_level1" value="0" >
+                    <span class="input__box"></span>
+                    <span>0</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="pain_level1" value="1">
+                    <span class="input__box"></span>
+                    <span>1 </span>
+                </label>
+
+                <label>
+                    <input type="radio" name="pain_level1" value="2">
+                    <span class="input__box"></span>
+                    <span>2</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="pain_level1" value="3">
+                    <span class="input__box"></span>
+                    <span>3</span>
+                </label>
+                <label>
+                    <input type="radio" name="pain_level1" value="4">
+                    <span class="input__box"></span>
+                    <span>4</span>
+                </label>
+                <label>
+                    <input type="radio" name="pain_level1" value="5">
+                    <span class="input__box"></span>
+                    <span>5</span>
+                </label>
+                <label>
+                    <input type="radio" name="pain_level1" value="6">
+                    <span class="input__box"></span>
+                    <span>6</span>
+                </label>
+                <label>
+                    <input type="radio" name="pain_level1" value="7">
+                    <span class="input__box"></span>
+                    <span>7</span>
+                </label>
+                <label>
+                    <input type="radio" name="pain_level1" value="8">
+                    <span class="input__box"></span>
+                    <span>8</span>
+                </label>
+                <label>
+                    <input type="radio" name="pain_level1" value="9">
+                    <span class="input__box"></span>
+                    <span>9</span>
+                </label>
+                <label>
+                    <input type="radio" name="pain_level1" value="10">
+                    <span class="input__box"></span>
+                    <span>10</span>
+                </label>
+            </div>
+        </div>
+
+        <div class="row">
+            <hr/>
+            <h3>疼痛影响- pain inference</h3>
+
+            <p>26.疼痛对您的日常活动有多大的影响？</p>
+            <div class="input input--radio input--primary">
+                <label>
+                    <input type="radio" name="pain_infer1" value="1" >
+                    <span class="input__box"></span>
+                    <span>完全没有</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="pain_infer1" value="2">
+                    <span class="input__box"></span>
+                    <span>有一点 </span>
+                </label>
+
+                <label>
+                    <input type="radio" name="pain_infer1" value="3">
+                    <span class="input__box"></span>
+                    <span>有一些</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="pain_infer1" value="4">
+                    <span class="input__box"></span>
+                    <span>相当大</span>
+                </label>
+                <label>
+                    <input type="radio" name="pain_infer1" value="5">
+                    <span class="input__box"></span>
+                    <span>非常大</span>
+                </label>
+            </div>
+        </div>
+
+        <div class="row">
+            <p>27.疼痛对您做家务事有多大的影响？</p>
+            <div class="input input--radio input--primary">
+                <label>
+                    <input type="radio" name="pain_infer2" value="1" >
+                    <span class="input__box"></span>
+                    <span>完全没有</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="pain_infer2" value="2">
+                    <span class="input__box"></span>
+                    <span>有一点 </span>
+                </label>
+
+                <label>
+                    <input type="radio" name="pain_infer2" value="3">
+                    <span class="input__box"></span>
+                    <span>有一些</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="pain_infer2" value="4">
+                    <span class="input__box"></span>
+                    <span>相当大</span>
+                </label>
+                <label>
+                    <input type="radio" name="pain_infer2" value="5">
+                    <span class="input__box"></span>
+                    <span>非常大</span>
+                </label>
+            </div>
+        </div>
+
+        <div class="row">
+            <p>28.疼痛对您参加社交活动的能力有多大的影响？</p>
+            <div class="input input--radio input--primary">
+                <label>
+                    <input type="radio" name="pain_infer3" value="1" >
+                    <span class="input__box"></span>
+                    <span>完全没有</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="pain_infer3" value="2">
+                    <span class="input__box"></span>
+                    <span>有一点 </span>
+                </label>
+
+                <label>
+                    <input type="radio" name="pain_infer3" value="3">
+                    <span class="input__box"></span>
+                    <span>有一些</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="pain_infer3" value="4">
+                    <span class="input__box"></span>
+                    <span>相当大</span>
+                </label>
+                <label>
+                    <input type="radio" name="pain_infer3" value="5">
+                    <span class="input__box"></span>
+                    <span>非常大</span>
+                </label>
+            </div>
+        </div>
+
+        
+        <div class="row">
+            <p>29.疼痛对您完成家务劳动有多大的影响？</p>
+            <div class="input input--radio input--primary">
+                <label>
+                    <input type="radio" name="pain_infer4" value="1" >
+                    <span class="input__box"></span>
+                    <span>完全没有</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="pain_infer4" value="2">
+                    <span class="input__box"></span>
+                    <span>有一点 </span>
+                </label>
+
+                <label>
+                    <input type="radio" name="pain_infer4" value="3">
+                    <span class="input__box"></span>
+                    <span>有一些</span>
+                </label>
+
+                <label>
+                    <input type="radio" name="pain_infer4" value="4">
+                    <span class="input__box"></span>
+                    <span>相当大</span>
+                </label>
+                <label>
+                    <input type="radio" name="pain_infer4" value="5">
+                    <span class="input__box"></span>
+                    <span>非常大</span>
+                </label>
+            </div>
+        </div>
+        <div class="row">
+            <hr/>
+            
+            <buttn class="button-3d-1" onclick="calc_all()">计算得分</buttn>
+            <ul>
+                <li>身体功能（physical）：<span id="physical_val">空</span></li>
+                <li>焦虑（anxiety）：<span id="anxiety_val">空</span></li>
+                <li>抑郁（depression）：<span id="depression_val">空</span></li>
+                <li>疲劳（fatigue）：<span id="fatigue_val">空</span></li>
+                <li>睡眠（sleep）功能：<span id="sleep_val">空</span></li>
+                <li>社会（social）功能：<span id="social_val">空</span></li>
+                <li>疼痛影响（pain_level）：<span id="pain_level_val">空</span></li>
+                <li>疼痛影响（pain_inference）：<span id="pain_infer_val">空</span></li>
+            </ul>
+        </div>
+    </div>
+</article>
+
+
+</body>
+<script>
+    const rules = new Map([
+        ["physical", new Array(22.5, 26.6, 28.9, 30.5, 31.9, 33.2, 34.4, 35.6, 36.7, 37.9, 39.2, 40.5, 41.9, 43.5, 45.5, 48.3, 57.0)],
+        ["anxiety", new Array(40.3, 48.0, 51.2, 53.7, 55.8, 57.7, 59.5, 61.4, 63.4, 65.3, 67.3, 69.3, 71.2, 73.3, 75.4, 77.9, 81.6)],
+        ["depression", new Array(41.0, 49.0, 51.8, 53.9, 55.7, 57.3, 58.9, 60.5, 62.2, 63.9, 65.7, 67.5, 69.4, 71.2, 73.3, 75.7, 79.4)],
+        ["fatigue", new Array(33.7, 39.7, 43.1, 46.0, 48.6, 51.0, 53.1, 55.1, 57.0, 58.8, 60.7, 62.7, 64.6, 66.7, 69.0, 71.6, 75.8)],
+        ["sleep", new Array(32.0, 37.5, 41.1, 43.8, 46.2, 48.4, 50.5, 52.4, 54.3, 56.1, 57.9, 59.8, 61.7, 63.8, 66.0, 68.8, 73.3)],
+        ["social",new Array(27.5, 31.8, 34.0, 35.7, 37.3, 38.8, 40.5, 42.3, 44.2, 46.2, 48.1, 50.0, 51.9, 53.7, 55.8, 58.3, 64.2)],
+        ["pain_infer", new Array(41.6, 49.6, 52.0, 53.9, 55.6, 57.1, 58.5, 59.9, 61.2, 62.5, 63.8, 65.2, 66.6, 68.0, 69.7, 71.6, 75.6)],
+    ]);
+
+ function calc_item(calc_name, num) {
+    value = 0;
+    for ( i = 1; i <= num; i++){
+        var temp = document.getElementsByName(calc_name+i);
+        console.log(temp);
+        flag = false;
+        for (j=0 ; j < temp.length; j++ ){
+            if(temp[j].checked)
+            {
+                console.log("你选择了" + temp[j].value);
+                value += parseInt(temp[j].value);
+                flag = true;
+            }
+        }
+        if(!flag){
+            return "<span style='color:red; width: 100px'>第"+i+"个未选择!</span>";
+        }
+    }
+    if(calc_name == 'pain_level'){
+        return "<b>" + value +"</b>";
+    }
+    console.log(calc_name +": " +value);
+    return "<b>" +rules.get(calc_name)[value-4] +"</b>";
+}
+
+
+function calc_all(){
+    document.getElementById("physical_val").innerHTML= calc_item('physical', 4);
+    document.getElementById("anxiety_val").innerHTML= calc_item('anxiety', 4);
+    document.getElementById("depression_val").innerHTML= calc_item('depression', 4);
+    document.getElementById("fatigue_val").innerHTML= calc_item('fatigue', 4);
+    document.getElementById("sleep_val").innerHTML= calc_item('sleep', 4);
+    document.getElementById("social_val").innerHTML= calc_item('social', 4);
+    document.getElementById("pain_level_val").innerHTML= calc_item('pain_level', 1);
+    document.getElementById("pain_infer_val").innerHTML= calc_item('pain_infer', 4);
+// calc_item('physical', 4);
+// calc_item('anxiety', 4);
+// calc_item('depression', 4);
+// calc_item('fatigue', 4);
+// calc_item('sleep', 4);
+// calc_item('social', 4);
+// calc_item('pain_level', 1);
+// calc_item('pain_infer', 4);
+
+
+}
+ </script>
+
+</html>
