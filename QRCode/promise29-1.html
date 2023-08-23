@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Promise-29评估计算系统</title>
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+  <meta name="description" content="何问起">
+  <meta name="keywords" content="何问起">
+  <link href="./assets/hovertreeanswer.css" rel="stylesheet" />
+  <style>h2{color:white;text-align:center;}a{color:deeppink;font-size:16px;}</style>
+</head>
+<body style="background-color:#1fc587">
+  <div class="wrapper">
+    <br />
+    <h2>Promise-29评估计算系统</h2>
+    <div id="answer" class="card_wrap">
+      <!--Q1-->
+      <div class="card_cont card1">
+        <div class="card">
+          <p class="question"><span>Q1、</span>你第一门接触的编程语言是？</p>
+          <ul class="select">
+            <li>
+              <input id="q1_1" type="radio" name="r-group-1">
+              <label for="q1_1">JavaScript</label>
+            </li>
+            <li>
+              <input id="q1_2" type="radio" name="r-group-1">
+              <label for="q1_2">C语言</label>
+            </li>
+            <li>
+              <input id="q1_3" type="radio" name="r-group-1">
+              <label for="q1_3">Java</label>
+            </li>
+            <li>
+              <input id="q1_4" type="radio" name="r-group-1">
+              <label for="q1_4">C#</label>
+            </li>
+            <li>
+              <input id="q1_5" type="radio" name="r-group-1">
+              <label for="q1_5">其他</label>
+            </li>
+          </ul>
+          <div class="card_bottom"><span><b>1</b>/5</span></div>
+        </div>
+      </div>
+      <!--Q2-->
+      <div class="card_cont card2">
+        <div class="card">
+          <p class="question"><span>Q2、</span>你主要从事的开发设计工作是？</p>
+          <ul class="select">
+            <li>
+              <input id="q2_1" type="radio" name="r-group-2">
+              <label for="q2_1">Web前端</label>
+            </li>
+            <li>
+              <input id="q2_2" type="radio" name="r-group-2">
+              <label for="q2_2">安卓软件开发</label>
+            </li>
+            <li>
+              <input id="q2_3" type="radio" name="r-group-2">
+              <label for="q2_3">IOS软件开发</label>
+            </li>
+            <li>
+              <input id="q2_4" type="radio" name="r-group-2">
+              <label for="q2_4">网站、软件维护</label>
+            </li>
+            <li>
+              <input id="q2_5" type="radio" name="r-group-2">
+              <label for="q2_5">数据库开发管理</label>
+            </li>
+          </ul>
+          <div class="card_bottom"><a class="prev">上一题</a><span><b>2</b>/5</span></div>
+        </div>
+      </div>
+      <!--Q3-->
+      <div class="card_cont card3">
+        <div class="card">
+          <p class="question"><span>Q3、</span>你最早知道的有关开发的网站是哪个？</p>
+          <ul class="select">
+            <li>
+              <input id="q3_1" type="radio" name="r-group-3">
+              <label for="q3_1">何问起（http://hovertree.com/）</label>
+            </li>
+            <li>
+              <input id="q3_2" type="radio" name="r-group-3">
+              <label for="q3_2">博客园（http://www.cnblogs.com/）</label>
+            </li>
+            <li>
+              <input id="q3_3" type="radio" name="r-group-3">
+              <label for="q3_3">柯乐义（http://keleyi.com/）</label>
+            </li>
+            <li>
+              <input id="q3_4" type="radio" name="r-group-3">
+              <label for="q3_4">CSDN（http://www.csdn.net/）</label>
+            </li>
+            <li>
+              <input id="q3_5" type="radio" name="r-group-3">
+              <label for="q3_5">其他</label>
+            </li>
+          </ul>
+          <div class="card_bottom"><a class="prev">上一题</a><span><b>3</b>/5</span></div>
+        </div>
+      </div>
+      <!--Q4-->
+      <div class="card_cont">
+        <div class="card">
+          <p class="question"><span>Q4、</span>你开发中使用的主要操作系统是？</p>
+          <ul class="select">
+            <li>
+              <input id="q4_1" type="radio" name="r-group-4">
+              <label for="q4_1">Windows 10</label>
+            </li>
+            <li>
+              <input id="q4_2" type="radio" name="r-group-4">
+              <label for="q4_2">Windows 7</label>
+            </li>
+            <li>
+              <input id="q4_3" type="radio" name="r-group-4">
+              <label for="q4_3">Linux</label>
+            </li>
+            <li>
+              <input id="q4_4" type="radio" name="r-group-4">
+              <label for="q4_4">Mac OS</label>
+            </li>
+            <li>
+              <input id="q4_5" type="radio" name="r-group-4">
+              <label for="q4_5">其他</label>
+            </li>
+          </ul>
+          <div class="card_bottom"><a class="prev">上一题</a><span><b>4</b>/5</span></div>
+        </div>
+      </div>
+      <!--Q5-->
+      <div class="card_cont">
+        <div class="card">
+          <p class="question"><span>Q5、</span>你觉得下面哪个栏目最实用？</p>
+          <ul class="select">
+            <li>
+              <input id="q5_1" type="radio" name="r-group-5">
+              <label for="q5_1">网页特效 http://hovertree.com/menu/texiao/ </label>
+            </li>
+            <li>
+              <input id="q5_2" type="radio" name="r-group-5">
+              <label for="q5_2">在线题库 http://hovertree.com/tiku/ </label>
+            </li>
+            <li>
+              <input id="q5_3" type="radio" name="r-group-5">
+              <label for="q5_3">jQuery下载 http://hovertree.com/h/bjaf/ati6k7yk.htm</label>
+            </li>
+            <li>
+              <input id="q5_4" type="radio" name="r-group-5">
+              <label for="q5_4">图片 http://hovertree.com/hvtimg/ </label>
+            </li>
+            <li>
+              <input id="q5_5" type="radio" name="r-group-5">
+              <label for="q5_5">代码 http://hovertree.com/code/ </label>
+            </li>
+          </ul>
+          <div class="card_bottom"><a class="prev">上一题</a><span><b>5</b>/5</span></div>
+        </div>
+      </div>
+      <!--6-->
+      <div class="card_cont">
+        <div class="card">
+          <p class="question"></p>
+          <ul class="select">
+            <li>感谢您的参与！<br />
+            更多信息请访问何问起网。
+            <br />
+              <a href="http://hovertree.com" target="_blank">何问起首页</a>
+            </li>
+          </ul>
+          <div class="card_bottom"><a class="prev">上一题</a></div>
+        </div>
+      </div>
+    </div><!--/card_wrap-->
+    <br /><br />
+    <div style="text-align:center;">
+      <a href="http://hovertree.com">首页</a>
+      <a href="http://hovertree.com/texiao/">特效库</a>
+      <a href="http://hovertree.com/h/bjaf/ml26ksm5.htm">原文</a>
+    </div>
+  </div>
+  <script src="./assets/jquery-3.6.0.min.js"></script>
+  <script src="./assets/hovertreeanswer.js"></script>
+  <script>
+  $(function(){
+    $("#answer").answerSheet({});
+  })
+  </script>
+</body>
+</html>
